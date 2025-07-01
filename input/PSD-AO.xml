@@ -4,7 +4,7 @@
 <PP xmlns="https://niap-ccevs.org/cc/v1"
     xmlns:sec="https://niap-ccevs.org/cc/v1/section"
     xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes">  
-  <!-- <inline-comment color='green'>Initial PSD-AI Template on 5/8.</inline-comment> -->
+  <!-- <inline-comment color='green'>Initial PSD-AO Template on 5/8.</inline-comment> -->
   <!-- <inline-comment color='blue' linebreak='yes'> Hello World QQQQ </inline-comment> -->
  
   <PPReference>
@@ -143,52 +143,80 @@
       <cc-pp-conf/>
       <cc-pp-config-with>
         <PP-cc-ref>Protection Profile for Peripheral Sharing Device, Version 5.0</PP-cc-ref>
-        <Mod-cc-ref>PP-Module for Keyboard/Mouse Devices, Version 1.0</Mod-cc-ref>
-        <Mod-cc-ref>PP-Module for User Authentication Devices, Version 1.0</Mod-cc-ref>
-        <Mod-cc-ref>PP-MOdule for Video/Display Devices, Version 1.0</Mod-cc-ref>
+        <Mod-cc-ref>PP-Module for Keyboard/Mouse Devices, Version 2.0</Mod-cc-ref>
+        <Mod-cc-ref>PP-Module for User Authentication Devices, Version 2.0</Mod-cc-ref>
+        <Mod-cc-ref>PP-MOdule for Video/Display Devices, Version 2.0</Mod-cc-ref>
       </cc-pp-config-with>        
       <cc-pkg-claim/>
     </CClaimsInfo>
   </section>
   
   <sec:spd title="Security Problem Description">    
-    <sec:Threats>
-      This PP‐Module describes the security problem in terms of the threats the TOE is expected to address,
+    This PP‐Module describes the security problem in terms of the threats the TOE is expected to address,
       assumptions about its operational environment, and any organizational security policies (OSPs) that the
       TOE is expected to enforce.<h:br/><h:br/>
       Note that as a PP‐Module of the PSD PP, all threats, assumptions, and Organizational Security Policies (OSP)
       defined in the base PP will also apply to the TOE unless otherwise specified.
+    <sec:Threats>      
       <threat name="T.AUDIO_REVERSED">
-        <description>A malicious agent could repurpose an authorized audio output peripheral device by converting it to a
+        <description>A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
           low‐gain microphone to eavesdrop on the surrounding audio or transfer data across an air‐gap
           through audio signaling.</description>
         <consistency-rationale>The PSD PP does not identify any threats specific to analog audio output
           peripheral devices. This threat is specific to analog audio output devices and
           therefore is an additional threat to this module supplementing those in PSD
           PP.</consistency-rationale>        
-        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale></rationale>
-        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale></rationale>
-        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale></rationale>
+        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          ensuring no data or electrical signals can flow between connections and only user-selected
+        interfaces can rout data.</rationale>
+        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
+          outgoing audio signals are within the range of human hearing.</rationale>
+        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.</rationale>
       </threat>
             
       <threat name="T.DATA_LEAK">
         <from base="bpp-psd"/>
-        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale></rationale>
-        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale></rationale>
-        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale></rationale>
+        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          requiring restrictions on how data is routed between interfaces.</rationale>
+        <addressed-by>FDP_PDC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices.</rationale>
+        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing.</rationale>
+        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.</rationale>
       </threat>
       
-      <threat name="T.MICROPHONE_USE">        
-        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale></rationale>
-        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale></rationale>
-        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale></rationale>
+      <threat name="T.MICROPHONE_USE">  
+        <description>A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
+          the TOE audio out peripheral device interface to eavesdrop or transfer data across an air‐gap through
+          audio signaling.</description>
+        <consistency-rationale>The PSD PP does not identify any threats specific to analog audio output
+          peripheral devices. This threat is specific to analog audio output devices and
+          therefore is an additional threat to this module supplementing those in PSD
+          PP.</consistency-rationale>
+        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          preventing data and electrical signals from flowing between connections.</rationale>
+        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
+          outgoing signals are filtered to within the range of human hearing.</rationale>
+        <addressed-by>FDP_PDC_EXT.2/AO</addressed-by><rationale>Mitigates this threat by only
+          allowing authorized devices to connect upon power up and when a peripheral device is
+          connected.
+      </rationale>
+        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.</rationale>      
       </threat>
 
       <threat name="T.SIGNAL_LEAK">
         <from base="bpp-psd"/>
-        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale></rationale>
-        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale></rationale>
-        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale></rationale>
+        <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          requiring restrictions on how signals are routed between interfaces.</rationale>
+        <addressed-by>FDP_PDC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices.</rationale>
+        <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing.</rationale>
+        <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
+          signals transit unidirectionally between interfaces.</rationale>        
       </threat>
 
     </sec:Threats>
