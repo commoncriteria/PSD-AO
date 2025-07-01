@@ -785,43 +785,68 @@ The following sections list Common Criteria and technology terms used in this do
 					any Protection Profile.
 				</dd><p></p><dd>The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a 
 					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>:
-					<ul><li>Protection Profile for Peripheral Sharing Device, Version 5.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Keyboard/Mouse Devices, Version 1.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for User Authentication Devices, Version 1.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-MOdule for Video/Display Devices, Version 1.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is not conformant to any 
+					<ul><li>Protection Profile for Peripheral Sharing Device, Version 5.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Keyboard/Mouse Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for User Authentication Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-MOdule for Video/Display Devices, Version 2.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is not conformant to any 
 						Functional or Assurance Packages.</dd></dl>
   <h1 class="indexable" data-level="1" id="spd">3 Security Problem Description</h1>    
-    <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module describes the security problem in terms of the threats the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address,
+    This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module describes the security problem in terms of the threats the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address,
       assumptions about its operational environment, and any organizational security policies (OSPs) that the
       <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to enforce.<br/><br/>
       Note that as a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module of the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, all threats, assumptions, and Organizational Security Policies (OSP)
       defined in the base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> will also apply to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified.
+    <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>      
       
-        <span class="description">A malicious agent could repurpose an authorized audio output peripheral device by converting it to a
+        <span class="description">A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
           low‐gain microphone to eavesdrop on the surrounding audio or transfer data across an air‐gap
           through audio signaling.</span>
                 
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)
-        <a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>
-        <a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>
+        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
+          ensuring no data or electrical signals can flow between connections and only user-selected
+        interfaces can rout data.
+        FDP_AFL_EXT.1Mitigates this threat by ensuring
+          outgoing audio signals are within the range of human hearing.
+        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.
       
             
       
         
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)
-        <a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>
-        <a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>
+        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
+          requiring restrictions on how data is routed between interfaces.
+        <a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices.
+        FDP_AFL_EXT.1Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing.
+        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.
       
       
-              
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)
-        <a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>
-        <a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>
+        
+        <span class="description">A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
+          the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio out peripheral device interface to eavesdrop or transfer data across an air‐gap through
+          audio signaling.</span>
+        
+        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
+          preventing data and electrical signals from flowing between connections.
+        FDP_AFL_EXT.1Mitigates this threat by ensuring
+          outgoing signals are filtered to within the range of human hearing.
+        FDP_PDC_EXT.2/AOMitigates this threat by only
+          allowing authorized devices to connect upon power up and when a peripheral device is
+          connected.
+      
+        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
+          output data transit unidirectionally between interfaces.      
       
 
       
         
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)
-        <a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>
-        <a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>
+        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
+          requiring restrictions on how signals are routed between interfaces.
+        <a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices.
+        FDP_AFL_EXT.1Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing.
+        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
+          signals transit unidirectionally between interfaces.        
       
 
     
