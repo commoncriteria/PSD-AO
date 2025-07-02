@@ -289,10 +289,10 @@
       <modified-sfrs>
         <sec:mod_fdp title="User Data Protection (FDP)">
           <f-component cc-id="fdp_apc_ext.1" name="Active PSD Connections">
-            <consistency-reationale>
+            <consistency-rationale>
               This SFR adds a requirement to block electrical signals that strengthens but
               does not conflict with the requirement in the PSD PP.
-            </consistency-reationale>
+            </consistency-rationale>
             <f-element id="fdp-apc-ext.1e1">
               <title> The TSF shall route user data only <h:s>to or</h:s> from the interfaces selected by the
                 user. 
@@ -364,7 +364,7 @@
                   received.                  
                   <testlist>
                     <test>
-                      <h:b>AO: Analog Audio Output Data Routing Methods</h:b><h:br/><h:br/>
+                      <h:b>Analog Audio Output Data Routing Methods</h:b><h:br/><h:br/>
                       This test verifies the functionality of the TOE routing methods while powered on, powered off, and in
                       failure state.<h:br/><h:br/><h:ol>
                         <h:li>Connect amplified speakers to the TOE audio output device interface. Set the speakers to
@@ -389,7 +389,7 @@
                     </test>
                     
                     <test>
-                      <h:b>AO: Analog Audio Output Interface Isolation</h:b><h:br/><h:br/>
+                      <h:b>Analog Audio Output Interface Isolation</h:b><h:br/><h:br/>
                       [Conditional: Perform this test if “switching through express user action” is selected in FDP_SWI_EXT.1.1
                       in the PSD PP.]<h:br/><h:br/>
                       This test verifies that no data or electrical signals flow between connected computers while the TOE is
@@ -432,7 +432,7 @@
                         </h:ol>
                     </test>
                     <test>
-                      <h:b>AO: No Flow between Computers with Other Peripheral Device Types</h:b><h:br/><h:br/>
+                      <h:b>No Flow between Computers with Other Peripheral Device Types</h:b><h:br/><h:br/>
                       [Conditional: Perform this test only if a PP‐Module aside from the Analog Audio Output PP‐Module is part
                       of the PP‐Configuration being claimed AND if “switching through express user action” is selected in
                       FDP_SWI_EXT.1.1 in the PSD PP.]<h:br/><h:br/>
