@@ -348,7 +348,7 @@
                   and any peripherals/connectors that are included with the TOE that cause data flows to behave differently
                   if peripherals are connected through them.
                 </Guidance>
-                <Test>
+                <Tests>
                   <h:b>Test Setup</h:b>
                   The evaluator shall perform the following setup steps.<h:ul>
                     <h:li>Configure the TOE and the operational environment in accordance with the operational
@@ -497,7 +497,7 @@
                       </h:ol>
                     </test>
                   </testlist>
-                </Test>
+                </Tests>
               </aactivity>              
             </f-element>
           </f-component>
@@ -676,7 +676,7 @@
               <TSS>The evaluator shall check the TSS to verify that the TOE audio function implementation properly filters
                 the audio passing through the TOE.</TSS>
               <Guidance/>
-              <Test>
+              <Tests>
                 <h:ol>
                   <h:li>Connect a computer to the TOE analog audio output peripheral interface and run audio analyzer
                     software on it.</h:li>
@@ -696,7 +696,7 @@
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
                     attenuation.</h:li>
                 </h:ol>
-              </Test>
+              </Tests>
             </aactivity>
           </f-element>
           
@@ -828,7 +828,7 @@
                 The evaluator shall verify that the guidance states that a microphone should never be connected to the
                 TOE’s analog audio output interface.
               </Guidance>
-              <Test>
+              <Tests>
                 <h:ol>
                   <h:li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
                     green in color). Set the volume at the speakers to approximately 25 percent.</h:li>
@@ -842,7 +842,7 @@
                   <h:li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
                     microphone.</h:li>                                    
                 </h:ol>
-              </Test>
+              </Tests>
             </aactivity>
           </f-element>          
         </f-component>
