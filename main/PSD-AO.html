@@ -974,6 +974,14 @@ The following sections list Common Criteria and technology terms used in this do
                                   
                 
                 
+              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component.<br/></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to grant or deny authorization to audio communications is configurable, the
+                  evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the
+                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
+                  and any peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently
+                  if peripherals are connected through them.
+                </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                   <b>Test Setup</b>
                   The evaluator shall perform the following setup steps.<ul>
                     <li>Configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the operational environment in accordance with the operational
@@ -1126,14 +1134,6 @@ The following sections list Common Criteria and technology terms used in this do
                       </ol>
                     </li>
                   </ul></span>
-                
-              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component.<br/></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to grant or deny authorization to audio communications is configurable, the
-                  evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the
-                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>. This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
-                  and any peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently
-                  if peripherals are connected through them.
                 </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>
@@ -1300,6 +1300,9 @@ The following sections list Common Criteria and technology terms used in this do
               
               
               
+            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio function implementation properly filters
+                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</div></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio analyzer
                     software on it.</li>
@@ -1319,10 +1322,7 @@ The following sections list Common Criteria and technology terms used in this do
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
                     attenuation.</li>
                 </ol>
-              
-            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio function implementation properly filters
-                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</div></div><div class="eacategory">Guidance</div><div class="ea">
-			There are no additional Guidance evaluation activities for this component.<br/></div></div></div></div>
+              </div></div></div></div></div>
         
         <div class="comp" id="FDP_PDC_EXT.2/AO"><h4>FDP_PDC_EXT.2/AO Peripheral Device Connection (Audio Output)</h4>
           
@@ -1395,6 +1395,15 @@ The following sections list Common Criteria and technology terms used in this do
               
               
               
+            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
+                The evaluator shall verify the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> states that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not supply power to an unauthorized device
+                connected to the analog audio output interface.<br/><br/>
+                The evaluator shall also verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> cannot be configured to supply power to a device connected
+                to the analog audio output interface.
+              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                The evaluator shall verify that the guidance states that a microphone should never be connected to the
+                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s analog audio output interface.
+              </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <ol>
                   <li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
                     green in color). Set the volume at the speakers to approximately 25 percent.</li>
@@ -1408,15 +1417,6 @@ The following sections list Common Criteria and technology terms used in this do
                   <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
                     microphone.</li>                                    
                 </ol>
-              
-            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
-                The evaluator shall verify the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> states that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not supply power to an unauthorized device
-                connected to the analog audio output interface.<br/><br/>
-                The evaluator shall also verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> cannot be configured to supply power to a device connected
-                to the analog audio output interface.
-              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-                The evaluator shall verify that the guidance states that a microphone should never be connected to the
-                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s analog audio output interface.
               </div></div></div></div></div>
         
         <div class="comp" id="FDP_UDF_EXT.1/AO"><h4>FDP_UDF_EXT.1/AO Unidirectional Data Flow</h4>

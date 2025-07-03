@@ -926,43 +926,50 @@ The following sections list Common Criteria and technology terms used in this do
                                   
                 
                 
+              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_120" href="#period_120">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to grant or deny authorization to audio communications is configurable, the
+                  evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the
+                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_121" href="#period_121">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
+                  and any peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently
+                  if peripherals are connected through them<a id="period_122" href="#period_122">. </a>                </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                   <b>Test Setup</b>
-                  The evaluator shall perform the following setup steps<a id="period_120" href="#period_120">. </a><ul>
+                  The evaluator shall perform the following setup steps<a id="period_123" href="#period_123">. </a><ul>
                     <li>Configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the operational environment in accordance with the operational
-                      guidance<a id="period_121" href="#period_121">. </a></li>
+                      guidance<a id="period_124" href="#period_124">. </a></li>
                     <li>Play a different audio file on a number of computers for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer
-                      analog audio interface<a id="period_122" href="#period_122">. </a></li>
-                    <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_123" href="#period_123">. </a></li>
+                      analog audio interface<a id="period_125" href="#period_125">. </a></li>
+                    <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_126" href="#period_126">. </a></li>
                   </ul>
                   Note that for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that provides audio mixing functions the evaluator shall maximize the volume on a
-                  specific channel where instructed in the following text to assign that specific computer<a id="period_124" href="#period_124">. </a><br><br>
+                  specific channel where instructed in the following text to assign that specific computer<a id="period_127" href="#period_127">. </a><br><br>
                   Note: Electrical signals are considered not to flow between connected computers and data is considered
                   not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of attenuation at the specific audio frequency is
-                  received<a id="period_125" href="#period_125">. </a>                 
+                  received<a id="period_128" href="#period_128">. </a>                 
                   <span class="testlist-"><ul>
                     <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>:
       
                       <b>Analog Audio Output Data Routing Methods</b><br><br>
                       This test verifies the functionality of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> routing methods while powered on, powered off, and in
-                      failure state<a id="period_126" href="#period_126">. </a><br><br><ol>
-                        <li>Connect amplified speakers to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output device interface<a id="period_127" href="#period_127">. </a>Set the speakers to
-                          approximately 25 percent volume<a id="period_128" href="#period_128">. </a></li>
+                      failure state<a id="period_129" href="#period_129">. </a><br><br><ol>
+                        <li>Connect amplified speakers to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output device interface<a id="period_130" href="#period_130">. </a>Set the speakers to
+                          approximately 25 percent volume<a id="period_131" href="#period_131">. </a></li>
                         <li>[Conditional: If &#8220;switching can be initiated only through express user action&#8221; is selected in
                           FDP_SWI_EXT.1.1 in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, then] perform step 3 for each switching method selected in
-                          FDP_SWI_EXT.2.2 in accordance with the operational user guidance<a id="period_129" href="#period_129">. </a></li>
+                          FDP_SWI_EXT.2.2 in accordance with the operational user guidance<a id="period_132" href="#period_132">. </a></li>
                         <li>For each connected computer, ensure it is selected, listen to the amplified speakers, and verify
-                          that the audio is coming from the selected computer(s)<a id="period_130" href="#period_130">. </a>Adjust the volume if necessary<a id="period_131" href="#period_131">. </a></li>
+                          that the audio is coming from the selected computer(s)<a id="period_133" href="#period_133">. </a>Adjust the volume if necessary<a id="period_134" href="#period_134">. </a></li>
                         <li>Replace the speakers with a computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface
-                          and run audio spectrum analyzer software on it<a id="period_132" href="#period_132">. </a>Run tone generator software on all connected computers<a id="period_133" href="#period_133">. </a></li>
+                          and run audio spectrum analyzer software on it<a id="period_135" href="#period_135">. </a>Run tone generator software on all connected computers<a id="period_136" href="#period_136">. </a></li>
                         <li>Turn off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and for each connected computer, use the tone generator program to generate
                           a sine wave audio tone for each of the designated frequencies and verify that no audio is present in the
                           audio spectrum analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device
-                          interface<a id="period_134" href="#period_134">. </a></li>
+                          interface<a id="period_137" href="#period_137">. </a></li>
                         <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, cause the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to enter a failure state, and verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> provides the user
-                          with an indication of failure<a id="period_135" href="#period_135">. </a>For each connected computer use the tone generator program to generate
+                          with an indication of failure<a id="period_138" href="#period_138">. </a>For each connected computer use the tone generator program to generate
                           a sine wave audio tone for each of the designated frequencies and verify that no audio is present in the
                           audio spectrum analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device
-                          interface<a id="period_136" href="#period_136">. </a></li>                        
+                          interface<a id="period_139" href="#period_139">. </a></li>                        
                       </ol>                      
                     </li>
                     
@@ -972,28 +979,28 @@ The following sections list Common Criteria and technology terms used in this do
                       [Conditional: Perform this test if &#8220;switching through express user action&#8221; is selected in FDP_SWI_EXT.1.1
                       in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.]<br><br>
                       This test verifies that no data or electrical signals flow between connected computers while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-                      powered on or off<a id="period_137" href="#period_137">. </a><br><br>
+                      powered on or off<a id="period_140" href="#period_140">. </a><br><br>
                       <ol>
-                        <li>Continue with the setup from Test 1<a id="period_138" href="#period_138">. </a></li>
-                        <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_139" href="#period_139">. </a>Run audio spectrum analyzer
-                          software on all computers<a id="period_140" href="#period_140">. </a></li>
-                        <li>Perform steps 4&#8208;13 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface<a id="period_141" href="#period_141">. </a></li>
-                        <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure the first computer is selected<a id="period_142" href="#period_142">. </a></li>
+                        <li>Continue with the setup from Test 1<a id="period_141" href="#period_141">. </a></li>
+                        <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_142" href="#period_142">. </a>Run audio spectrum analyzer
+                          software on all computers<a id="period_143" href="#period_143">. </a></li>
+                        <li>Perform steps 4&#8208;13 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface<a id="period_144" href="#period_144">. </a></li>
+                        <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure the first computer is selected<a id="period_145" href="#period_145">. </a></li>
                         <li>Use the tone generator program on the first computer to generate a sine wave audio tone for each
-                          of the designated frequencies<a id="period_143" href="#period_143">. </a>Verify that the audio is present in the audio spectrum analyzer software
+                          of the designated frequencies<a id="period_146" href="#period_146">. </a>Verify that the audio is present in the audio spectrum analyzer software
                           on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface and is not present in the
-                          audio spectrum analyzer software on any of the non&#8208;selected computers<a id="period_144" href="#period_144">. </a></li>
+                          audio spectrum analyzer software on any of the non&#8208;selected computers<a id="period_147" href="#period_147">. </a></li>
                         <li>For each other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface, select that computer and use the tone
                           generator program on the first computer (now no longer selected) to generate a sine wave audio tone for
-                          each of the designated frequencies<a id="period_145" href="#period_145">. </a>Verify that the audio is not present in the audio spectrum analyzer
+                          each of the designated frequencies<a id="period_148" href="#period_148">. </a>Verify that the audio is not present in the audio spectrum analyzer
                           software on the selected computer, the other non&#8208;selected computers, or the computer connected to the
-                          <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_146" href="#period_146">. </a></li>
+                          <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_149" href="#period_149">. </a></li>
                         <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and use the tone generator program on the first computer to generate a sine
-                          wave audio tone for each of the designated frequencies<a id="period_147" href="#period_147">. </a>Verify that the audio is not present in the audio
-                          spectrum analyzer software on any of the other connected computers<a id="period_148" href="#period_148">. </a></li>
-                        <li>Restart the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, select the first computer, and replace it with an external audio signal generator<a id="period_149" href="#period_149">. </a></li>
+                          wave audio tone for each of the designated frequencies<a id="period_150" href="#period_150">. </a>Verify that the audio is not present in the audio
+                          spectrum analyzer software on any of the other connected computers<a id="period_151" href="#period_151">. </a></li>
+                        <li>Restart the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, select the first computer, and replace it with an external audio signal generator<a id="period_152" href="#period_152">. </a></li>
                         <li>For each non&#8208;selected computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output computer interface,
-                          replace it with an oscilloscope set to measure the peak&#8208;to&#8208;peak voltage and perform steps 10&#8208;14<a id="period_150" href="#period_150">. </a></li>
+                          replace it with an oscilloscope set to measure the peak&#8208;to&#8208;peak voltage and perform steps 10&#8208;14<a id="period_153" href="#period_153">. </a></li>
                         <li>Perform steps 11&#8208;13 with the signal generator set to the following
                           settings:<ul>
                             <li>Pure sine wave around the average voltage of half output (positive signal only), with the output signal set
@@ -1002,12 +1009,12 @@ The following sections list Common Criteria and technology terms used in this do
                           </ul>                          
                         </li>
                         <li>Set the signal generator to generate the designated frequencies and verify the signal on the
-                          oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_151" href="#period_151">. </a>This level of signal ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended
-                          audio frequency range<a id="period_152" href="#period_152">. </a></li>
+                          oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_154" href="#period_154">. </a>This level of signal ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended
+                          audio frequency range<a id="period_155" href="#period_155">. </a></li>
                         <li>For each other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface, select it, set the signal generator to
-                          generate the designated frequencies, and verify the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_153" href="#period_153">. </a></li>
+                          generate the designated frequencies, and verify the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_156" href="#period_156">. </a></li>
                         <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and set the signal generator to generate the designated frequencies and verify
-                          the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_154" href="#period_154">. </a></li>
+                          the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_157" href="#period_157">. </a></li>
                         </ol>
                     </li>
                     <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
@@ -1017,74 +1024,67 @@ The following sections list Common Criteria and technology terms used in this do
                       of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration being claimed AND if &#8220;switching through express user action&#8221; is selected in
                       FDP_SWI_EXT.1.1 in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.]<br><br>
                       This test verifies that power events at one <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface do not affect the analog audio
-                      output computer interface of another computer<a id="period_155" href="#period_155">. </a><br><br>
+                      output computer interface of another computer<a id="period_158" href="#period_158">. </a><br><br>
                       Note: &#8220;No sound appears&#8221; is defined as a temporary jump of at least 4 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> from the existing ambient noise
-                      floor<a id="period_156" href="#period_156">. </a>                      <ol>
+                      floor<a id="period_159" href="#period_159">. </a>                      <ol>
                         <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio spectrum
-                          analyzer software on it and each connected computer<a id="period_157" href="#period_157">. </a></li>
-                        <li>Perform steps 3&#8208;9 for each connected computer<a id="period_158" href="#period_158">. </a></li>
+                          analyzer software on it and each connected computer<a id="period_160" href="#period_160">. </a></li>
+                        <li>Perform steps 3&#8208;9 for each connected computer<a id="period_161" href="#period_161">. </a></li>
                         <li>Ensure the first computer is selected and perform steps 4&#8208;8 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and
-                          powered off<a id="period_159" href="#period_159">. </a></li>
+                          powered off<a id="period_162" href="#period_162">. </a></li>
                         [Conditional: Perform steps 4 and 5 only if the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Video/Display Devices is part of the PPConfiguration
                         being claimed.]<br><br>
                         <li>For each other connected computer, disconnect and reconnect the video cables from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                          computer interface several times<a id="period_160" href="#period_160">. </a>Verify that no sound appears on the audio analyzer software on the
-                          first computer<a id="period_161" href="#period_161">. </a></li>
+                          computer interface several times<a id="period_163" href="#period_163">. </a>Verify that no sound appears on the audio analyzer software on the
+                          first computer<a id="period_164" href="#period_164">. </a></li>
                         <li>Disconnect and reconnect the first computer&#8217;s video cables from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface
-                          several times<a id="period_162" href="#period_162">. </a>Verify that no sound appears on the audio analyzer software on the other connected
-                          computers<a id="period_163" href="#period_163">. </a></li>
+                          several times<a id="period_165" href="#period_165">. </a>Verify that no sound appears on the audio analyzer software on the other connected
+                          computers<a id="period_166" href="#period_166">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Keyboard/Mouse Devices or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication
                           Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration being claimed, then:] for each other connected computer,
-                          disconnect and reconnect the USB cable from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface several times<a id="period_164" href="#period_164">. </a>Verify that
+                          disconnect and reconnect the USB cable from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface several times<a id="period_167" href="#period_167">. </a>Verify that
                           no sound appears on the audio analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio
-                          output peripheral interface or any connected computers<a id="period_165" href="#period_165">. </a></li>
+                          output peripheral interface or any connected computers<a id="period_168" href="#period_168">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Keyboard/Mouse Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed, then:] disconnect and reconnect the peripheral device type(s) selected in
-                          FDP_PDC_EXT.3.1/KM from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> KM peripheral device interface several times<a id="period_166" href="#period_166">. </a>Verify that no sound
-                          appears on the audio analyzer software on the other connected computers<a id="period_167" href="#period_167">. </a></li>
+                          FDP_PDC_EXT.3.1/KM from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> KM peripheral device interface several times<a id="period_169" href="#period_169">. </a>Verify that no sound
+                          appears on the audio analyzer software on the other connected computers<a id="period_170" href="#period_170">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed and &#8220;external&#8221; is selected in FDP_PDC_EXT.4.1, then:] disconnect and reconnect the UA
-                          peripheral device from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> UA peripheral device interface several times<a id="period_168" href="#period_168">. </a>Verify that no sound appears
-                          on the audio analyzer software on the other connected computers<a id="period_169" href="#period_169">. </a></li>
+                          peripheral device from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> UA peripheral device interface several times<a id="period_171" href="#period_171">. </a>Verify that no sound appears
+                          on the audio analyzer software on the other connected computers<a id="period_172" href="#period_172">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed, then:] connect an authentication session to the first computer and verify that no sounds
-                          appears on the audio analyzer software on the other connected computers<a id="period_170" href="#period_170">. </a></li></ol>
+                          appears on the audio analyzer software on the other connected computers<a id="period_173" href="#period_173">. </a></li></ol>
                     </li>
                     <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_APC_EXT.1:4</a>:
       
                       This test verifies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not send data to different computers connected to the same interface
-                      at different times<a id="period_171" href="#period_171">. </a>Repeat this test for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Output
-                      port<a id="period_172" href="#period_172">. </a><ol>
-                        <li>Ensure only one computer is connected and it is selected<a id="period_173" href="#period_173">. </a>Run a tone generator program on the
-                          connected computer and the audio analyzer software on a non&#8208;connected computer<a id="period_174" href="#period_174">. </a></li>
-                        <li>Perform steps 3&#8208;11 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and powered off<a id="period_175" href="#period_175">. </a></li>
-                        <li>Perform steps 4&#8208;5 for each of the designated frequencies<a id="period_176" href="#period_176">. </a></li>
-                        <li>Use the tone generator program on the connected computer to generate a sine wave audio tone<a id="period_177" href="#period_177">. </a></li>
+                      at different times<a id="period_174" href="#period_174">. </a>Repeat this test for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Output
+                      port<a id="period_175" href="#period_175">. </a><ol>
+                        <li>Ensure only one computer is connected and it is selected<a id="period_176" href="#period_176">. </a>Run a tone generator program on the
+                          connected computer and the audio analyzer software on a non&#8208;connected computer<a id="period_177" href="#period_177">. </a></li>
+                        <li>Perform steps 3&#8208;11 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and powered off<a id="period_178" href="#period_178">. </a></li>
+                        <li>Perform steps 4&#8208;5 for each of the designated frequencies<a id="period_179" href="#period_179">. </a></li>
+                        <li>Use the tone generator program on the connected computer to generate a sine wave audio tone<a id="period_180" href="#period_180">. </a></li>
                         <li>Disconnect the connected computer, wait two minutes, connect the other computer, and verify
-                          that the generated audio frequency is not present in the audio spectrum analyzer software<a id="period_178" href="#period_178">. </a></li>
-                        <li>Replace the connected computer with an external audio signal generator<a id="period_179" href="#period_179">. </a></li>
+                          that the generated audio frequency is not present in the audio spectrum analyzer software<a id="period_181" href="#period_181">. </a></li>
+                        <li>Replace the connected computer with an external audio signal generator<a id="period_182" href="#period_182">. </a></li>
                         <li>Perform steps 8&#8208;11 with the signal generator set to the following
                           settings:<ul>
                             <li>Pure sine wave around the average voltage of half output (positive signal only), with the output signal set
                               to 2.00 V peak&#8208;to&#8208;peak, calibrating the signal with the oscilloscope as needed</li>
                             <li>Signal average to 0v (negative swing)</li>
                           </ul></li>
-                        <li>Perform steps 9&#8208;11 for each of the designated frequencies<a id="period_180" href="#period_180">. </a></li>
-                        <li>Use the signal generator to generate the signal<a id="period_181" href="#period_181">. </a></li>
+                        <li>Perform steps 9&#8208;11 for each of the designated frequencies<a id="period_183" href="#period_183">. </a></li>
+                        <li>Use the signal generator to generate the signal<a id="period_184" href="#period_184">. </a></li>
                         <li>Disconnect the signal generator, wait two minutes, and replace it with an oscilloscope set to
-                          measure the peak&#8208;to&#8208;peak voltage<a id="period_182" href="#period_182">. </a></li>
-                        <li>Verify the signal on the oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less at the generated frequency<a id="period_183" href="#period_183">. </a></li>                        
+                          measure the peak&#8208;to&#8208;peak voltage<a id="period_185" href="#period_185">. </a></li>
+                        <li>Verify the signal on the oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less at the generated frequency<a id="period_186" href="#period_186">. </a></li>                        
                       </ol>
                     </li>
                   </ul></span>
-                
-              <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_184" href="#period_184">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
-                  If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to grant or deny authorization to audio communications is configurable, the
-                  evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the
-                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_185" href="#period_185">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
-                  and any peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently
-                  if peripherals are connected through them<a id="period_186" href="#period_186">. </a>                </div></div></div></div></div>
+                </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>
             There is no modification to this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_187" href="#period_187">. </a>However, there are additions to the supported
@@ -1244,29 +1244,29 @@ The following sections list Common Criteria and technology terms used in this do
               
               
               
+            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio function implementation properly filters
+                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_210" href="#period_210">. </a></div></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component<a id="period_211" href="#period_211">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio analyzer
-                    software on it<a id="period_210" href="#period_210">. </a></li>
+                    software on it<a id="period_212" href="#period_212">. </a></li>
                   <li>For each connected computer, ensure it is selected, use its tone generator software to generate a
                     sine wave audio tone for each of the frequencies in the Audio Filtration Specifications table and verify in
                     the audio analyzer software that they are attenuated by at least the amount specified in the Audio
-                    Filtration Specifications table<a id="period_211" href="#period_211">. </a></li>
+                    Filtration Specifications table<a id="period_213" href="#period_213">. </a></li>
                   <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
-                    the peak&#8208;to&#8208;peak voltage<a id="period_212" href="#period_212">. </a></li>
+                    the peak&#8208;to&#8208;peak voltage<a id="period_214" href="#period_214">. </a></li>
                   <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
-                    the peak&#8208;to&#8208;peak voltage<a id="period_213" href="#period_213">. </a><ul>
+                    the peak&#8208;to&#8208;peak voltage<a id="period_215" href="#period_215">. </a><ul>
                       <li>Pure sine wave around the average voltage of half output (positive signal only), with the output
                         signal set to 2.00 V peak&#8208;to&#8208;peak, calibrating the signal with the oscilloscope as needed</li>
                       <li>Signal average to 0V (negative swing)</li>
                     </ul></li>
                   <li>Set the signal generator to generate the frequencies in Audio Filtration Specifications table and
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
-                    attenuation<a id="period_214" href="#period_214">. </a></li>
+                    attenuation<a id="period_216" href="#period_216">. </a></li>
                 </ol>
-              
-            <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio function implementation properly filters
-                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_215" href="#period_215">. </a></div></div><div class="eacategory">Guidance</div><div class="ea">
-			There are no additional Guidance evaluation activities for this component<a id="period_216" href="#period_216">. </a><br></div></div></div></div>
+              </div></div></div></div></div>
         
         <div class="comp" id="FDP_PDC_EXT.2/AO"><h4>FDP_PDC_EXT.2/AO Peripheral Device Connection (Audio Output)</h4>
           
@@ -1335,27 +1335,27 @@ The following sections list Common Criteria and technology terms used in this do
               
               
               
-                <ol>
-                  <li>Connect the amplified speakers directly to computer #1&#8217;s analog audio output interface (typically
-                    green in color)<a id="period_234" href="#period_234">. </a>Set the volume at the speakers to approximately 25 percent<a id="period_235" href="#period_235">. </a></li>
-                  <li>Connect the computer interface audio cable to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output computer interface and
-                    computer #1&#8217;s analog audio microphone input interface (typically pink in color) instead of the computer
-                    analog audio output interface<a id="period_236" href="#period_236">. </a></li>
-                  <li>Connect an open 3.5 millimeter stereo plug to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface<a id="period_237" href="#period_237">. </a></li>
-                  <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure computer #1 is selected<a id="period_238" href="#period_238">. </a></li>
-                  <li>Measure the DC voltage of stereo plug from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface between
-                    the ground terminal and each one of the other two terminals (tip and ring) using a digital voltmeter<a id="period_239" href="#period_239">. </a></li>
-                  <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
-                    microphone<a id="period_240" href="#period_240">. </a></li>                                    
-                </ol>
-              
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
                 The evaluator shall verify the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> states that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not supply power to an unauthorized device
-                connected to the analog audio output interface<a id="period_241" href="#period_241">. </a><br><br>
+                connected to the analog audio output interface<a id="period_234" href="#period_234">. </a><br><br>
                 The evaluator shall also verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> cannot be configured to supply power to a device connected
-                to the analog audio output interface<a id="period_242" href="#period_242">. </a>              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                to the analog audio output interface<a id="period_235" href="#period_235">. </a>              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
                 The evaluator shall verify that the guidance states that a microphone should never be connected to the
-                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s analog audio output interface<a id="period_243" href="#period_243">. </a>              </div></div></div></div></div>
+                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s analog audio output interface<a id="period_236" href="#period_236">. </a>              </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                <ol>
+                  <li>Connect the amplified speakers directly to computer #1&#8217;s analog audio output interface (typically
+                    green in color)<a id="period_237" href="#period_237">. </a>Set the volume at the speakers to approximately 25 percent<a id="period_238" href="#period_238">. </a></li>
+                  <li>Connect the computer interface audio cable to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output computer interface and
+                    computer #1&#8217;s analog audio microphone input interface (typically pink in color) instead of the computer
+                    analog audio output interface<a id="period_239" href="#period_239">. </a></li>
+                  <li>Connect an open 3.5 millimeter stereo plug to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface<a id="period_240" href="#period_240">. </a></li>
+                  <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure computer #1 is selected<a id="period_241" href="#period_241">. </a></li>
+                  <li>Measure the DC voltage of stereo plug from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface between
+                    the ground terminal and each one of the other two terminals (tip and ring) using a digital voltmeter<a id="period_242" href="#period_242">. </a></li>
+                  <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
+                    microphone<a id="period_243" href="#period_243">. </a></li>                                    
+                </ol>
+              </div></div></div></div></div>
         
         <div class="comp" id="FDP_UDF_EXT.1/AO"><h4>FDP_UDF_EXT.1/AO Unidirectional Data Flow</h4>
           
