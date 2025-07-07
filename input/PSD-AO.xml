@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="..\transforms\module2html.xsl"?>
+<?xml-model href="../transforms/schemas/CCModule.rng" type="application/xml"?>
 
-<PP xmlns="https://niap-ccevs.org/cc/v1"
-    xmlns:sec="https://niap-ccevs.org/cc/v1/section"
-    xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes">  
+<Module
+  name="Analog Audio Output Devices"
+  xmlns="https://niap-ccevs.org/cc/v1"
+  xmlns:h="http://www.w3.org/1999/xhtml"
+  xmlns:sec="https://niap-ccevs.org/cc/v1/section"
+  target-product="Audio Input Device"
+  target-products="Audio Input Devices"
+  boilerplate="yes"
+  short="AI">  
   <!-- <inline-comment color='green'>Initial PSD-AO Template on 5/8.</inline-comment> -->
   <!-- <inline-comment color='blue' linebreak='yes'> Hello World QQQQ </inline-comment> -->
  
   <PPReference>
     <ReferenceTable>
-      <PPTitle>PP-Module for Analog Audio Output Devices</PPTitle>
+      
       <PPVersion>2.0</PPVersion>
       <PPAuthor>National Information Assurance Partnership</PPAuthor>
       <PPPubDate>2025-07-11</PPPubDate>
@@ -25,9 +32,11 @@
     </entry>
   </RevisionHistory>
   <RevisionHistory>
-    <version>2.0</version>
-    <date>2025-07-11</date>
-    <subject>Updates for CC:2022</subject>
+    <entry>
+      <version>2.0</version>
+      <date>2025-07-11</date>
+      <subject>Updates for CC:2022</subject>
+    </entry>
   </RevisionHistory>
 
   <sec:Introduction>
@@ -151,13 +160,15 @@
     </CClaimsInfo>
   </section>
   
-  <sec:spd title="Security Problem Description">    
-    This PP‐Module describes the security problem in terms of the threats the TOE is expected to address,
+  <sec:Security_Problem_Definition>    
+      This PP‐Module describes the security problem in terms of the threats the TOE is expected to address,
       assumptions about its operational environment, and any organizational security policies (OSPs) that the
       TOE is expected to enforce.<h:br/><h:br/>
       Note that as a PP‐Module of the PSD PP, all threats, assumptions, and Organizational Security Policies (OSP)
       defined in the base PP will also apply to the TOE unless otherwise specified.
-    <sec:Threats>      
+      
+      <sec:Threats>
+          <threats>
       <threat name="T.AUDIO_REVERSED">
         <description>A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
           low‐gain microphone to eavesdrop on the surrounding audio or transfer data across an air‐gap
@@ -218,28 +229,38 @@
         <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
           signals transit unidirectionally between interfaces.</rationale>        
       </threat>
-
-    </sec:Threats>
+          </threats>
+      </sec:Threats>
     
-    <section title="Assumptions" id="assumptions">
-      This PP‐Module defines the following additional assumption beyond those defined in the PSD PP
-      <assumptions name="A.NO_MICROPHONES">
-        Users are trained not to connect a microphone to the TOE audio output interface.<h:br/><h:br/>
-        Note that this assumption is necessary despite the fact that the TSF enforces unidirectional data flow (see
-        O.UNIDIRECTIONAL_AUDIO_OUT) below because the signals are analog and not digital. Because of this, it
-        is not possible to make the pathway truly unidirectional; instead, the TSF can only diminish the strength
-        of audio signals such that usable data cannot be transmitted. The assumption that microphones are
-        prohibited is used to enforce a defense‐in‐depth strategy for mitigating the threat of audio reversal.
-      </assumptions>
-    </section>
+      <sec:Assumptions>
+          This PP‐Module defines the following additional assumption beyond those defined in the PSD PP
+    <assumptions>
+      <assumption name="A.NO_MICROPHONES">
+        <description>
+          Users are trained not to connect a microphone to the TOE audio output interface.<h:br/><h:br/>
+          Note that this assumption is necessary despite the fact that the TSF enforces unidirectional data flow (see
+          O.UNIDIRECTIONAL_AUDIO_OUT) below because the signals are analog and not digital. Because of this, it
+          is not possible to make the pathway truly unidirectional; instead, the TSF can only diminish the strength
+          of audio signals such that usable data cannot be transmitted. The assumption that microphones are
+          prohibited is used to enforce a defense‐in‐depth strategy for mitigating the threat of audio reversal.
+        </description>
+        <objective-refer ref="OE.NO_MICROPHONES">
+          <rationale>The assumption is upheld by the objective
+            since the users in the environment are trained
+            not to connect a microphone to the TOE audio
+            output interface.</rationale>
+        </objective-refer>
+      </assumption>
+    </assumptions>
+    </sec:Assumptions>
     
-    <sec:Organizational_Security_Polcies>
+    <sec:Organizational_Security_Policies>
       <OSPs/>
-    </sec:Organizational_Security_Polcies>
-  </sec:spd>
+    </sec:Organizational_Security_Policies>
+  </sec:Security_Problem_Definition>
 
   <sec:Security_Objectives>
-    <section title="Security Objectives for the TOE" id="SecurityObjectivesTOE">
+    <sec:Security_Objectives_for_the_TOE>      
       A TOE conforming to this PP‐Module must address the O.COMPUTER_INTERFACE_ISOLATION,
       O.COMPUTER_INTERFACE_ISOLATION_UNPOWERED, O.USER_DATA_ISOLATION,
       O.PERIPHERAL_PORTS_ISOLATION, and O.REJECT_UNAUTHORIZED_PERIPHERAL objectives from the PSD
@@ -251,31 +272,30 @@
       </h:ul>
       The following security objectives are defined by this PP‐Module for a TOE that claims conformance to this
       PP‐Module.      
-    </section>    
+      <SOs/>
+    </sec:Security_Objectives_for_the_TOE>    
     
-    <section title="Security Objectives for the Operational Environment" id="SecurityObjectivesTOEorEnvironment">
+    <sec:Security_Objectives_for_the_Operational_Environment>
       <SOEs>
         <SOE name="OE.NO_MICROPHONES">
           <description>The operational environment is expected to ensure that microphones are not plugged into the TOE
             audio output interfaces.</description>
-          <consistency-rationale>The assumption is upheld by the objective
-            since the users in the environment are trained
-            not to connect a microphone to the TOE audio
-            output interface.</consistency-rationale>
+          <consistency-rationale></consistency-rationale>
         </SOE>
       </SOEs>
-      </section>    
-    <section title="Security Objectives Rationale" id="SOR"/>
+      </sec:Security_Objectives_for_the_Operational_Environment>
+    
+    <sec:Security_Objectives_Rationale/>
   </sec:Security_Objectives>
 
   <sec:Security_Requirements>
-    
+    <comment>Need to add URLs once created</comment>
     <base-pp id="bpp-psd" name="Peripheral Sharing Device" product="Device" short="PSD" version="5.0">
       <git>
-        <url><comment>Need to add URL once created</comment></url>
+        <url>https://github.com/commoncriteria/ai</url>
         <branch>release-5.0</branch>
       </git>
-      <url><comment>Need to add URL once created</comment></url>
+      <url>https://github.com/commoncriteria/psd</url>
       
       <sec-func-req-dir>
         When a TOE claims compliance to this PP‐Module, it is necessary to make claims in the PSD PP
@@ -293,12 +313,12 @@
               This SFR adds a requirement to block electrical signals that strengthens but
               does not conflict with the requirement in the PSD PP.
             </consistency-rationale>
-            <f-element id="fdp-apc-ext.1e1">
+            <f-element id="fdp-apc-ext-1e1">
               <title> The TSF shall route user data only <h:s>to or</h:s> from the interfaces selected by the
                 user. 
               </title>
             </f-element>
-            <f-element id="fdp-apc-ext.1e2">
+            <f-element id="fdp-apc-ext-1e2">
               <title>The TSF shall ensure that no data <h:b>or electrical signals</h:b>flow between connected computers whether the
                 TOE is powered on or powered off.
               </title>
@@ -328,7 +348,7 @@
                 must be included in this iteration, not just the ones that are modified by this PPModule.
               </note>              
               <aactivity>                
-                <Isolation>
+                
                   The evaluator shall examine the Isolation Documentation to determine that it describes the logic under
                   which the TSF permits audio flows from a connected computer to a connected audio output interface.<h:br/><h:br/>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
@@ -339,7 +359,7 @@
                   range, including negative swing signal.<h:br/><h:br/>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
                   prevents the audio output signal from traversing the TOE while the TOE is powered off.
-                </Isolation>
+                
                 <TSS/>                  
                 <Guidance>
                   If the ability of the TOE to grant or deny authorization to audio communications is configurable, the
@@ -348,6 +368,7 @@
                   and any peripherals/connectors that are included with the TOE that cause data flows to behave differently
                   if peripherals are connected through them.
                 </Guidance>
+                <CustomEA name="Isolation"/>                  
                 <Tests>
                   <h:b>Test Setup</h:b>
                   The evaluator shall perform the following setup steps.<h:ul>
@@ -503,17 +524,22 @@
           </f-component>
           
           <f-component cc-id="fdp_pdc_ext.1" name="Peripheral Device Connection">
-            There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
-            peripheral device connections (see Appendix E) that are associated with this SFR and
-            additional evaluation activities.
-            <consistency-rational>
+            
+            <consistency-rationale>
               This SFR is not changed by this PP‐Module and only defines existing Evaluation
               Activities for audio output devices, which does not conflict with the PSD PP.
-            </consistency-rational>
-            <aactivity>
-              <Isolation/>
+            </consistency-rationale>
+            <description>
+              There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
+              peripheral device connections (see Appendix E) that are associated with this SFR and
+              additional evaluation activities.
+            </description>
+            <f-element>
+              <title/>            
+            <aactivity>              
               <TSS/>                
               <Guidance/>                
+              <CustomEA name="Isolation"/>
               <Tests>
                 <testlist>
                   <test>
@@ -535,6 +561,7 @@
                 </testlist>
               </Tests>
             </aactivity>
+            </f-element>
           </f-component>         
         </sec:mod_fdp>
       </modified-sfrs>
@@ -583,11 +610,11 @@
         </ext-comp-def>
         
         <f-component cc-id="fdp_afl_ext.1" name="Audio Filtration">
-          <consistecny-rationale>
+          <consistency-rationale>
             This SFR defines the filtering levels that outgoing audio signals must enforce.
             This function is specific to audio output devices and does not prevent the
             enforcement of any PSD PP SFRs.
-          </consistecny-rationale>
+          </consistency-rationale>
           
           <comp-lev>requires the TSF to enforce outgoing audio filtration levels.</comp-lev>
           <management>No specific management functions are identified.</management>
@@ -660,22 +687,24 @@
                 </h:tr>
               </h:table>
             </title>
+            <ext-comp-def-title>
+              <title>
+                The TSF shall ensure outgoing audio signals are filtered as per <assignable>
+                  document reference to the table below.</assignable>
+              </title>
+            </ext-comp-def-title>
             <note role="application">
               The above security requirement is designed to reduce the likelihood that speakers
               emitting a signaling event at frequencies outside the range of human hearing
               could be successfully used to bridge an air‐gap to another computer.
             </note>
-            <ext-comp-def-title>
-              <title>
-                The TSF shall ensure outgoing audio signals are filtered as per <assignable>
-                document reference to the table below.</assignable>
-              </title>
-            </ext-comp-def-title>
+            
             <aactivity>
-              <Isolation/>
+              
               <TSS>The evaluator shall check the TSS to verify that the TOE audio function implementation properly filters
                 the audio passing through the TOE.</TSS>
               <Guidance/>
+              <CustomEA name="Isolation"/>
               <Tests>
                 <h:ol>
                   <h:li>Connect a computer to the TOE analog audio output peripheral interface and run audio analyzer
@@ -771,12 +800,13 @@
               interfaces supported by the TOE.
             </note>
             <aactivity>
-              <Isolation/>
+              
               <TSS/>                
               <Guidance>
                 The evaluator shall verify that the operational guidance describes devices authorized for use with the TOE
                 in accordance with the authorized peripheral device connections.
               </Guidance>
+              <CustomEA name="Isolation"/>
               <Tests>
                 The evaluator shall verify that the TOE ports do not reject authorized devices and devices with authorized
                 protocols as per the authorized peripheral device connections.<h:br/><h:br/>
@@ -813,11 +843,11 @@
           <audit>There are no auditable events foreseen.</audit>
           <dependencies>FDP_PDC_EXT.1 Peripheral Device Connection</dependencies>
           
-          <f-element id="fdp_pud_ext.1e1">
+          <f-element id="fdp_pud_ext-1e1">
             <title>The TSF shall not provide power to any unauthorized device connected to the
               analog audio peripheral interface.</title>
             <aactivity>
-              <Isolation/>
+              
               <TSS>
                 The evaluator shall verify the TSS states that the TOE does not supply power to an unauthorized device
                 connected to the analog audio output interface.<h:br/><h:br/>
@@ -828,6 +858,7 @@
                 The evaluator shall verify that the guidance states that a microphone should never be connected to the
                 TOE’s analog audio output interface.
               </Guidance>
+              <CustomEA name="Isolation"/>
               <Tests>
                 <h:ol>
                   <h:li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
@@ -860,7 +891,7 @@
           <audit>There are no auditable events foreseen.</audit>
           <dependencies>FDP_APC_EXT.1 Active PSD Connections</dependencies>  
           
-          <f-element id="fdp-udf-ext.1e1-ai">
+          <f-element id="fdp-udf-ext-1e1-ai">
             <title>
               The TSF shall ensure that [<h:i>analog audio output data</h:i>] transits the TOE
               unidirectionally from the [<h:i>TOE analog audio output computer</h:i>] interface to the
@@ -886,16 +917,17 @@
               above SFR.
             </note>
             <aactivity>
-              <Isolation>
+              
                 The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
                 enforces audio output data flow isolation from other TOE functions, such that the audio output peripheral
                 interface is unidirectional and no data can be routed from a connected peripheral back to a connected
                 computer. The description shall ensure the signal attenuation between any TOE audio output peripheral
                 device interface and any other TOE computer audio output interface is at least 45 dB measured with a 2V
                 input pure sine wave at the extended audio frequency range, including negative swing signal.
-              </Isolation>
+              
               <TSS/>
               <Guidance/>
+              <CustomEA name="Isolation"/>
               <Tests>
                 Note: Data is considered not to transit the TOE if no signal greater than 45 dB of attenuation at the specific
                 audio frequency is received.<h:br/><h:br/>
@@ -942,16 +974,11 @@
   </appendix>
   
   <bibliography>    
-    <entry>
+    <entry id="base-pp">
       <tag>PP_PSD_V5.0 or PSD PP</tag>
-      <h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</h:a>
+      <description><h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</h:a>
+    </description>
     </entry>
-    <entry>
-      <tag>MOD_AO_V</tag>
-      <h:a href=""><comment>Need to add URL once published.</comment>PP‐Module for Analog Audio
-        Output Devices, Version 2.0, 2027-07-11</h:a>
-    </entry>
-    
   </bibliography>
 
-    </PP>
+    </Module>
