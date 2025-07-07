@@ -1,4 +1,4 @@
-<html><head><meta content="text/html;charset=utf-8" http-equiv="Content-Type"><meta content="utf-8" http-equiv="encoding"><title>PP-Module for Analog Audio Output Devices</title><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><script type="text/x-mathjax-config">
+<html><head><meta content="text/html;charset=utf-8" http-equiv="Content-Type"><meta content="utf-8" http-equiv="encoding"><title>PP-Module for Audio Input Device</title><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script><script type="text/x-mathjax-config">
             MathJax.Hub.Config({
             extensions: ["tex2jax.js"],
             jax: ["input/TeX", "output/HTML-CSS"],
@@ -627,12 +627,26 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br><a href="#Comment-3-">Comment: Comment-3-</a><br><a href="#Comment-4-">Comment: Comment-4-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for Analog Audio Output Devices</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for Audio Input Device</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
       Version: 2.0<br>2025-07-11<br><b>National Information Assurance Partnership</b><br></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2019-07-19</td><td>Initial draft</td></tr>
-</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#ppoverview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#spd" style="text-indent:0px">3<span>Security Problem Description</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Polcies" style="text-indent:10px">3.3<span>Organizational Security Polcies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#SecurityObjectivesTOE" style="text-indent:10px">4.1<span>Security Objectives for the TOE</span></a><a href="#SecurityObjectivesTOEorEnvironment" style="text-indent:10px">4.2<span>Security Objectives for the Operational Environment</span></a><a href="#SOR" style="text-indent:10px">4.3<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-bpp-psd" style="text-indent:10px">5.1<span>
+<tr><td>2.0</td><td>2025-07-11</td><td>Updates for <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022</td></tr>
+</table><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#ppoverview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#TOEdescription" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:10px">1.4<span>TOE Boundary</span></a><a href="#usecases" style="text-indent:10px">1.5<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#Security_Problem_Definition" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#Threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#Security_Objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#Security_Objectives_for_the_TOE" style="text-indent:10px">4.1<span>Security Objectives for the TOE</span></a><a href="#Security_Objectives_for_the_Operational_Environment" style="text-indent:10px">4.2<span>Security Objectives for the Operational Environment</span></a><a href="#" style="text-indent:10px">4.3<span>Security Objectives Rationale</span></a><a href="#Security_Requirements" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-bpp-psd" style="text-indent:10px">5.1<span>
     Protection Profile for Peripheral Sharing Device
        Security Functional Requirements Direction
-    </span></a><a href="#modsfr-bpp-psd" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fdp" style="text-indent:30px">5.1.1.1<span>User Data Protection (FDP)</span></a><a href="#FDP" style="text-indent:20px">5.1.2<span>User Data Protection (FDP)</span></a><a href="#impl-reqs" style="text-indent:0px">Appendix A - <span>Implementation-dependent Requirements</span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix B - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">B.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">B.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FDP" style="text-indent:20px">B.2.1<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_AFL_EXT" style="text-indent:30px">B.2.1.1<span>FDP_AFL_EXT Audio Filtration</span></a><a href="#ext-comp-FDP_PDC_EXT" style="text-indent:30px">B.2.1.2<span>FDP_PDC_EXT Peripheral Device Connection</span></a><a href="#ext-comp-FDP_PUD_EXT" style="text-indent:30px">B.2.1.3<span>FDP_PUD_EXT Powering Unauthorized Devices</span></a><a href="#ext-comp-FDP_UDF_EXT" style="text-indent:30px">B.2.1.4<span>FDP_UDF_EXT Unidirectional Data Flow</span></a><a href="#req-supp-info" style="text-indent:0px">Appendix C - <span>Required Supplementary Information</span></a><a href="#acronyms" style="text-indent:0px">Appendix D - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix E - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
+    </span></a><a href="#modsfr-bpp-psd" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#mod_fdp" style="text-indent:30px">5.1.1.1<span>User Data Protection (FDP)</span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#FDP" style="text-indent:20px">5.2.1<span>User Data Protection (FDP)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-bpp-psd" style="text-indent:10px">6.1<span>
+    Protection Profile for Peripheral Sharing Device</span></a><a href="#contoe-bpp-psd" style="text-indent:20px">6.1.1<span>
+	Consistency of TOE Type
+      </span></a><a href="#consecprob-bpp-psd" style="text-indent:20px">6.1.2<span>
+	Consistency of Security Problem Definition
+      </span></a><a href="#conobj-bpp-psd" style="text-indent:20px">6.1.3<span>
+			Consistency of OE Objectives
+		</span></a><a href="#conreq-bpp-psd" style="text-indent:20px">6.1.4<span>
+	Consistency of Requirements
+      </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements
+    </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements
+    </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements
+    </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements
+    </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FDP" style="text-indent:20px">C.2.1<span>User Data Protection (FDP)</span></a><a href="#ext-comp-FDP_AFL_EXT" style="text-indent:30px">C.2.1.1<span>FDP_AFL_EXT Audio Filtration</span></a><a href="#ext-comp-FDP_PDC_EXT" style="text-indent:30px">C.2.1.2<span>FDP_PDC_EXT Peripheral Device Connection</span></a><a href="#ext-comp-FDP_PUD_EXT" style="text-indent:30px">C.2.1.3<span>FDP_PUD_EXT Powering Unauthorized Devices</span></a><a href="#ext-comp-FDP_UDF_EXT" style="text-indent:30px">C.2.1.4<span>FDP_UDF_EXT Unidirectional Data Flow</span></a><a href="#req-supp-info" style="text-indent:0px">Appendix D - <span>Required Supplementary Information</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a></div><h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
     <h2 class="indexable" data-level="2" id="ppoverview">1.1 Overview</h2>
       The scope of this Protection Profile (<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)&#8208;Module is to describe the security functionality of a specific type
       of Peripheral Sharing Device (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>) product in terms of Common Criteria for Information Technology
@@ -743,233 +757,219 @@ The following sections list Common Criteria and technology terms used in this do
       requirements related to security of the physical and logical interfaces for analog audio output devices<a id="period_59" href="#period_59">. </a>        
   <h1 class="indexable" data-level="1" id="sec-cclaims">2 Conformance Claims</h1>
     <dl><dt>Conformance Statement</dt><p></p><dd>An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must claim exact conformance 
-		 to this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_60" href="#period_60">. </a></dd><p></p><dd>The evaluation methods used for evaluating the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are a combination of the workunits 
+		 to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_60" href="#period_60">. </a></dd><p></p><dd>The evaluation methods used for evaluating the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are a combination of the workunits 
 			defined in <a href="#bibCEM">[CEM]</a> as well as the Evaluation Activities for ensuring that individual <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> 
 			and <abbr class="dyn-abbr"><a href="#abbr_SAR">SARs</a></abbr> have a sufficient level of supporting evidence in the Security Target and guidance 
 			documentation and have been sufficiently tested by the laboratory as part of completing 
 			ATE_IND.1<a id="period_61" href="#period_61">. </a>Any functional packages this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> claims similarly contain their own Evaluation 
-			Activities that are used in this same manner<a id="period_62" href="#period_62">. </a>			</dd><dt>CC Conformance Claims</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is conformant to 
+			Activities that are used in this same manner<a id="period_62" href="#period_62">. </a>			</dd><dt>CC Conformance Claims</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is conformant to 
 			Part 2 (extended) 
 			
 			
 			and Part 3 (conformant)
 			
 				of Common Criteria <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1<a id="period_63" href="#period_63">. </a>			</dd><dt>PP Claim</dt><p></p><dd>
-					This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not claim conformance to 
+					This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not claim conformance to 
 					any Protection Profile<a id="period_64" href="#period_64">. </a>				</dd><p></p><dd>The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a 
-					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>:
-					<ul><li>Protection Profile for Peripheral Sharing Device, Version 5.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Keyboard/Mouse Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for User Authentication Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-MOdule for Video/Display Devices, Version 2.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is not conformant to any 
+					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>:
+					<ul><li>Protection Profile for Peripheral Sharing Device, Version 5.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Keyboard/Mouse Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for User Authentication Devices, Version 2.0</li><li><abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-MOdule for Video/Display Devices, Version 2.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
 						Functional or Assurance Packages<a id="period_65" href="#period_65">. </a></dd></dl>
-  <h1 class="indexable" data-level="1" id="spd">3 Security Problem Description</h1>    
-    This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module describes the security problem in terms of the threats the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address,
+  <h1 class="indexable" data-level="1" id="Security_Problem_Definition">3 Security Problem Definition</h1>    
+      This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module describes the security problem in terms of the threats the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address,
       assumptions about its operational environment, and any organizational security policies (OSPs) that the
       <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to enforce<a id="period_66" href="#period_66">. </a><br><br>
       Note that as a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module of the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, all threats, assumptions, and Organizational Security Policies (OSP)
-      defined in the base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> will also apply to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified<a id="period_67" href="#period_67">. </a>    <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>      
-      
-        <span class="description">A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
+      defined in the base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> will also apply to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> unless otherwise specified<a id="period_67" href="#period_67">. </a>      
+      <h2 class="indexable" data-level="2" id="Threats">3.1 Threats</h2>
+          <dl><dt class="threat defined" id="T.AUDIO_REVERSED">T.AUDIO_REVERSED</dt><dd><span class="description">A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
           low&#8208;gain microphone to eavesdrop on the surrounding audio or transfer data across an air&#8208;gap
-          through audio signaling<a id="period_68" href="#period_68">. </a></span>
-                
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
-          ensuring no data or electrical signals can flow between connections and only user-selected
-        interfaces can rout data<a id="period_69" href="#period_69">. </a>        FDP_AFL_EXT.1Mitigates this threat by ensuring
-          outgoing audio signals are within the range of human hearing<a id="period_70" href="#period_70">. </a>        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
-          output data transit unidirectionally between interfaces<a id="period_71" href="#period_71">. </a>      
-            
-      
-        
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
-          requiring restrictions on how data is routed between interfaces<a id="period_72" href="#period_72">. </a>        <a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)Mitigates this threat by
-          requiring connections to be only from an authorized list of peripheral devices<a id="period_73" href="#period_73">. </a>        FDP_AFL_EXT.1Mitigates this threat by ensuring
-          signals are filtered within the range of human hearing<a id="period_74" href="#period_74">. </a>        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
-          output data transit unidirectionally between interfaces<a id="period_75" href="#period_75">. </a>      
-      
-        
-        <span class="description">A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
+          through audio signaling<a id="period_68" href="#period_68">. </a></span></dd><dt class="threat defined" id="T.DATA_LEAK">T.DATA_LEAK
+		(from PSD PP)
+	</dt><dd>
+						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_69" href="#period_69">. </a>					</dd><dt class="threat defined" id="T.MICROPHONE_USE">T.MICROPHONE_USE</dt><dd><span class="description">A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
           the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio out peripheral device interface to eavesdrop or transfer data across an air&#8208;gap through
-          audio signaling<a id="period_76" href="#period_76">. </a></span>
-        
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
-          preventing data and electrical signals from flowing between connections<a id="period_77" href="#period_77">. </a>        FDP_AFL_EXT.1Mitigates this threat by ensuring
-          outgoing signals are filtered to within the range of human hearing<a id="period_78" href="#period_78">. </a>        FDP_PDC_EXT.2/AOMitigates this threat by only
-          allowing authorized devices to connect upon power up and when a peripheral device is
-          connected<a id="period_79" href="#period_79">. </a>      
-        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
-          output data transit unidirectionally between interfaces<a id="period_80" href="#period_80">. </a>     
+          audio signaling<a id="period_70" href="#period_70">. </a></span></dd><dt class="threat defined" id="T.SIGNAL_LEAK">T.SIGNAL_LEAK
+		(from PSD PP)
+	</dt><dd>
+						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_71" href="#period_71">. </a>					</dd></dl>
       
-
-      
-        
-        <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)Mitigates this threat by
-          requiring restrictions on how signals are routed between interfaces<a id="period_81" href="#period_81">. </a>        <a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)Mitigates this threat by
-          requiring connections to be only from an authorized list of peripheral devices<a id="period_82" href="#period_82">. </a>        FDP_AFL_EXT.1Mitigates this threat by ensuring
-          signals are filtered within the range of human hearing<a id="period_83" href="#period_83">. </a>        FDP_UDF_EXT.1/AOMitigates this threat by ensuring
-          signals transit unidirectionally between interfaces<a id="period_84" href="#period_84">. </a>       
-      
-
+    
+      <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
+These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
+security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_72" href="#period_72">. </a>If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
+provide all of its security functionality<a id="period_73" href="#period_73">. </a>      
+          This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module defines the following additional assumption beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+    <dl><dt class="assumption defined" id="A.NO_MICROPHONES">A.NO_MICROPHONES</dt><dd><span class="description">
+          Users are trained not to connect a microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output interface<a id="period_74" href="#period_74">. </a><br><br>
+          Note that this assumption is necessary despite the fact that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> enforces unidirectional data flow (see
+          O.UNIDIRECTIONAL_AUDIO_OUT) below because the signals are analog and not digital<a id="period_75" href="#period_75">. </a>Because of this, it
+          is not possible to make the pathway truly unidirectional; instead, the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> can only diminish the strength
+          of audio signals such that usable data cannot be transmitted<a id="period_76" href="#period_76">. </a>The assumption that microphones are
+          prohibited is used to enforce a defense&#8208;in&#8208;depth strategy for mitigating the threat of audio reversal<a id="period_77" href="#period_77">. </a>        </span></dd></dl>
     
     
-    <h2 class="indexable" data-level="2" id="assumptions">3.2 Assumptions</h2>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module defines the following additional assumption beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
+      expected to satisfy the organizational security policy listed below in addition to all
+      organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_78" href="#period_78">. </a></p>
       
-      This document does not define any additional assumptions<a id="period_85" href="#period_85">. </a>    
-    
-    
-    <h2 class="indexable" data-level="2" id="Organizational_Security_Polcies">3.3 Organizational Security Polcies</h2>
-      
-      This document does not define any additional OSPs<a id="period_86" href="#period_86">. </a>    
+      This document does not define any additional OSPs<a id="period_79" href="#period_79">. </a>    
     
   <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
-    <h2 class="indexable" data-level="2" id="SecurityObjectivesTOE">4.1 Security Objectives for the TOE</h2>
+    <h2 class="indexable" data-level="2" id="Security_Objectives_for_the_TOE">4.1 Security Objectives for the TOE</h2>      
       A <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> conforming to this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module must address the O.COMPUTER_INTERFACE_ISOLATION,
       O.COMPUTER_INTERFACE_ISOLATION_UNPOWERED, O.USER_DATA_ISOLATION,
       O.PERIPHERAL_PORTS_ISOLATION, and O.REJECT_UNAUTHORIZED_PERIPHERAL objectives from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>
-      <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> specifically for audio output peripherals<a id="period_87" href="#period_87">. </a>In addition to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> mapped in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the following
+      <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> specifically for audio output peripherals<a id="period_80" href="#period_80">. </a>In addition to the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> mapped in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the following
       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module or modified from their <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> definition contribute to supporting these
       objectives for audio output devices:<ul>
         <li><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> definition), <a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (modified from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
       definition), <a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a>, <a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></li>
       </ul>
       The following security objectives are defined by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this
-      <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_88" href="#period_88">. </a>     
+      <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_81" href="#period_81">. </a>     
+      
+      This document does not define any additional SOs<a id="period_82" href="#period_82">. </a>    
         
     
-    <h2 class="indexable" data-level="2" id="SecurityObjectivesTOEorEnvironment">4.2 Security Objectives for the Operational Environment</h2>
+    <h2 class="indexable" data-level="2" id="Security_Objectives_for_the_Operational_Environment">4.2 Security Objectives for the Operational Environment</h2>
       <dl><dt class="SOE defined" id="OE.NO_MICROPHONES">OE.NO_MICROPHONES</dt><dd><span class="description">The operational environment is expected to ensure that microphones are not plugged into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-            audio output interfaces<a id="period_89" href="#period_89">. </a></span></dd></dl>
-          
-    <h2 id="SOR" class="indexable,h2" data-level="2">4.3 Security Objectives Rationale</h2>   
+            audio output interfaces<a id="period_83" href="#period_83">. </a></span></dd></dl>
+      
+    
+    <h2 id="" class="indexable,h2" data-level="2">4.3 Security Objectives Rationale</h2>   
 		This section describes how the assumptions and organizational 
-		security policies map to operational environment security objectives<a id="period_90" href="#period_90">. </a>	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td></tr></table>
-  <h1 class="indexable" data-level="1" id="Security_Requirements">5 Security Requirements</h1>
-      This chapter describes the security requirements which have to be fulfilled by the product under evaluation<a id="period_91" href="#period_91">. </a>     Those requirements comprise functional components from Part 2 and assurance components from Part 3 of 
-       <a href="#bibCC">[CC]</a><a id="period_92" href="#period_92">. </a>       
+		security policies map to operational environment security objectives<a id="period_84" href="#period_84">. </a>	<table><caption><span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale</caption><tr class="header"><td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td></tr><tr class="major-row"><td rowspan="1"><a href="#A.NO_MICROPHONES">A.NO_&#8203;MICROPHONES</a></td><td><a href="#OE.NO_MICROPHONES">OE.NO_&#8203;MICROPHONES</a></td><td>The assumption is upheld by the objective
+            since the users in the environment are trained
+            not to connect a microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio
+            output interface<a id="period_85" href="#period_85">. </a></td></tr></table>
+  <h1 id="Security_Requirements" class="indexable" data-level="1">5 Security Requirements</h1>
+      This chapter describes the security requirements which have to be fulfilled by the product under evaluation<a id="period_86" href="#period_86">. </a>     Those requirements comprise functional components from Part 2 and assurance components from Part 3 of 
+       <a href="#bibCC">[CC]</a><a id="period_87" href="#period_87">. </a>       
     The following conventions are used for the completion of operations:
      <ul>
        <li>
          <b>Refinement</b> operation (denoted by <b>bold text</b> or <strike>strikethrough
          text</strike>): Is used to add details to a requirement or to remove part of the requirement that is made irrelevant
-         through the completion of another operation, and thus further restricts a requirement<a id="period_93" href="#period_93">. </a>         </li>
+         through the completion of another operation, and thus further restricts a requirement<a id="period_88" href="#period_88">. </a>         </li>
        <li>
          <b>Selection</b> (denoted by <i>italicized text</i>): Is used to select one or more options
-         provided by the [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] in stating a requirement<a id="period_94" href="#period_94">. </a></li>
+         provided by the [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] in stating a requirement<a id="period_89" href="#period_89">. </a></li>
        <li>
          <b>Assignment</b> operation (denoted by <span class="assignable-content">italicized text</span>): Is used to assign a
-         specific value to an unspecified parameter, such as the length of a password<a id="period_95" href="#period_95">. </a>Showing the
-         value in square brackets indicates assignment<a id="period_96" href="#period_96">. </a></li>
+         specific value to an unspecified parameter, such as the length of a password<a id="period_90" href="#period_90">. </a>Showing the
+         value in square brackets indicates assignment<a id="period_91" href="#period_91">. </a></li>
        <li>
          <b>Iteration</b> operation: Is indicated by appending the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> name with a slash and unique identifier
-            suggesting the purpose of the operation, e.g<a id="period_97" href="#period_97">. </a>"/EXAMPLE1."
+            suggesting the purpose of the operation, e.g<a id="period_92" href="#period_92">. </a>"/EXAMPLE1."
        </li>
      </ul>
-   
-    
-    <h2 id="secreq-bpp-psd" class="indexable" data-level="2">5.1 
+   <h2 id="secreq-bpp-psd" class="indexable" data-level="2">5.1 
     Protection Profile for Peripheral Sharing Device
        Security Functional Requirements Direction
     </h2>
         When a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims compliance to this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module, it is necessary to make claims in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
-        requirements that are consistent with the functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_98" href="#period_98">. </a>The following sections
+        requirements that are consistent with the functionality provided by the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_93" href="#period_93">. </a>The following sections
         describe any <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> claims that must be made when the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary includes the functionality
-        described by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_99" href="#period_99">. </a>Note that for some requirements, only certain individual elements within
-        the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> have been modified for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_100" href="#period_100">. </a>Any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> elements that were omitted from the selections
-        below are to be included in a conformant <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> unmodified from their definition in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_101" href="#period_101">. </a>      <h3 id="modsfr-bpp-psd" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
+        described by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_94" href="#period_94">. </a>Note that for some requirements, only certain individual elements within
+        the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> have been modified for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_95" href="#period_95">. </a>Any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> elements that were omitted from the selections
+        below are to be included in a conformant <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> unmodified from their definition in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_96" href="#period_96">. </a>      <h3 id="modsfr-bpp-psd" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
 
 		The <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> listed in this section are defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> and 
-		relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_102" href="#period_102">. </a>		
+		relevant to the secure operation of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_97" href="#period_97">. </a>		
         <h4 id="mod_fdp" class="indexable" data-level="4">5.1.1.1 User Data Protection (FDP)</h4>
           <div class="comp" id="FDP_APC_EXT.1"><h4>FDP_APC_EXT.1 Active PSD Connections</h4>
             
             <div class="element"><div class="reqid" id="FDP_APC_EXT.1.1"><a href="#FDP_APC_EXT.1.1" class="abbr">FDP_APC_EXT.1.1</a></div><div class="reqdesc"> The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall route user data only <s>to or</s> from the interfaces selected by the
-                user<a id="period_103" href="#period_103">. </a>
+                user<a id="period_98" href="#period_98">. </a>
               </div></div>
             <div class="element"><div class="reqid" id="FDP_APC_EXT.1.2"><a href="#FDP_APC_EXT.1.2" class="abbr">FDP_APC_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that no data <b>or electrical signals</b>flow between connected computers whether the
-                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on or powered off<a id="period_104" href="#period_104">. </a>              <div class="appnote"><span class="note-header">Application
+                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on or powered off<a id="period_99" href="#period_99">. </a>              <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
                 This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is refined from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module to include further
                 restrictions on how data may be routed in regards to interfaces selected by the
-                user<a id="period_105" href="#period_105">. </a><br><br>
+                user<a id="period_100" href="#period_100">. </a><br><br>
                 This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is refined from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> for this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module to include further
-                restrictions for electrical signals<a id="period_106" href="#period_106">. </a>Electrical signals are considered not to flow
+                restrictions for electrical signals<a id="period_101" href="#period_101">. </a>Electrical signals are considered not to flow
                 between connected computers and data is considered not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no
                 signal greater than 45dB of attenuation at the extended audio frequency range is
-                received<a id="period_107" href="#period_107">. </a>It is very unlikely that this element can be satisfied unless all unselected
-                computer interfaces are shorted to ground by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_108" href="#period_108">. </a><br><br>
+                received<a id="period_102" href="#period_102">. </a>It is very unlikely that this element can be satisfied unless all unselected
+                computer interfaces are shorted to ground by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_103" href="#period_103">. </a><br><br>
                 Note that the above port&#8208;to&#8208;port attenuation pass criterion is calculated based on
-                the following: 45 <abbr class="dyn-abbr"><a href="#abbr_dBv">dBv</a></abbr> = 177.82 signal to voltage ratio<a id="period_109" href="#period_109">. </a>When the signal inserted
+                the following: 45 <abbr class="dyn-abbr"><a href="#abbr_dBv">dBv</a></abbr> = 177.82 signal to voltage ratio<a id="period_104" href="#period_104">. </a>When the signal inserted
                 on one <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface audio input is 2.00 V peak&#8208;to&#8208;peak sine wave, the
                 maximum allowed output signal voltage measured at another <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer
-                interface is therefore 11.2mV (or well below noise level)<a id="period_110" href="#period_110">. </a>Negative swing is
-                measured when the generated audio signal average voltage is 0V<a id="period_111" href="#period_111">. </a><br><br>
+                interface is therefore 11.2mV (or well below noise level)<a id="period_105" href="#period_105">. </a>Negative swing is
+                measured when the generated audio signal average voltage is 0V<a id="period_106" href="#period_106">. </a><br><br>
                 If the peripheral interface supports multiple signals (such as right and left audio,
                 or audio bias), then all those supported signals should comply with the above
-                <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_112" href="#period_112">. </a><br><br>
+                <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_107" href="#period_107">. </a><br><br>
                 If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims conformance to multiple <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Modules, each <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module modifies
-                this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in a different manner for the interfaces that are unique to that module<a id="period_113" href="#period_113">. </a>In
+                this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in a different manner for the interfaces that are unique to that module<a id="period_108" href="#period_108">. </a>In
                 this case, the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should reference this modification of the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> as
-                &#8220;<a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a>/AO&#8221; for uniqueness<a id="period_114" href="#period_114">. </a>Note that all elements of <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a>
-                must be included in this iteration, not just the ones that are modified by this PPModule<a id="period_115" href="#period_115">. </a>              </span></div></div></div>
+                &#8220;<a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a>/AO&#8221; for uniqueness<a id="period_109" href="#period_109">. </a>Note that all elements of <a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a>
+                must be included in this iteration, not just the ones that are modified by this PPModule<a id="period_110" href="#period_110">. </a>              </span></div></div></div>
           <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a></div>                
                 
                   The evaluator shall examine the Isolation Documentation to determine that it describes the logic under
-                  which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> permits audio flows from a connected computer to a connected audio output interface<a id="period_116" href="#period_116">. </a><br><br>
+                  which the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> permits audio flows from a connected computer to a connected audio output interface<a id="period_111" href="#period_111">. </a><br><br>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
                   enforces audio output data flow isolation from other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions, such that it is not possible for two
-                  computers connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to use the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to communicate with one another<a id="period_117" href="#period_117">. </a>The description shall
+                  computers connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to use the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to communicate with one another<a id="period_112" href="#period_112">. </a>The description shall
                   ensure the signal attenuation in the extended audio frequency range between any computer audio output
                   interfaces is at least 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> measured with a 2V input pure sine wave at the extended audio frequency
-                  range, including negative swing signal<a id="period_118" href="#period_118">. </a><br><br>
+                  range, including negative swing signal<a id="period_113" href="#period_113">. </a><br><br>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                  prevents the audio output signal from traversing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_119" href="#period_119">. </a>                
+                  prevents the audio output signal from traversing the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_114" href="#period_114">. </a>                
                                   
                 
+                                  
                 
               <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_120" href="#period_120">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_115" href="#period_115">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
                   If the ability of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to grant or deny authorization to audio communications is configurable, the
                   evaluator shall verify that the operational guidance describes how to configure the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to behave in the
-                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_121" href="#period_121">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
+                  manner specified by the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_116" href="#period_116">. </a>This includes the possibility of both administratively configured <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> settings
                   and any peripherals/connectors that are included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that cause data flows to behave differently
-                  if peripherals are connected through them<a id="period_122" href="#period_122">. </a>                </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                  if peripherals are connected through them<a id="period_117" href="#period_117">. </a>                </div></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_118" href="#period_118">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                   <b>Test Setup</b>
-                  The evaluator shall perform the following setup steps<a id="period_123" href="#period_123">. </a><ul>
+                  The evaluator shall perform the following setup steps<a id="period_119" href="#period_119">. </a><ul>
                     <li>Configure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and the operational environment in accordance with the operational
-                      guidance<a id="period_124" href="#period_124">. </a></li>
+                      guidance<a id="period_120" href="#period_120">. </a></li>
                     <li>Play a different audio file on a number of computers for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer
-                      analog audio interface<a id="period_125" href="#period_125">. </a></li>
-                    <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_126" href="#period_126">. </a></li>
+                      analog audio interface<a id="period_121" href="#period_121">. </a></li>
+                    <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_122" href="#period_122">. </a></li>
                   </ul>
                   Note that for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that provides audio mixing functions the evaluator shall maximize the volume on a
-                  specific channel where instructed in the following text to assign that specific computer<a id="period_127" href="#period_127">. </a><br><br>
+                  specific channel where instructed in the following text to assign that specific computer<a id="period_123" href="#period_123">. </a><br><br>
                   Note: Electrical signals are considered not to flow between connected computers and data is considered
                   not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of attenuation at the specific audio frequency is
-                  received<a id="period_128" href="#period_128">. </a>                 
+                  received<a id="period_124" href="#period_124">. </a>                 
                   <span class="testlist-"><ul>
                     <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>:
       
                       <b>Analog Audio Output Data Routing Methods</b><br><br>
                       This test verifies the functionality of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> routing methods while powered on, powered off, and in
-                      failure state<a id="period_129" href="#period_129">. </a><br><br><ol>
-                        <li>Connect amplified speakers to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output device interface<a id="period_130" href="#period_130">. </a>Set the speakers to
-                          approximately 25 percent volume<a id="period_131" href="#period_131">. </a></li>
+                      failure state<a id="period_125" href="#period_125">. </a><br><br><ol>
+                        <li>Connect amplified speakers to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output device interface<a id="period_126" href="#period_126">. </a>Set the speakers to
+                          approximately 25 percent volume<a id="period_127" href="#period_127">. </a></li>
                         <li>[Conditional: If &#8220;switching can be initiated only through express user action&#8221; is selected in
                           FDP_SWI_EXT.1.1 in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, then] perform step 3 for each switching method selected in
-                          FDP_SWI_EXT.2.2 in accordance with the operational user guidance<a id="period_132" href="#period_132">. </a></li>
+                          FDP_SWI_EXT.2.2 in accordance with the operational user guidance<a id="period_128" href="#period_128">. </a></li>
                         <li>For each connected computer, ensure it is selected, listen to the amplified speakers, and verify
-                          that the audio is coming from the selected computer(s)<a id="period_133" href="#period_133">. </a>Adjust the volume if necessary<a id="period_134" href="#period_134">. </a></li>
+                          that the audio is coming from the selected computer(s)<a id="period_129" href="#period_129">. </a>Adjust the volume if necessary<a id="period_130" href="#period_130">. </a></li>
                         <li>Replace the speakers with a computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface
-                          and run audio spectrum analyzer software on it<a id="period_135" href="#period_135">. </a>Run tone generator software on all connected computers<a id="period_136" href="#period_136">. </a></li>
+                          and run audio spectrum analyzer software on it<a id="period_131" href="#period_131">. </a>Run tone generator software on all connected computers<a id="period_132" href="#period_132">. </a></li>
                         <li>Turn off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, and for each connected computer, use the tone generator program to generate
                           a sine wave audio tone for each of the designated frequencies and verify that no audio is present in the
                           audio spectrum analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device
-                          interface<a id="period_137" href="#period_137">. </a></li>
+                          interface<a id="period_133" href="#period_133">. </a></li>
                         <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, cause the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> to enter a failure state, and verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> provides the user
-                          with an indication of failure<a id="period_138" href="#period_138">. </a>For each connected computer use the tone generator program to generate
+                          with an indication of failure<a id="period_134" href="#period_134">. </a>For each connected computer use the tone generator program to generate
                           a sine wave audio tone for each of the designated frequencies and verify that no audio is present in the
                           audio spectrum analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device
-                          interface<a id="period_139" href="#period_139">. </a></li>                        
+                          interface<a id="period_135" href="#period_135">. </a></li>                        
                       </ol>                      
                     </li>
                     
@@ -979,28 +979,28 @@ The following sections list Common Criteria and technology terms used in this do
                       [Conditional: Perform this test if &#8220;switching through express user action&#8221; is selected in FDP_SWI_EXT.1.1
                       in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.]<br><br>
                       This test verifies that no data or electrical signals flow between connected computers while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-                      powered on or off<a id="period_140" href="#period_140">. </a><br><br>
+                      powered on or off<a id="period_136" href="#period_136">. </a><br><br>
                       <ol>
-                        <li>Continue with the setup from Test 1<a id="period_141" href="#period_141">. </a></li>
-                        <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_142" href="#period_142">. </a>Run audio spectrum analyzer
-                          software on all computers<a id="period_143" href="#period_143">. </a></li>
-                        <li>Perform steps 4&#8208;13 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface<a id="period_144" href="#period_144">. </a></li>
-                        <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure the first computer is selected<a id="period_145" href="#period_145">. </a></li>
+                        <li>Continue with the setup from Test 1<a id="period_137" href="#period_137">. </a></li>
+                        <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_138" href="#period_138">. </a>Run audio spectrum analyzer
+                          software on all computers<a id="period_139" href="#period_139">. </a></li>
+                        <li>Perform steps 4&#8208;13 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface<a id="period_140" href="#period_140">. </a></li>
+                        <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure the first computer is selected<a id="period_141" href="#period_141">. </a></li>
                         <li>Use the tone generator program on the first computer to generate a sine wave audio tone for each
-                          of the designated frequencies<a id="period_146" href="#period_146">. </a>Verify that the audio is present in the audio spectrum analyzer software
+                          of the designated frequencies<a id="period_142" href="#period_142">. </a>Verify that the audio is present in the audio spectrum analyzer software
                           on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface and is not present in the
-                          audio spectrum analyzer software on any of the non&#8208;selected computers<a id="period_147" href="#period_147">. </a></li>
+                          audio spectrum analyzer software on any of the non&#8208;selected computers<a id="period_143" href="#period_143">. </a></li>
                         <li>For each other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface, select that computer and use the tone
                           generator program on the first computer (now no longer selected) to generate a sine wave audio tone for
-                          each of the designated frequencies<a id="period_148" href="#period_148">. </a>Verify that the audio is not present in the audio spectrum analyzer
+                          each of the designated frequencies<a id="period_144" href="#period_144">. </a>Verify that the audio is not present in the audio spectrum analyzer
                           software on the selected computer, the other non&#8208;selected computers, or the computer connected to the
-                          <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_149" href="#period_149">. </a></li>
+                          <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device interface<a id="period_145" href="#period_145">. </a></li>
                         <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and use the tone generator program on the first computer to generate a sine
-                          wave audio tone for each of the designated frequencies<a id="period_150" href="#period_150">. </a>Verify that the audio is not present in the audio
-                          spectrum analyzer software on any of the other connected computers<a id="period_151" href="#period_151">. </a></li>
-                        <li>Restart the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, select the first computer, and replace it with an external audio signal generator<a id="period_152" href="#period_152">. </a></li>
+                          wave audio tone for each of the designated frequencies<a id="period_146" href="#period_146">. </a>Verify that the audio is not present in the audio
+                          spectrum analyzer software on any of the other connected computers<a id="period_147" href="#period_147">. </a></li>
+                        <li>Restart the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, select the first computer, and replace it with an external audio signal generator<a id="period_148" href="#period_148">. </a></li>
                         <li>For each non&#8208;selected computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output computer interface,
-                          replace it with an oscilloscope set to measure the peak&#8208;to&#8208;peak voltage and perform steps 10&#8208;14<a id="period_153" href="#period_153">. </a></li>
+                          replace it with an oscilloscope set to measure the peak&#8208;to&#8208;peak voltage and perform steps 10&#8208;14<a id="period_149" href="#period_149">. </a></li>
                         <li>Perform steps 11&#8208;13 with the signal generator set to the following
                           settings:<ul>
                             <li>Pure sine wave around the average voltage of half output (positive signal only), with the output signal set
@@ -1009,12 +1009,12 @@ The following sections list Common Criteria and technology terms used in this do
                           </ul>                          
                         </li>
                         <li>Set the signal generator to generate the designated frequencies and verify the signal on the
-                          oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_154" href="#period_154">. </a>This level of signal ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended
-                          audio frequency range<a id="period_155" href="#period_155">. </a></li>
+                          oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_150" href="#period_150">. </a>This level of signal ensures signal attenuation of 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> in the extended
+                          audio frequency range<a id="period_151" href="#period_151">. </a></li>
                         <li>For each other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio computer interface, select it, set the signal generator to
-                          generate the designated frequencies, and verify the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_156" href="#period_156">. </a></li>
+                          generate the designated frequencies, and verify the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_152" href="#period_152">. </a></li>
                         <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and set the signal generator to generate the designated frequencies and verify
-                          the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_157" href="#period_157">. </a></li>
+                          the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_153" href="#period_153">. </a></li>
                         </ol>
                     </li>
                     <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
@@ -1024,133 +1024,109 @@ The following sections list Common Criteria and technology terms used in this do
                       of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration being claimed AND if &#8220;switching through express user action&#8221; is selected in
                       FDP_SWI_EXT.1.1 in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.]<br><br>
                       This test verifies that power events at one <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface do not affect the analog audio
-                      output computer interface of another computer<a id="period_158" href="#period_158">. </a><br><br>
+                      output computer interface of another computer<a id="period_154" href="#period_154">. </a><br><br>
                       Note: &#8220;No sound appears&#8221; is defined as a temporary jump of at least 4 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> from the existing ambient noise
-                      floor<a id="period_159" href="#period_159">. </a>                      <ol>
+                      floor<a id="period_155" href="#period_155">. </a>                      <ol>
                         <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio spectrum
-                          analyzer software on it and each connected computer<a id="period_160" href="#period_160">. </a></li>
-                        <li>Perform steps 3&#8208;9 for each connected computer<a id="period_161" href="#period_161">. </a></li>
+                          analyzer software on it and each connected computer<a id="period_156" href="#period_156">. </a></li>
+                        <li>Perform steps 3&#8208;9 for each connected computer<a id="period_157" href="#period_157">. </a></li>
                         <li>Ensure the first computer is selected and perform steps 4&#8208;8 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and
-                          powered off<a id="period_162" href="#period_162">. </a></li>
+                          powered off<a id="period_158" href="#period_158">. </a></li>
                         [Conditional: Perform steps 4 and 5 only if the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Video/Display Devices is part of the PPConfiguration
                         being claimed.]<br><br>
                         <li>For each other connected computer, disconnect and reconnect the video cables from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                          computer interface several times<a id="period_163" href="#period_163">. </a>Verify that no sound appears on the audio analyzer software on the
-                          first computer<a id="period_164" href="#period_164">. </a></li>
+                          computer interface several times<a id="period_159" href="#period_159">. </a>Verify that no sound appears on the audio analyzer software on the
+                          first computer<a id="period_160" href="#period_160">. </a></li>
                         <li>Disconnect and reconnect the first computer&#8217;s video cables from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface
-                          several times<a id="period_165" href="#period_165">. </a>Verify that no sound appears on the audio analyzer software on the other connected
-                          computers<a id="period_166" href="#period_166">. </a></li>
+                          several times<a id="period_161" href="#period_161">. </a>Verify that no sound appears on the audio analyzer software on the other connected
+                          computers<a id="period_162" href="#period_162">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Keyboard/Mouse Devices or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication
                           Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration being claimed, then:] for each other connected computer,
-                          disconnect and reconnect the USB cable from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface several times<a id="period_167" href="#period_167">. </a>Verify that
+                          disconnect and reconnect the USB cable from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> USB computer interface several times<a id="period_163" href="#period_163">. </a>Verify that
                           no sound appears on the audio analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio
-                          output peripheral interface or any connected computers<a id="period_168" href="#period_168">. </a></li>
+                          output peripheral interface or any connected computers<a id="period_164" href="#period_164">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Keyboard/Mouse Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed, then:] disconnect and reconnect the peripheral device type(s) selected in
-                          FDP_PDC_EXT.3.1/KM from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> KM peripheral device interface several times<a id="period_169" href="#period_169">. </a>Verify that no sound
-                          appears on the audio analyzer software on the other connected computers<a id="period_170" href="#period_170">. </a></li>
+                          FDP_PDC_EXT.3.1/KM from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> KM peripheral device interface several times<a id="period_165" href="#period_165">. </a>Verify that no sound
+                          appears on the audio analyzer software on the other connected computers<a id="period_166" href="#period_166">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed and &#8220;external&#8221; is selected in FDP_PDC_EXT.4.1, then:] disconnect and reconnect the UA
-                          peripheral device from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> UA peripheral device interface several times<a id="period_171" href="#period_171">. </a>Verify that no sound appears
-                          on the audio analyzer software on the other connected computers<a id="period_172" href="#period_172">. </a></li>
+                          peripheral device from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> UA peripheral device interface several times<a id="period_167" href="#period_167">. </a>Verify that no sound appears
+                          on the audio analyzer software on the other connected computers<a id="period_168" href="#period_168">. </a></li>
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration
                           being claimed, then:] connect an authentication session to the first computer and verify that no sounds
-                          appears on the audio analyzer software on the other connected computers<a id="period_173" href="#period_173">. </a></li></ol>
+                          appears on the audio analyzer software on the other connected computers<a id="period_169" href="#period_169">. </a></li></ol>
                     </li>
                     <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_APC_EXT.1:4</a>:
       
                       This test verifies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not send data to different computers connected to the same interface
-                      at different times<a id="period_174" href="#period_174">. </a>Repeat this test for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Output
-                      port<a id="period_175" href="#period_175">. </a><ol>
-                        <li>Ensure only one computer is connected and it is selected<a id="period_176" href="#period_176">. </a>Run a tone generator program on the
-                          connected computer and the audio analyzer software on a non&#8208;connected computer<a id="period_177" href="#period_177">. </a></li>
-                        <li>Perform steps 3&#8208;11 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and powered off<a id="period_178" href="#period_178">. </a></li>
-                        <li>Perform steps 4&#8208;5 for each of the designated frequencies<a id="period_179" href="#period_179">. </a></li>
-                        <li>Use the tone generator program on the connected computer to generate a sine wave audio tone<a id="period_180" href="#period_180">. </a></li>
+                      at different times<a id="period_170" href="#period_170">. </a>Repeat this test for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Output
+                      port<a id="period_171" href="#period_171">. </a><ol>
+                        <li>Ensure only one computer is connected and it is selected<a id="period_172" href="#period_172">. </a>Run a tone generator program on the
+                          connected computer and the audio analyzer software on a non&#8208;connected computer<a id="period_173" href="#period_173">. </a></li>
+                        <li>Perform steps 3&#8208;11 while the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered on and powered off<a id="period_174" href="#period_174">. </a></li>
+                        <li>Perform steps 4&#8208;5 for each of the designated frequencies<a id="period_175" href="#period_175">. </a></li>
+                        <li>Use the tone generator program on the connected computer to generate a sine wave audio tone<a id="period_176" href="#period_176">. </a></li>
                         <li>Disconnect the connected computer, wait two minutes, connect the other computer, and verify
-                          that the generated audio frequency is not present in the audio spectrum analyzer software<a id="period_181" href="#period_181">. </a></li>
-                        <li>Replace the connected computer with an external audio signal generator<a id="period_182" href="#period_182">. </a></li>
+                          that the generated audio frequency is not present in the audio spectrum analyzer software<a id="period_177" href="#period_177">. </a></li>
+                        <li>Replace the connected computer with an external audio signal generator<a id="period_178" href="#period_178">. </a></li>
                         <li>Perform steps 8&#8208;11 with the signal generator set to the following
                           settings:<ul>
                             <li>Pure sine wave around the average voltage of half output (positive signal only), with the output signal set
                               to 2.00 V peak&#8208;to&#8208;peak, calibrating the signal with the oscilloscope as needed</li>
                             <li>Signal average to 0v (negative swing)</li>
                           </ul></li>
-                        <li>Perform steps 9&#8208;11 for each of the designated frequencies<a id="period_183" href="#period_183">. </a></li>
-                        <li>Use the signal generator to generate the signal<a id="period_184" href="#period_184">. </a></li>
+                        <li>Perform steps 9&#8208;11 for each of the designated frequencies<a id="period_179" href="#period_179">. </a></li>
+                        <li>Use the signal generator to generate the signal<a id="period_180" href="#period_180">. </a></li>
                         <li>Disconnect the signal generator, wait two minutes, and replace it with an oscilloscope set to
-                          measure the peak&#8208;to&#8208;peak voltage<a id="period_185" href="#period_185">. </a></li>
-                        <li>Verify the signal on the oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less at the generated frequency<a id="period_186" href="#period_186">. </a></li>                        
+                          measure the peak&#8208;to&#8208;peak voltage<a id="period_181" href="#period_181">. </a></li>
+                        <li>Verify the signal on the oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less at the generated frequency<a id="period_182" href="#period_182">. </a></li>                        
                       </ol>
                     </li>
                   </ul></span>
                 </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>
-            There is no modification to this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_187" href="#period_187">. </a>However, there are additions to the supported
-            peripheral device connections (see Appendix E) that are associated with this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> and
-            additional evaluation activities<a id="period_188" href="#period_188">. </a>            
-              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is not changed by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module and only defines existing Evaluation
-              Activities for audio output devices, which does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_189" href="#period_189">. </a>            
             
-              
-                              
-                              
-              
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_5" class="defined" href="#_t_5"></a>:
-      
-                    The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports properly reject unauthorized devices and devices with
-                    unauthorized protocols as per the unauthorized peripheral device connections<a id="period_190" href="#period_190">. </a><br><br>
-                    For this test, verify device rejection through <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication in accordance with the operational user
-                    guidance or an immediate cessation of traffic following device detection or enumeration, or
-                    incompatibility of the device interface with the peripheral interface<a id="period_191" href="#period_191">. </a><br><br>
-                    <ol>
-                      <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off and audio analyzer software is running on the connected computer<a id="period_192" href="#period_192">. </a></li>
-                      <li>Connect an analog microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_193" href="#period_193">. </a></li>
-                      <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, speak loudly into the microphone from approximately one&#8208;inch distance, and
-                        verify no audio is present in the audio analyzer software<a id="period_194" href="#period_194">. </a></li>
-                      <li>Disconnect the microphone and reconnect it to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_195" href="#period_195">. </a></li>
-                      <li>Speak loudly into the microphone from approximately one&#8208;inch distance, and verify no audio is
-                        present in the audio analyzer software<a id="period_196" href="#period_196">. </a></li>
-                    </ol>
-                  </li>                  
-                </ul></span>
-              
             
-          <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a></div>
+            <span class="description">
+              There is no modification to this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_183" href="#period_183">. </a>However, there are additions to the supported
+              peripheral device connections (see Appendix E) that are associated with this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> and
+              additional evaluation activities<a id="period_184" href="#period_184">. </a>            </span>
+            <div class="element"><div class="reqid" id="FDP_PDC_EXT.1.1"><a href="#FDP_PDC_EXT.1.1" class="abbr">FDP_PDC_EXT.1.1</a></div><div class="reqdesc"></div></div>
+          <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a></div>              
+                              
+                              
               
-                              
-                              
               
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_197" href="#period_197">. </a><br></div><div class="eacategory">Guidance</div><div class="ea">
-			There are no additional Guidance evaluation activities for this component<a id="period_198" href="#period_198">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_185" href="#period_185">. </a><br></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component<a id="period_186" href="#period_186">. </a><br></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_187" href="#period_187">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <span class="testlist-"><ul>
                   <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:1</a>:
       
                     The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports properly reject unauthorized devices and devices with
-                    unauthorized protocols as per the unauthorized peripheral device connections<a id="period_199" href="#period_199">. </a><br><br>
+                    unauthorized protocols as per the unauthorized peripheral device connections<a id="period_188" href="#period_188">. </a><br><br>
                     For this test, verify device rejection through <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication in accordance with the operational user
                     guidance or an immediate cessation of traffic following device detection or enumeration, or
-                    incompatibility of the device interface with the peripheral interface<a id="period_200" href="#period_200">. </a><br><br>
+                    incompatibility of the device interface with the peripheral interface<a id="period_189" href="#period_189">. </a><br><br>
                     <ol>
-                      <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off and audio analyzer software is running on the connected computer<a id="period_201" href="#period_201">. </a></li>
-                      <li>Connect an analog microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_202" href="#period_202">. </a></li>
+                      <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off and audio analyzer software is running on the connected computer<a id="period_190" href="#period_190">. </a></li>
+                      <li>Connect an analog microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_191" href="#period_191">. </a></li>
                       <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, speak loudly into the microphone from approximately one&#8208;inch distance, and
-                        verify no audio is present in the audio analyzer software<a id="period_203" href="#period_203">. </a></li>
-                      <li>Disconnect the microphone and reconnect it to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_204" href="#period_204">. </a></li>
+                        verify no audio is present in the audio analyzer software<a id="period_192" href="#period_192">. </a></li>
+                      <li>Disconnect the microphone and reconnect it to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_193" href="#period_193">. </a></li>
                       <li>Speak loudly into the microphone from approximately one&#8208;inch distance, and verify no audio is
-                        present in the audio analyzer software<a id="period_205" href="#period_205">. </a></li>
+                        present in the audio analyzer software<a id="period_194" href="#period_194">. </a></li>
                     </ol>
                   </li>                  
                 </ul></span>
               </div></div></div></div></div>         
         
-      
-    
-    
-      <h3 id="FDP" class="indexable" data-level="3">5.1.2 User Data Protection (FDP)</h3>
+      <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
+	The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_195" href="#period_195">. </a>	These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_196" href="#period_196">. </a>        
+      <h3 id="FDP" class="indexable" data-level="3">5.2.1 User Data Protection (FDP)</h3>
         
         
         
@@ -1161,8 +1137,6 @@ The following sections list Common Criteria and technology terms used in this do
         
         <div class="comp" id="FDP_AFL_EXT.1"><h4>FDP_AFL_EXT.1 Audio Filtration</h4>
           
-            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the filtering levels that outgoing audio signals must enforce<a id="period_206" href="#period_206">. </a>            This function is specific to audio output devices and does not prevent the
-            enforcement of any <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_207" href="#period_207">. </a>          
           
           
           
@@ -1170,7 +1144,7 @@ The following sections list Common Criteria and technology terms used in this do
           
           
           <div class="element"><div class="reqid" id="FDP_AFL_EXT.1.1"><a href="#FDP_AFL_EXT.1.1" class="abbr">FDP_AFL_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure outgoing audio signals are filtered as per the [<i>Audio Filtration
-              Specifications table</i>]<a id="period_208" href="#period_208">. </a>              <table border="1" style="width:100%">
+              Specifications table</i>]<a id="period_197" href="#period_197">. </a>              <table border="1" style="width:100%">
               <tr class="header">
                 <td>Frequency (kHz)</td>
                 <td>Minimum Attenuation (<abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr>)</td>
@@ -1237,34 +1211,36 @@ The following sections list Common Criteria and technology terms used in this do
     </span><span class="note">
               The above security requirement is designed to reduce the likelihood that speakers
               emitting a signaling event at frequencies outside the range of human hearing
-              could be successfully used to bridge an air&#8208;gap to another computer<a id="period_209" href="#period_209">. </a>            </span></div></div></div>
+              could be successfully used to bridge an air&#8208;gap to another computer<a id="period_198" href="#period_198">. </a>            </span></div></div></div>
           
         <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></div>
               
               
               
               
+              
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">The evaluator shall check the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> to verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio function implementation properly filters
-                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_210" href="#period_210">. </a></div></div><div class="eacategory">Guidance</div><div class="ea">
-			There are no additional Guidance evaluation activities for this component<a id="period_211" href="#period_211">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_199" href="#period_199">. </a></div></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component<a id="period_200" href="#period_200">. </a><br></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_201" href="#period_201">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio analyzer
-                    software on it<a id="period_212" href="#period_212">. </a></li>
+                    software on it<a id="period_202" href="#period_202">. </a></li>
                   <li>For each connected computer, ensure it is selected, use its tone generator software to generate a
                     sine wave audio tone for each of the frequencies in the Audio Filtration Specifications table and verify in
                     the audio analyzer software that they are attenuated by at least the amount specified in the Audio
-                    Filtration Specifications table<a id="period_213" href="#period_213">. </a></li>
+                    Filtration Specifications table<a id="period_203" href="#period_203">. </a></li>
                   <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
-                    the peak&#8208;to&#8208;peak voltage<a id="period_214" href="#period_214">. </a></li>
+                    the peak&#8208;to&#8208;peak voltage<a id="period_204" href="#period_204">. </a></li>
                   <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
-                    the peak&#8208;to&#8208;peak voltage<a id="period_215" href="#period_215">. </a><ul>
+                    the peak&#8208;to&#8208;peak voltage<a id="period_205" href="#period_205">. </a><ul>
                       <li>Pure sine wave around the average voltage of half output (positive signal only), with the output
                         signal set to 2.00 V peak&#8208;to&#8208;peak, calibrating the signal with the oscilloscope as needed</li>
                       <li>Signal average to 0V (negative swing)</li>
                     </ul></li>
                   <li>Set the signal generator to generate the frequencies in Audio Filtration Specifications table and
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
-                    attenuation<a id="period_216" href="#period_216">. </a></li>
+                    attenuation<a id="period_206" href="#period_206">. </a></li>
                 </ol>
               </div></div></div></div></div>
         
@@ -1282,41 +1258,43 @@ The following sections list Common Criteria and technology terms used in this do
                     Keyboard/Mouse Devices</span>, <span class="selectable-content" id="_s_2">authorized devices as defined in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication
                     Devices</span>, <span class="selectable-content" id="_s_3">authorized devices as defined in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Video/Display
                     Devices</span>, <span class="selectable-content" id="_s_4">no other device</span>] upon <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> power up and connection of a peripheral device
-              to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_217" href="#period_217">. </a>            </div></div>
+              to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_207" href="#period_207">. </a>            </div></div>
           <div class="element"><div class="reqid" id="FDP_PDC_EXT.2.2/AO"><a href="#FDP_PDC_EXT.2.2/AO" class="abbr">FDP_PDC_EXT.2.2/AO</a></div><div class="reqdesc">
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow connections with authorized devices presenting authorized
               interface protocols as defined in [<i>Appendix E</i>] and [<b>selection</b>: <span class="selectable-content" id="_s_5">authorized devices presenting authorized interface protocols as defined
                   in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Keyboard/Mouse Devices</span>, <span class="selectable-content" id="_s_6">authorized devices presenting authorized interface protocols as defined
                   in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for User Authentication Devices</span>, <span class="selectable-content" id="_s_7">authorized devices presenting authorized interface protocols as
-                  defined in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Video/Display Devices</span>, <span class="selectable-content" id="_s_8">no other devices</span>] upon <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> power up and connection of a peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_218" href="#period_218">. </a>            <div class="appnote"><span class="note-header">Application
+                  defined in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module for Video/Display Devices</span>, <span class="selectable-content" id="_s_8">no other devices</span>] upon <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> power up and connection of a peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_208" href="#period_208">. </a>            <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> must claim conformance to a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration that includes each PPModule
-              contained in any selections<a id="period_219" href="#period_219">. </a>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should select all devices and
-              interfaces supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_220" href="#period_220">. </a>            </span></div></div></div>
+              contained in any selections<a id="period_209" href="#period_209">. </a>The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author should select all devices and
+              interfaces supported by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_210" href="#period_210">. </a>            </span></div></div></div>
         <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></div>
               
                               
               
               
+              
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_221" href="#period_221">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_211" href="#period_211">. </a><br></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
                 The evaluator shall verify that the operational guidance describes devices authorized for use with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                in accordance with the authorized peripheral device connections<a id="period_222" href="#period_222">. </a>              </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                in accordance with the authorized peripheral device connections<a id="period_212" href="#period_212">. </a>              </div></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_213" href="#period_213">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports do not reject authorized devices and devices with authorized
-                protocols as per the authorized peripheral device connections<a id="period_223" href="#period_223">. </a><br><br>
+                protocols as per the authorized peripheral device connections<a id="period_214" href="#period_214">. </a><br><br>
                 Repeat this test for each of the following devices: analog headphone and analog
-                speakers<a id="period_224" href="#period_224">. </a><ol>
-                  <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_225" href="#period_225">. </a></li>
-                  <li>Connect the authorized device to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_226" href="#period_226">. </a></li>
-                  <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_227" href="#period_227">. </a>Verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication described in the operational user guidance is not
-                    present<a id="period_228" href="#period_228">. </a></li>
+                speakers<a id="period_215" href="#period_215">. </a><ol>
+                  <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off<a id="period_216" href="#period_216">. </a></li>
+                  <li>Connect the authorized device to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_217" href="#period_217">. </a></li>
+                  <li>Power on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_218" href="#period_218">. </a>Verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication described in the operational user guidance is not
+                    present<a id="period_219" href="#period_219">. </a></li>
                   <li>Play an audio file on the connected computer and verify the sound is heard through the authorized
-                    device<a id="period_229" href="#period_229">. </a></li>
-                  <li>Disconnect the authorized device, then reconnect it to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_230" href="#period_230">. </a></li>
-                  <li>Verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication described in the operational user guidance is not present<a id="period_231" href="#period_231">. </a></li>
+                    device<a id="period_220" href="#period_220">. </a></li>
+                  <li>Disconnect the authorized device, then reconnect it to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> peripheral interface<a id="period_221" href="#period_221">. </a></li>
+                  <li>Verify the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> user indication described in the operational user guidance is not present<a id="period_222" href="#period_222">. </a></li>
                   <li>Play an audio file on the connected computer and verify the sound is heard through the authorized
-                    device<a id="period_232" href="#period_232">. </a></li>
+                    device<a id="period_223" href="#period_223">. </a></li>
                 </ol>
               </div></div></div></div></div>
         
@@ -1329,31 +1307,33 @@ The following sections list Common Criteria and technology terms used in this do
           
           
           <div class="element"><div class="reqid" id="FDP_PUD_EXT.1.1"><a href="#FDP_PUD_EXT.1.1" class="abbr">FDP_PUD_EXT.1.1</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not provide power to any unauthorized device connected to the
-              analog audio peripheral interface<a id="period_233" href="#period_233">. </a></div></div>          
+              analog audio peripheral interface<a id="period_224" href="#period_224">. </a></div></div>          
         <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></div>
+              
               
               
               
               
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea"><div class="ea">
                 The evaluator shall verify the <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> states that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not supply power to an unauthorized device
-                connected to the analog audio output interface<a id="period_234" href="#period_234">. </a><br><br>
+                connected to the analog audio output interface<a id="period_225" href="#period_225">. </a><br><br>
                 The evaluator shall also verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> cannot be configured to supply power to a device connected
-                to the analog audio output interface<a id="period_235" href="#period_235">. </a>              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
+                to the analog audio output interface<a id="period_226" href="#period_226">. </a>              </div></div><div class="eacategory">Guidance</div><div class="ea"><div class="ea">
                 The evaluator shall verify that the guidance states that a microphone should never be connected to the
-                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s analog audio output interface<a id="period_236" href="#period_236">. </a>              </div></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s analog audio output interface<a id="period_227" href="#period_227">. </a>              </div></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_228" href="#period_228">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <ol>
                   <li>Connect the amplified speakers directly to computer #1&#8217;s analog audio output interface (typically
-                    green in color)<a id="period_237" href="#period_237">. </a>Set the volume at the speakers to approximately 25 percent<a id="period_238" href="#period_238">. </a></li>
+                    green in color)<a id="period_229" href="#period_229">. </a>Set the volume at the speakers to approximately 25 percent<a id="period_230" href="#period_230">. </a></li>
                   <li>Connect the computer interface audio cable to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output computer interface and
                     computer #1&#8217;s analog audio microphone input interface (typically pink in color) instead of the computer
-                    analog audio output interface<a id="period_239" href="#period_239">. </a></li>
-                  <li>Connect an open 3.5 millimeter stereo plug to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface<a id="period_240" href="#period_240">. </a></li>
-                  <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure computer #1 is selected<a id="period_241" href="#period_241">. </a></li>
+                    analog audio output interface<a id="period_231" href="#period_231">. </a></li>
+                  <li>Connect an open 3.5 millimeter stereo plug to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface<a id="period_232" href="#period_232">. </a></li>
+                  <li>Power up the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and ensure computer #1 is selected<a id="period_233" href="#period_233">. </a></li>
                   <li>Measure the DC voltage of stereo plug from the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio peripheral interface between
-                    the ground terminal and each one of the other two terminals (tip and ring) using a digital voltmeter<a id="period_242" href="#period_242">. </a></li>
+                    the ground terminal and each one of the other two terminals (tip and ring) using a digital voltmeter<a id="period_234" href="#period_234">. </a></li>
                   <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
-                    microphone<a id="period_243" href="#period_243">. </a></li>                                    
+                    microphone<a id="period_235" href="#period_235">. </a></li>                                    
                 </ol>
               </div></div></div></div></div>
         
@@ -1368,91 +1348,188 @@ The following sections list Common Criteria and technology terms used in this do
           <div class="element"><div class="reqid" id="FDP_UDF_EXT.1.1/AO"><a href="#FDP_UDF_EXT.1.1/AO" class="abbr">FDP_UDF_EXT.1.1/AO</a></div><div class="reqdesc">
               The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure that [<i>analog audio output data</i>] transits the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
               unidirectionally from the [<i><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output computer</i>] interface to the
-              [<i><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio input computer interface</i>]<a id="period_244" href="#period_244">. </a>            <div class="appnote"><span class="note-header">Application
+              [<i><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio input computer interface</i>]<a id="period_236" href="#period_236">. </a>            <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
               For audio signals, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output computer interface is
               considered to be unidirectional if it receives no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of
-              attenuation at the extended audio frequency range<a id="period_245" href="#period_245">. </a>It is very unlikely that this
+              attenuation at the extended audio frequency range<a id="period_237" href="#period_237">. </a>It is very unlikely that this
               element can be satisfied unless all unselected computer interfaces are shorted
-              to ground by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_246" href="#period_246">. </a><br><br>
+              to ground by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr><a id="period_238" href="#period_238">. </a><br><br>
               If the peripheral interface supports multiple signals (such as right and left
               audio, or audio bias), then all those supported signals should comply with the
-              above <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_247" href="#period_247">. </a>            </span></div></div></div>  
+              above <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_239" href="#period_239">. </a>            </span></div></div></div>  
         <div class="activity_pane hide"><div class="activity_pane_header"><a onclick="toggle(this);return false;" href="#"><span class="activity_pane_label"> Evaluation Activities </span><span class="toggler"></span></a></div><div class="activity_pane_body"><div class="component-activity-header"><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></div>
               
                 The evaluator shall examine the Isolation Documentation to determine that it describes how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
                 enforces audio output data flow isolation from other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> functions, such that the audio output peripheral
                 interface is unidirectional and no data can be routed from a connected peripheral back to a connected
-                computer<a id="period_248" href="#period_248">. </a>The description shall ensure the signal attenuation between any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output peripheral
+                computer<a id="period_240" href="#period_240">. </a>The description shall ensure the signal attenuation between any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output peripheral
                 device interface and any other <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer audio output interface is at least 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> measured with a 2V
-                input pure sine wave at the extended audio frequency range, including negative swing signal<a id="period_249" href="#period_249">. </a>              
+                input pure sine wave at the extended audio frequency range, including negative swing signal<a id="period_241" href="#period_241">. </a>              
+              
               
               
               
             <div class="eacategory"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></div><div class="ea">
-			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_250" href="#period_250">. </a><br></div><div class="eacategory">Guidance</div><div class="ea">
-			There are no additional Guidance evaluation activities for this component<a id="period_251" href="#period_251">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component<a id="period_242" href="#period_242">. </a><br></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component<a id="period_243" href="#period_243">. </a><br></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component<a id="period_244" href="#period_244">. </a><br></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 Note: Data is considered not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of attenuation at the specific
-                audio frequency is received<a id="period_252" href="#period_252">. </a><br><br>
-                The evaluator shall perform the following test<a id="period_253" href="#period_253">. </a><ol>
+                audio frequency is received<a id="period_245" href="#period_245">. </a><br><br>
+                The evaluator shall perform the following test<a id="period_246" href="#period_246">. </a><ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface, run its tone generator
-                    software, and run audio analyzer software on the connected computer<a id="period_254" href="#period_254">. </a></li>
-                  <li>Perform steps 3&#8208;6 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_255" href="#period_255">. </a></li>
+                    software, and run audio analyzer software on the connected computer<a id="period_247" href="#period_247">. </a></li>
+                  <li>Perform steps 3&#8208;6 for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_248" href="#period_248">. </a></li>
                   <li>For each connected computer, ensure it is selected, use the tone generator on the computer
                     connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface to generate the designated frequencies,
-                    and verify that the audio is not present on the selected computer&#8217;s audio analyzer software<a id="period_256" href="#period_256">. </a></li>
+                    and verify that the audio is not present on the selected computer&#8217;s audio analyzer software<a id="period_249" href="#period_249">. </a></li>
                   <li>Replace the selected computer with an oscilloscope and connect an external audio signal
-                    generator to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_257" href="#period_257">. </a>Perform step 5 with the signal generator
-                    set to the following settings<a id="period_258" href="#period_258">. </a><ul>
+                    generator to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface<a id="period_250" href="#period_250">. </a>Perform step 5 with the signal generator
+                    set to the following settings<a id="period_251" href="#period_251">. </a><ul>
                   <li>Pure sine wave around the average voltage of half output (positive signal only), with the
                       output signal set to 2.00 V peak&#8208;to&#8208;peak, calibrating the signal with the oscilloscope as
-                      needed<a id="period_259" href="#period_259">. </a></li>
+                      needed<a id="period_252" href="#period_252">. </a></li>
                   <li>Signal average to 0v (negative swing)</li>
                 </ul>
                   </li>
                   <li>Set the signal generator to generate the designated frequencies, and verify the signal on the
-                    oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_260" href="#period_260">. </a></li>
+                    oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less<a id="period_253" href="#period_253">. </a></li>
                 </ol>                
               </div></div></div></div></div>        
             
-    
-    
-    
-    
-    
-  <h1 id="impl-reqs" class="indexable" data-level="A">Appendix A -  Implementation-dependent Requirements</h1>
-                Implementation-dependent Requirements 
-		Appendix <a href="#feat-based-reqs" class="dynref"></a> defines requirements that must be claimed in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>  
-		if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> implements particular product features<a id="period_261" href="#period_261">. </a>
-		For this technology type, the following product features require the claiming of additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>:
-  <h1 id="ext-comp-defs" class="indexable" data-level="A">Appendix B -  Extended Component Definitions</h1>
-	This appendix contains the definitions for all extended requirements specified in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_262" href="#period_262">. </a>
-    <h2 id="ext-comp-defs-bg" class="indexable" data-level="2">B.1 Extended Components Table</h2>
+    <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="3"><a href="#T.AUDIO_REVERSED">T.AUDIO_&#8203;REVERSED</a></td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          ensuring no data or electrical signals can flow between connections and only user-selected
+        interfaces can rout data<a id="period_254" href="#period_254">. </a></td></tr>
+<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+          outgoing audio signals are within the range of human hearing<a id="period_255" href="#period_255">. </a></td></tr>
+<tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces<a id="period_256" href="#period_256">. </a></td></tr>
+<tr class="major-row"><td rowspan="4"><a href="#T.DATA_LEAK">T.DATA_&#8203;LEAK</a>
+		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+	</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          requiring restrictions on how data is routed between interfaces<a id="period_257" href="#period_257">. </a></td></tr>
+<tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices<a id="period_258" href="#period_258">. </a></td></tr>
+<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing<a id="period_259" href="#period_259">. </a></td></tr>
+<tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces<a id="period_260" href="#period_260">. </a></td></tr>
+<tr class="major-row"><td rowspan="4"><a href="#T.MICROPHONE_USE">T.MICROPHONE_&#8203;USE</a></td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          preventing data and electrical signals from flowing between connections<a id="period_261" href="#period_261">. </a></td></tr>
+<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+          outgoing signals are filtered to within the range of human hearing<a id="period_262" href="#period_262">. </a></td></tr>
+<tr><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>Mitigates this threat by only
+          allowing authorized devices to connect upon power up and when a peripheral device is
+          connected<a id="period_263" href="#period_263">. </a>      </td></tr>
+<tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
+          output data transit unidirectionally between interfaces<a id="period_264" href="#period_264">. </a></td></tr>
+<tr class="major-row"><td rowspan="4"><a href="#T.SIGNAL_LEAK">T.SIGNAL_&#8203;LEAK</a>
+		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
+	</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          requiring restrictions on how signals are routed between interfaces<a id="period_265" href="#period_265">. </a></td></tr>
+<tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
+          requiring connections to be only from an authorized list of peripheral devices<a id="period_266" href="#period_266">. </a></td></tr>
+<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+          signals are filtered within the range of human hearing<a id="period_267" href="#period_267">. </a></td></tr>
+<tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
+          signals transit unidirectionally between interfaces<a id="period_268" href="#period_268">. </a></td></tr>
+</table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-bpp-psd" class="indexable" data-level="2">6.1 
+    Protection Profile for Peripheral Sharing Device</h2><h3 id="contoe-bpp-psd" class="indexable" data-level="3">6.1.1 
+	Consistency of TOE Type
+      </h3>
+        The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines the boundaries of a <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>&#8212;a device that provides a mechanism for securely connecting
+        a set of peripherals to one or more attached computers<a id="period_269" href="#period_269">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module builds on this by defining
+        functional capabilities that are specific to devices that can share audio output peripherals<a id="period_270" href="#period_270">. </a>The
+        requirements of this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> do not prevent a conformant <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> from implementing mandatory requirements of
+        the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_271" href="#period_271">. </a>      <h3 id="consecprob-bpp-psd" class="indexable" data-level="3">6.1.2 
+	Consistency of Security Problem Definition
+      </h3>The threats and assumptions defined by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> (see sections 3.1 and 3.2) supplement those defined
+        in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> as follows: <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">3</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.AUDIO_REVERSED">T.AUDIO_REVERSED</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not identify any threats specific to analog audio output
+          peripheral devices<a id="period_272" href="#period_272">. </a>This threat is specific to analog audio output devices and
+          therefore is an additional threat to this module supplementing those in <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>
+          <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_273" href="#period_273">. </a></td></tr><tr><td><a href="#T.MICROPHONE_USE">T.MICROPHONE_USE</a></td><td>The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not identify any threats specific to analog audio output
+          peripheral devices<a id="period_274" href="#period_274">. </a>This threat is specific to analog audio output devices and
+          therefore is an additional threat to this module supplementing those in <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr>
+          <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_275" href="#period_275">. </a></td></tr><tr><td><a href="#A.NO_MICROPHONES">A.NO_MICROPHONES</a></td><td></td></tr></table><h3 id="conobj-bpp-psd" class="indexable" data-level="3">6.1.3 
+			Consistency of OE Objectives
+		</h3><p><table><caption><span class="ctr" data-myid="t-con-oe-objs" data-counter-type="ct-Table" id="t-con-oe-objs">Table <span class="counter">4</span></span>: Consistency of <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objectives (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> Objective</th><th>Consistency Rationale</th></tr><tr><td><a href="#OE.NO_MICROPHONES">OE.NO_MICROPHONES</a></td><td></td></tr></table></p><h3 id="conreq-bpp-psd" class="indexable" data-level="3">6.1.4 
+	Consistency of Requirements
+      </h3>
+      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support
+      Audio Input Device functionality<a id="period_276" href="#period_276">. </a>      This is considered to be consistent because the functionality provided by the
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose<a id="period_277" href="#period_277">. </a>      
+          The <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> also identifies a number of modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
+          <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+          that are used entirely to provide functionality for
+	  Audio Input Device<a id="period_278" href="#period_278">. </a>        
+          The rationale for why this does not conflict with the claims
+      defined by the
+      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows:
+      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">5</span></span>: Consistency of Requirements (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a></td><td>
+              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> adds a requirement to block electrical signals that strengthens but
+              does not conflict with the requirement in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_279" href="#period_279">. </a>            </td></tr><tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a></td><td>
+              This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is not changed by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module and only defines existing Evaluation
+              Activities for audio output devices, which does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_280" href="#period_280">. </a>            </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
+	      <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base<a id="period_281" href="#period_281">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the filtering levels that outgoing audio signals must enforce<a id="period_282" href="#period_282">. </a>            This function is specific to audio output devices and does not prevent the
+            enforcement of any <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_283" href="#period_283">. </a>          </td></tr><tr><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defines the devices that are authorized by this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module<a id="period_284" href="#period_284">. </a>This is
+            dependent on the other <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Modules that are claimed in the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>&#8217;s <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr><a id="period_285" href="#period_285">. </a>The
+            Base&#8208;<abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is written specifically not to discuss the supported device types,
+            instead leaving it to the various <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Modules to define what they support<a id="period_286" href="#period_286">. </a>          </td></tr><tr><td><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></td><td>
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> not provide power to any unauthorized device
+            connected to the analog audio peripheral interface in addition to the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+            requirement of rejecting it<a id="period_287" href="#period_287">. </a>The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not define any requirements to
+            provide power to peripherals, therefore this does not conflict with the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
+            but is supplementary to the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_288" href="#period_288">. </a>          </td></tr><tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>
+            This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the specific types of peripheral data defined in this PPModule
+            to flow unidirectionally<a id="period_289" href="#period_289">. </a>This does not prevent the enforcement of
+            any <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_290" href="#period_290">. </a>          </td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements<a id="period_291" href="#period_291">. </a>	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements<a id="period_292" href="#period_292">. </a>	    </td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Implementation-dependent requirements<a id="period_293" href="#period_293">. </a>	    </td></tr></tr><tr><th colspan="2"> Selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Selection-based requirements<a id="period_294" href="#period_294">. </a>	    </td></tr></tr></table><h1 id="opt-sfrs" class="indexable" data-level="A">Appendix A -  Optional SFRs</h1><h2 id="opt-sfrs" class="indexable" data-level="2">A.1 Strictly Optional Requirements
+    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
+       Strictly Optional        <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_SAR">SARs</a></abbr><a id="period_295" href="#period_295">. </a></p><h2 id="obj-sfrs" class="indexable" data-level="2">A.2 Objective Requirements
+    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
+       Objective       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_296" href="#period_296">. </a></p><h2 id="impl-dep-sfrs" class="indexable" data-level="2">A.3 Implementation-dependent Requirements
+    </h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
+       Implementation-dependent       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_297" href="#period_297">. </a></p><h1 id="sel-sfrs" class="indexable" data-level="1">Appendix B -  Selection-based Requirements
+    </h1><p>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any 
+       Selection-based       <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr><a id="period_298" href="#period_298">. </a></p><h1 id="ext-comp-defs" class="indexable" data-level="A">Appendix C -  Extended Component Definitions</h1>
+	This appendix contains the definitions for all extended requirements specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr><a id="period_299" href="#period_299">. </a>
+    <h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.1 Extended Components Table</h2>
 
-	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are listed in this table:
+	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
 
-<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">2</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="User Data Protection (FDP)"><td>User Data Protection (FDP)</td><td>FDP_AFL_EXT Audio Filtration<br>FDP_PDC_EXT Peripheral Device Connection<br>FDP_PUD_EXT Powering Unauthorized Devices<br>FDP_UDF_EXT Unidirectional Data Flow<br></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">B.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="User Data Protection (FDP)"><h3 id="ext-comp-FDP" class="indexable" data-level="3">B.2.1 User Data Protection (FDP)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines the following extended components as part of the
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">6</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="User Data Protection (FDP)"><td>User Data Protection (FDP)</td><td>FDP_AFL_EXT Audio Filtration<br>FDP_PDC_EXT Peripheral Device Connection<br>FDP_PUD_EXT Powering Unauthorized Devices<br>FDP_UDF_EXT Unidirectional Data Flow<br></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="User Data Protection (FDP)"><h3 id="ext-comp-FDP" class="indexable" data-level="3">C.2.1 User Data Protection (FDP)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
 	 FDP class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2:
-	<h3 id="ext-comp-FDP_AFL_EXT" class="indexable" data-level="4">B.2.1.1 FDP_AFL_EXT Audio Filtration</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define the requirements for device filtering<a id="period_263" href="#period_263">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_AFL_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>,
+	<h3 id="ext-comp-FDP_AFL_EXT" class="indexable" data-level="4">C.2.1.1 FDP_AFL_EXT Audio Filtration</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define the requirements for device filtering<a id="period_300" href="#period_300">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_AFL_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a>,
              Audio Filtration,
-             requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enforce outgoing audio filtration levels<a id="period_264" href="#period_264">. </a></p><h4>Management: FDP_AFL_EXT.1</h4><p>No specific management functions are identified<a id="period_265" href="#period_265">. </a></p><h4>Audit: FDP_AFL_EXT.1</h4><p>There are no auditable events foreseen<a id="period_266" href="#period_266">. </a></p><h4>FDP_AFL_EXT.1 Audio Filtration</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_267" href="#period_267">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_AFL_EXT.1.1">FDP_AFL_EXT.1.1</h4>
+             requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to enforce outgoing audio filtration levels<a id="period_301" href="#period_301">. </a></p><h4>Management: FDP_AFL_EXT.1</h4><p>No specific management functions are identified<a id="period_302" href="#period_302">. </a></p><h4>Audit: FDP_AFL_EXT.1</h4><p>There are no auditable events foreseen<a id="period_303" href="#period_303">. </a></p><h4>FDP_AFL_EXT.1 Audio Filtration</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_304" href="#period_304">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_AFL_EXT.1.1">FDP_AFL_EXT.1.1</h4>
                 The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure outgoing audio signals are filtered as per [<b>assignment</b>: 
      <span class="assignable-content">
-                document reference to the table below<a id="period_268" href="#period_268">. </a></span>]
-              </div></div><h3 id="ext-comp-FDP_PDC_EXT" class="indexable" data-level="4">B.2.1.2 FDP_PDC_EXT Peripheral Device Connection</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family is defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_269" href="#period_269">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module augments the extended family by adding one
-            additional component, FDP_PDC_EXT.2<a id="period_270" href="#period_270">. </a>The new component and its impact on the extended family&#8217;s
-            component leveling are shown below; reference the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> for all other definitions for this family<a id="period_271" href="#period_271">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_PDC_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">2/AO</text><rect x="232" y="11" width="48" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a>,
+                  document reference to the table below<a id="period_305" href="#period_305">. </a></span>]
+              </div></div><h3 id="ext-comp-FDP_PDC_EXT" class="indexable" data-level="4">C.2.1.2 FDP_PDC_EXT Peripheral Device Connection</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>This family is defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_306" href="#period_306">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module augments the extended family by adding one
+            additional component, FDP_PDC_EXT.2<a id="period_307" href="#period_307">. </a>The new component and its impact on the extended family&#8217;s
+            component leveling are shown below; reference the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> for all other definitions for this family<a id="period_308" href="#period_308">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_PDC_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">2/AO</text><rect x="232" y="11" width="48" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a>,
              Peripheral Device Connection (Audio Output),
              defines the types of physical devices that the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> will permit to
-            connect to it<a id="period_272" href="#period_272">. </a></p><h4>Management: FDP_PDC_EXT.2/AO</h4><p>No specific management functions are identified</p><h4>Audit: FDP_PDC_EXT.2/AO</h4><p>There are no auditable events foreseen<a id="period_273" href="#period_273">. </a></p><h4>FDP_PDC_EXT.2/AO Peripheral Device Connection (Audio Output)</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_274" href="#period_274">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_PDC_EXT.2.1/AO">FDP_PDC_EXT.2.1/AO</h4>
+            connect to it<a id="period_309" href="#period_309">. </a></p><h4>Management: FDP_PDC_EXT.2/AO</h4><p>No specific management functions are identified</p><h4>Audit: FDP_PDC_EXT.2/AO</h4><p>There are no auditable events foreseen<a id="period_310" href="#period_310">. </a></p><h4>FDP_PDC_EXT.2/AO Peripheral Device Connection (Audio Output)</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_311" href="#period_311">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_PDC_EXT.2.1/AO">FDP_PDC_EXT.2.1/AO</h4>
                 The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow connections with authorized devices as defined in
                 [<b>assignment</b>: 
      <span class="assignable-content">devices specified in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module in which this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is defined</span>]
                 and [<b>assignment</b>: 
      <span class="assignable-content">devices specified in another <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module that shares a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr>
                   with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module in which this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is defined</span>] upon <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
-                power up and upon connection of a peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_275" href="#period_275">. </a>              <h4 id="ext-comp-FDP_PDC_EXT.2.2/AO">FDP_PDC_EXT.2.2/AO</h4>
+                power up and upon connection of a peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_312" href="#period_312">. </a>              <h4 id="ext-comp-FDP_PDC_EXT.2.2/AO">FDP_PDC_EXT.2.2/AO</h4>
                 The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall allow connections with authorized devices presenting authorized
                 interface protocols as defined in [<b>assignment</b>: 
      <span class="assignable-content">devices specified in the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>
@@ -1460,29 +1537,29 @@ The following sections list Common Criteria and technology terms used in this do
      <span class="assignable-content">devices specified in another
                 <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module that shares a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Configuration with the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> or <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module in
                 which this <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> is defined</span>] upon <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> power up and connection of a
-                peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_276" href="#period_276">. </a>              </div></div><h3 id="ext-comp-FDP_PUD_EXT" class="indexable" data-level="4">B.2.1.3 FDP_PUD_EXT Powering Unauthorized Devices</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define the requirements for unauthorized device
-            powering<a id="period_277" href="#period_277">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_PUD_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a>,
+                peripheral device to a powered&#8208;on <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr><a id="period_313" href="#period_313">. </a>              </div></div><h3 id="ext-comp-FDP_PUD_EXT" class="indexable" data-level="4">C.2.1.3 FDP_PUD_EXT Powering Unauthorized Devices</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define the requirements for unauthorized device
+            powering<a id="period_314" href="#period_314">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_PUD_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1</text><rect x="232" y="11" width="12" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a>,
              Powering Unauthorized Devices,
              the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to not power any unauthorized devices
-            connected to the peripheral interface<a id="period_278" href="#period_278">. </a></p><h4>Management: FDP_PUD_EXT.1</h4><p>No specific management functions are identified<a id="period_279" href="#period_279">. </a></p><h4>Audit: FDP_PUD_EXT.1</h4><p>There are no auditable events foreseen<a id="period_280" href="#period_280">. </a></p><h4>FDP_PUD_EXT.1 Powering Unauthorized Devices</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_281" href="#period_281">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_PUD_EXT.1.1">FDP_PUD_EXT.1.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not provide power to any unauthorized device connected to the
-              analog audio peripheral interface<a id="period_282" href="#period_282">. </a></div></div><h3 id="ext-comp-FDP_UDF_EXT" class="indexable" data-level="4">B.2.1.4 FDP_UDF_EXT Unidirectional Data Flow</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define unidirectional transmission of user data<a id="period_283" href="#period_283">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_UDF_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1/AO</text><rect x="232" y="11" width="48" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>,
+            connected to the peripheral interface<a id="period_315" href="#period_315">. </a></p><h4>Management: FDP_PUD_EXT.1</h4><p>No specific management functions are identified<a id="period_316" href="#period_316">. </a></p><h4>Audit: FDP_PUD_EXT.1</h4><p>There are no auditable events foreseen<a id="period_317" href="#period_317">. </a></p><h4>FDP_PUD_EXT.1 Powering Unauthorized Devices</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_318" href="#period_318">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> Peripheral Device Connection</td></tr></table><h4 id="ext-comp-FDP_PUD_EXT.1.1">FDP_PUD_EXT.1.1</h4>The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall not provide power to any unauthorized device connected to the
+              analog audio peripheral interface<a id="period_319" href="#period_319">. </a></div></div><h3 id="ext-comp-FDP_UDF_EXT" class="indexable" data-level="4">C.2.1.4 FDP_UDF_EXT Unidirectional Data Flow</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div>Components in this family define unidirectional transmission of user data<a id="period_320" href="#period_320">. </a></div><h4>Component Leveling</h4><svg style="max-height: 30px;"><text x="4" fill="black" font-size="15" y="24">FDP_UDF_EXT</text><rect x="2" y="11" width="150" height="16" fill="none" stroke="black"></rect><text x="234" fill="black" font-size="15" y="24">1/AO</text><rect x="232" y="11" width="48" height="16" fill="none" stroke="black"></rect><line x1="152" y1="17" x2="231" y2="17" stroke="black"></line></svg><p><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a>,
              Unidirectional Data Flow,
              requires the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> to provide unidirectional (one&#8208;way)
-            communications between a given pair of interface types<a id="period_284" href="#period_284">. </a></p><h4>Management: FDP_UDF_EXT.1/AO</h4><p>No specific management functions are identified<a id="period_285" href="#period_285">. </a></p><h4>Audit: FDP_UDF_EXT.1/AO</h4><p>There are no auditable events foreseen<a id="period_286" href="#period_286">. </a></p><h4>FDP_UDF_EXT.1/AO Unidirectional Data Flow</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_287" href="#period_287">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> Active <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> Connections</td></tr></table><h4 id="ext-comp-FDP_UDF_EXT.1.1/AO">FDP_UDF_EXT.1.1/AO</h4>
+            communications between a given pair of interface types<a id="period_321" href="#period_321">. </a></p><h4>Management: FDP_UDF_EXT.1/AO</h4><p>No specific management functions are identified<a id="period_322" href="#period_322">. </a></p><h4>Audit: FDP_UDF_EXT.1/AO</h4><p>There are no auditable events foreseen<a id="period_323" href="#period_323">. </a></p><h4>FDP_UDF_EXT.1/AO Unidirectional Data Flow</h4><div style="margin-left: 1em;"><table class="ecd_heir_dep" style="width: 100%"><tr><td style="whitespace: nowrap">Hierarchical to:</td><td style="width: 100%">No other components<a id="period_324" href="#period_324">. </a></td></tr><tr style="background-color: inherit"><td>Dependencies to:</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> Active <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> Connections</td></tr></table><h4 id="ext-comp-FDP_UDF_EXT.1.1/AO">FDP_UDF_EXT.1.1/AO</h4>
                 The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall ensure [<b>assignment</b>: 
      <span class="assignable-content">type of data</span>] data transits the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>
                 unidirectionally from the [<b>assignment</b>: 
      <span class="assignable-content">origin point of data</span>] interface to the
                 [<b>assignment</b>: 
-     <span class="assignable-content">destination point of data</span>] interface<a id="period_288" href="#period_288">. </a>              </div></div></span></span><h1 id="req-supp-info" class="indexable" data-level="A">Appendix C -  Required Supplementary Information</h1>
+     <span class="assignable-content">destination point of data</span>] interface<a id="period_325" href="#period_325">. </a>              </div></div></span></span><h1 id="req-supp-info" class="indexable" data-level="A">Appendix D -  Required Supplementary Information</h1>
     This Supporting Document refers in various places to the possibility that &#8216;supplementary information&#8217; may
-    need to be supplied as part of the deliverables for an evaluation<a id="period_289" href="#period_289">. </a>This term is intended to describe
+    need to be supplied as part of the deliverables for an evaluation<a id="period_326" href="#period_326">. </a>This term is intended to describe
     information that is not necessarily included in the Security Target or operational guidance, and that may
-    not necessarily be public<a id="period_290" href="#period_290">. </a>Examples of such information could be a Letter of Volatility or isolation
-    documentation<a id="period_291" href="#period_291">. </a>The requirement for any such supplementary information will be identified in the
-    relevant <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module, or Supporting Document<a id="period_292" href="#period_292">. </a><br><br>
+    not necessarily be public<a id="period_327" href="#period_327">. </a>Examples of such information could be a Letter of Volatility or isolation
+    documentation<a id="period_328" href="#period_328">. </a>The requirement for any such supplementary information will be identified in the
+    relevant <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>&#8208;Module, or Supporting Document<a id="period_329" href="#period_329">. </a><br><br>
     The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> requires an Isolation Document to be included with the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> for evaluation of isolation
-    requirements<a id="period_293" href="#period_293">. </a>The EAs the evaluator is to perform are captured under the appropriate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_294" href="#period_294">. </a>  <h1 id="acronyms" class="indexable" data-level="A">Appendix D -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">3</span></span>: Acronyms
+    requirements<a id="period_330" href="#period_330">. </a>The EAs the evaluator is to perform are captured under the appropriate <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr><a id="period_331" href="#period_331">. </a>  <h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">7</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
@@ -1506,18 +1583,19 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><span class="term" id="abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr></span></td><td><span id="long_abbr_TSF"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Security Functionality</span></td></tr>
 <tr><td><span class="term" id="abbr_TSFI" data-plural="TSFIs"><abbr class="dyn-abbr"><a href="#abbr_TSFI">TSFI</a></abbr></span></td><td><span id="long_abbr_TSFI"><abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> Interface</span></td></tr>
 <tr><td><span class="term" id="abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr></span></td><td><span id="long_abbr_TSS"><abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Summary Specification</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix E -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">4</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">8</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
-				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_295" href="#period_295">. </a></li>
+				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_332" href="#period_332">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 
-				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_296" href="#period_296">. </a></li>
+				Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_333" href="#period_333">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: 
-                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_297" href="#period_297">. </a></li>
+                Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_334" href="#period_334">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: 
-                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_298" href="#period_298">. </a></li>
+                Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_335" href="#period_335">. </a></li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: 
-                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_299" href="#period_299">. </a></li>
+                 Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_336" href="#period_336">. </a></li>
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
-                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_300" href="#period_300">. </a></li>
-          </ul></span></td></tr><tr><td><span id="">[MOD_AO_V]</span></td><td></td></tr><tr><td><span id="">[PP_PSD_V5.0 or <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>]</span></td><td></td></tr></table></body></html>
+                 Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_337" href="#period_337">. </a></li>
+          </ul></span></td></tr><tr><td><span id="base-pp">[PP_PSD_V5.0 or <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>]</span></td><td><span class="description"><a href=""><span style="" class="comment " id="Comment-2-">Need to add URL once published.</span>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</a>
+    </span></td></tr></table></body></html>
