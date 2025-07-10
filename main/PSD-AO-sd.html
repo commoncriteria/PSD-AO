@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html><head><title>Supporting Document - 
-    PP-Module for Audio Input Device</title><style type="text/css">
+    PP-Module for Audio Output Device</title><style type="text/css">
     #toc a{
         display: block;
     }
@@ -273,7 +273,7 @@
    
    </style></head><body><div style="text-align: center; margin-left: auto; margin-right: auto;"><h1 class="title" style="page-break-before:auto;">Supporting Document<br/>
         Mandatory Technical Document</h1><img src="images/niaplogo.png" alt="NIAP Logo"></img><hr width="50%"></hr><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><br/>
-    PP-Module for Audio Input Device<br/>
+    PP-Module for Audio Output Device<br/>
       Version: 2.0<br/>2025-07-11<br/><b>National Information Assurance Partnership</b></div><div class="foreword"><h1 style="text-align: center">Foreword</h1><p>This is a Supporting Document (SD), intended to complement the Common Criteria version 3
       and the associated Common Evaluation Methodology for
       Information Technology Security Evaluation.</p><p>SDs may be “Guidance Documents”, that highlight specific approaches 
@@ -286,18 +286,18 @@
       National Information Assurance Partnership (NIAP)
       </p><p><b style="page-break-before:always;">Document history:</b><table><tr class="header"><th>Version</th><th>Date</th><th style="align:left;">Comment</th></tr><tr><td>1.0</td><td>2019-07-19</td><td>Initial draft</td></tr><tr><td>2.0</td><td>2025-07-11</td><td>Updates for CC:2022</td></tr></table></p><p><b>General Purpose:</b><br/>
       The purpose of this SD is to define evaluation methods for the functional behavior of
-      Audio Input Device      
+      Audio Output Device      
       products.
       </p><p><b>Acknowledgments:</b><br/>
       This SD was developed with support from NIAP 
-      Audio Input Device
+      Audio Output Device
       Technical Community members, with representatives from industry, government 
       agencies, Common Criteria Test Laboratories, and members of academia.
       </p></div><h1>Table of Contents</h1><div id="toc"><a href="#introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#scope" style="text-indent:10px">1.1<span>Technology Area and Scope of Supporting Document</span></a><a href="#structure" style="text-indent:10px">1.2<span>Structure of the Document</span></a><a href="#glossary" style="text-indent:10px">1.3<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.3.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.3.2<span>Technical Terms</span></a><a href="#sfr" style="text-indent:0px">2<span>Evaluation Activities for SFRs</span></a><a href="#aa-bpp-psd" style="text-indent:10px">2.1<span>Peripheral Sharing Device</span></a><a href="#qq-sfrs-bpp-psd-Modified" style="text-indent:20px">2.1.1<span>Modified SFRs
         </span></a><a href="#mod_fdp" style="text-indent:30px">2.1.1.1<span>User Data Protection (FDP)</span></a><a href="#man-sfrs" style="text-indent:10px">2.2<span>TOE SFR Evaluation Activities</span></a><a href="#FDP" style="text-indent:20px">2.2.1<span>User Data Protection (FDP)</span></a><a href="#opt-sfrs" style="text-indent:10px">2.3<span>Evaluation Activities for Optional SFRs</span></a><a href="#sel-sfrs" style="text-indent:10px">2.4<span>Evaluation Activities for Selection-Based SFRs</span></a><a href="#obj-sfrs" style="text-indent:10px">2.5<span>Evaluation Activities for Objective SFRs</span></a><a href="#impl-sfrs-" style="text-indent:10px">2.6<span>Evaluation Activities for Implementation-dependent SFRs</span></a><a href="#sar_aas" style="text-indent:0px">3<span>Evaluation Activities for SARs</span></a><a href="#sup-info" style="text-indent:0px">4<span>Required Supplementary Information</span></a><a href="#biblio" style="text-indent:0px">Appendix A - <span>References</span></a></div><h1 id="introduction" class="indexable" data-level="0">1 Introduction</h1><h2 id="scope" class="indexable" data-level="1">1.1 Technology Area and Scope of Supporting Document</h2><p>The scope of the 
-    PP-Module for Audio Input Device is
+    PP-Module for Audio Output Device is
     to describe the security functionality of 
-    Audio Input Device
+    Audio Output Device
     products in terms of 
     [CC] and to define functional and assurance requirements for them.
 
@@ -305,7 +305,7 @@
     The PP-Module is intended for use with the following Base-PP:
         <ul><li>Peripheral Sharing Device, version 5.0.</li></ul><br/>
     This SD is mandatory for evaluations of TOEs that claim conformance to a PP-Configuration that includes the PP-Module for :
-    <ul><li>Audio Input Device, Version 2.0</li></ul>
+    <ul><li>Audio Output Device, Version 2.0</li></ul>
     As such it defines Evaluation Activities for the functionality described in the PP-Module as well as any impacts to the Evaluation Activities to the Base-PP(s) it modifies.
     </p><p> 
 Although Evaluation Activities are defined mainly for the evaluators to follow, in general they also help developers to prepare for evaluation by identifying specific requirements for their TOE.
@@ -438,7 +438,7 @@ The following sections list Common Criteria and technology terms used in this do
                   interfaces is at least 45 dB measured with a 2V input pure sine wave at the extended audio frequency
                   range, including negative swing signal.<br/><br/>
                   The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
-                  prevents the audio output signal from traversing the TOE while the TOE is powered off.
+                  prevents the audio output signal from traversing the TOE while the TOE is powered off.<br/><br/>
                 
                                   
                 
@@ -453,7 +453,7 @@ The following sections list Common Criteria and technology terms used in this do
                   if peripherals are connected through them.
                 </div></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-                  <b>Test Setup</b>
+                  <b>Test Setup</b><br/><br/>
                   The evaluator shall perform the following setup steps.<ul>
                     <li>Configure the TOE and the operational environment in accordance with the operational
                       guidance.</li>
@@ -465,10 +465,10 @@ The following sections list Common Criteria and technology terms used in this do
                   specific channel where instructed in the following text to assign that specific computer.<br/><br/>
                   Note: Electrical signals are considered not to flow between connected computers and data is considered
                   not to transit the TOE if no signal greater than 45 dB of attenuation at the specific audio frequency is
-                  received.                  
+                  received. <br/><br/>                 
                   <span class="testlist-"><ul>
                     <li class="test-"><a id="_t_1" class="defined" href="#_t_1">Test FDP_APC_EXT.1:1</a>:
-      
+      <br/><br/>
                       <b>Analog Audio Output Data Routing Methods</b><br/><br/>
                       This test verifies the functionality of the TOE routing methods while powered on, powered off, and in
                       failure state.<br/><br/><ol>
@@ -491,10 +491,10 @@ The following sections list Common Criteria and technology terms used in this do
                           audio spectrum analyzer software on the computer connected to the TOE analog audio output device
                           interface.</li>                        
                       </ol>                      
-                    </li>
+                    </li><br/><br/>
                     
                     <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>:
-      
+      <br/><br/>
                       <b>Analog Audio Output Interface Isolation</b><br/><br/>
                       [Conditional: Perform this test if “switching through express user action” is selected in FDP_SWI_EXT.1.1
                       in the PSD PP.]<br/><br/>
@@ -509,7 +509,9 @@ The following sections list Common Criteria and technology terms used in this do
                         <li>Use the tone generator program on the first computer to generate a sine wave audio tone for each
                           of the designated frequencies. Verify that the audio is present in the audio spectrum analyzer software
                           on the computer connected to the TOE analog audio output device interface and is not present in the
-                          audio spectrum analyzer software on any of the non‐selected computers.</li>
+                          audio spectrum analyzer software on any of the non‐selected computers.
+                          This step does not fail if frequencies above 20 kHz are not present in the
+                        software on the connected computer due to attenuation as per FDP_AFL_EXT.1.</li>
                         <li>For each other TOE analog audio computer interface, select that computer and use the tone
                           generator program on the first computer (now no longer selected) to generate a sine wave audio tone for
                           each of the designated frequencies. Verify that the audio is not present in the audio spectrum analyzer
@@ -536,9 +538,9 @@ The following sections list Common Criteria and technology terms used in this do
                         <li>Power off the TOE and set the signal generator to generate the designated frequencies and verify
                           the signal on the oscilloscopes is 11.2 mV or less.</li>
                         </ol>
-                    </li>
+                    </li><br/><br/>
                     <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
-      
+      <br/><br/>
                       <b>No Flow between Computers with Other Peripheral Device Types</b><br/><br/>
                       [Conditional: Perform this test only if a PP‐Module aside from the Analog Audio Output PP‐Module is part
                       of the PP‐Configuration being claimed AND if “switching through express user action” is selected in
@@ -553,7 +555,8 @@ The following sections list Common Criteria and technology terms used in this do
                         <li>Perform steps 3‐9 for each connected computer.</li>
                         <li>Ensure the first computer is selected and perform steps 4‐8 while the TOE is powered on and
                           powered off.</li>
-                        [Conditional: Perform steps 4 and 5 only if the PP‐Module for Video/Display Devices is part of the PPConfiguration
+                        [Conditional: Perform steps 4 and 5 only if the PP‐Module for Video/Display
+                        Devices is part of the PP-Configuration
                         being claimed.]<br/><br/>
                         <li>For each other connected computer, disconnect and reconnect the video cables from the TOE
                           computer interface several times. Verify that no sound appears on the audio analyzer software on the
@@ -577,7 +580,7 @@ The following sections list Common Criteria and technology terms used in this do
                         <li>[Conditional: If the PP‐Module for User Authentication Devices is part of the PP‐Configuration
                           being claimed, then:] connect an authentication session to the first computer and verify that no sounds
                           appears on the audio analyzer software on the other connected computers.</li></ol>
-                    </li>
+                    </li><br/><br/>
                     <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_APC_EXT.1:4</a>:
       
                       This test verifies that the TOE does not send data to different computers connected to the same interface
@@ -644,6 +647,9 @@ The following sections list Common Criteria and technology terms used in this do
                 the audio passing through the TOE.</div></div><div class="eacategory">Guidance</div><div class="ea">
 			There are no additional Guidance evaluation activities for this component.<br/></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                <span class="testlist-"><ul>
+                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FDP_AFL_EXT.1:1</a>:
+      
                 <ol>
                   <li>Connect a computer to the TOE analog audio output peripheral interface and run audio analyzer
                     software on it.</li>
@@ -663,6 +669,8 @@ The following sections list Common Criteria and technology terms used in this do
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
                     attenuation.</li>
                 </ol>
+                  </li>
+                </ul></span>
               </div></div></span></div><div class="comp" id="FDP-PDC-EXT-2-AO"><h4>FDP_PDC_EXT.2/AO Peripheral Device Connection (Audio Output)</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.2/AO</div>
               
                               
@@ -678,7 +686,11 @@ The following sections list Common Criteria and technology terms used in this do
                 The evaluator shall verify that the TOE ports do not reject authorized devices and devices with authorized
                 protocols as per the authorized peripheral device connections.<br/><br/>
                 Repeat this test for each of the following devices: analog headphone and analog
-                speakers.<ol>
+                speakers.
+                <span class="testlist-"><ul>
+                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FDP_PDC_EXT.2/AO:1</a>:
+      
+                <ol>
                   <li>Ensure the TOE is powered off.</li>
                   <li>Connect the authorized device to the TOE peripheral interface.</li>
                   <li>Power on the TOE. Verify the TOE user indication described in the operational user guidance is not
@@ -690,6 +702,8 @@ The following sections list Common Criteria and technology terms used in this do
                   <li>Play an audio file on the connected computer and verify the sound is heard through the authorized
                     device.</li>
                 </ol>
+                  </li>
+                </ul></span>
               </div></div></span></div><div class="comp" id=""><h4>FDP_PUD_EXT.1 Powering Unauthorized Devices</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PUD_EXT.1</div>
               
               
@@ -706,6 +720,9 @@ The following sections list Common Criteria and technology terms used in this do
                 TOE’s analog audio output interface.
               </div></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                <span class="testlist-"><ul>
+                  <li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FDP_PUD_EXT.1:1</a>:
+      
                 <ol>
                   <li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
                     green in color). Set the volume at the speakers to approximately 25 percent.</li>
@@ -719,6 +736,8 @@ The following sections list Common Criteria and technology terms used in this do
                   <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
                     microphone.</li>                                    
                 </ol>
+                  </li>
+                </ul></span>
               </div></div></span></div><div class="comp" id="FDP-UDF-EXT-1-AO"><h4>FDP_UDF_EXT.1/AO Unidirectional Data Flow</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_UDF_EXT.1/AO</div>
               
                 The evaluator shall examine the Isolation Documentation to determine that it describes how the TOE
@@ -738,7 +757,11 @@ The following sections list Common Criteria and technology terms used in this do
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 Note: Data is considered not to transit the TOE if no signal greater than 45 dB of attenuation at the specific
                 audio frequency is received.<br/><br/>
-                The evaluator shall perform the following test.<ol>
+                The evaluator shall perform the following test.
+                <span class="testlist-"><ul>
+                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FDP_UDF_EXT.1/AO:1</a>:
+      
+                <ol>
                   <li>Connect a computer to the TOE analog audio output peripheral interface, run its tone generator
                     software, and run audio analyzer software on the connected computer.</li>
                   <li>Perform steps 3‐6 for each TOE analog audio output peripheral interface.</li>
@@ -756,7 +779,9 @@ The following sections list Common Criteria and technology terms used in this do
                   </li>
                   <li>Set the signal generator to generate the designated frequencies, and verify the signal on the
                     oscilloscope is 11.2 mV or less.</li>
-                </ol>                
+                </ol> 
+                  </li>
+                </ul></span>
               </div></div></span></div><h2 class="indexable" data-level="1" id="opt-sfrs">2.3 Evaluation Activities for Optional SFRs</h2>The PP-Module does not define any optional requirements.<h2 class="indexable" data-level="1" id="sel-sfrs">2.4 Evaluation Activities for Selection-Based SFRs</h2>The PP-Module does not define any selection-based requirements.<h2 class="indexable" data-level="1" id="obj-sfrs">2.5 Evaluation Activities for Objective SFRs</h2>The PP-Module does not define any objective requirements.<h2 class="indexable" data-level="1" id="impl-sfrs-">2.6 Evaluation Activities for Implementation-dependent SFRs</h2>The PP-Module does not define any implementation-dependent requirements.<h1 id="sar_aas" class="indexable" data-level="0">3 Evaluation Activities for SARs</h1><p>The PP-Module does not define any SARs beyond those defined within the
     
 	base PSD PP to which it must claim conformance.
