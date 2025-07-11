@@ -562,16 +562,16 @@
       <con-mod ref="T.AUDIO_REVERSED">
         The PSD PP does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in PSD PP.
       </con-mod>
-      <con-mod ref="T.DATA_LEAK (from PSD PP)">
+      <con-mod ref="T.DATA_LEAK">
         This threat is from the PSD PP, thus no conflict exists.
       </con-mod>
       <con-mod ref="T.MICROPHONE_USE">
         The PSD PP does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in PSD PP.
       </con-mod>
-      <con-mod ref="T.SIGNAL_LEAK (from PSD PP)">
+      <con-mod ref="T.SIGNAL_LEAK">
         This threat is from the PSD PP, thus no conflict exists.
       </con-mod>
-      <con-mod ref="T.UNAUTHORIZED_DEVICES (from PSD PP)">
+      <con-mod ref="T.UNAUTHORIZED_DEVICES">
         This threat is from the PSD PP, thus no conflict exists.
       </con-mod>
     </base-pp>
