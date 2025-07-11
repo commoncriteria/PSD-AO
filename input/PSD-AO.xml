@@ -173,11 +173,7 @@
       <threat name="T.AUDIO_REVERSED">
         <description>A malicious agent could re-purpose an authorized audio output peripheral device by converting it to a
           low‐gain microphone to eavesdrop on the surrounding audio or transfer data across an air‐gap
-          through audio signaling.</description>
-        <consistency-rationale>The PSD PP does not identify any threats specific to analog audio output
-          peripheral devices. This threat is specific to analog audio output devices and
-          therefore is an additional threat to this module supplementing those in PSD
-          PP.</consistency-rationale>        
+          through audio signaling.</description>                
         <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
           ensuring no data or electrical signals can flow between connections and only user-selected
         interfaces can rout data.</rationale>
@@ -188,7 +184,7 @@
       </threat>
             
       <threat name="T.DATA_LEAK">
-        <from base="bpp-psd"/>
+        <from base="bpp-psd"/>        
         <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
           requiring restrictions on how data is routed between interfaces.</rationale>
         <addressed-by>FDP_PDC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
@@ -203,10 +199,7 @@
         <description>A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
           the TOE audio out peripheral device interface to eavesdrop or transfer data across an air‐gap through
           audio signaling.</description>
-        <consistency-rationale>The PSD PP does not identify any threats specific to analog audio output
-          peripheral devices. This threat is specific to analog audio output devices and
-          therefore is an additional threat to this module supplementing those in PSD
-          PP.</consistency-rationale>
+        
         <addressed-by>FDP_APC_EXT.1 (Modified)</addressed-by><rationale>Mitigates this threat by
           preventing data and electrical signals from flowing between connections.</rationale>
         <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
@@ -582,10 +575,23 @@
         in the PSD PP as follows: </con-sec-prob>
       
       <!-- 6.1.3 Consistency of Objectives -->
-      <con-obj>
-        This PP‐Module defines TOE objectives that supplement those the PSD PP defines as follows:
-      </con-obj>
+      
       <con-op-en/>
+      <con-mod ref="T.AUDIO_REVERSED">
+        The PSD PP does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in PSD PP.
+      </con-mod>
+      <con-mod ref="T.DATA_LEAK (from PSD PP)">
+        This threat is from the PSD PP, thus no conflict exists.
+      </con-mod>
+      <con-mod ref="T.MICROPHONE_USE">
+        The PSD PP does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in PSD PP.
+      </con-mod>
+      <con-mod ref="T.SIGNAL_LEAK (from PSD PP)">
+        This threat is from the PSD PP, thus no conflict exists.
+      </con-mod>
+      <con-mod ref="T.UNAUTHORIZED_DEVICES (from PSD PP)">
+        This threat is from the PSD PP, thus no conflict exists.
+      </con-mod>
     </base-pp>
     
     <man-sfrs>
@@ -994,7 +1000,7 @@
   <bibliography>    
     <entry id="base-pp">
       <tag>PP_PSD_V5.0 or PSD PP</tag>
-      <description><h:a href=""><comment>Need to add URL once published.</comment>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</h:a>
+      <description><h:a href="https://www.niap-ccevs.org/protectionprofiles/412"><comment>Need to add URL once published.</comment>Protection Profile for Peripheral Sharing Device, Version 5.0, 2025-07-11</h:a>
     </description>
     </entry>
   </bibliography>
