@@ -1454,26 +1454,17 @@ provide all of its security functionality.
               </div></div></div></div></div>        
             
     <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="3"><a href="#T.AUDIO_REVERSED">T.AUDIO_​REVERSED</a></td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          ensuring no data or electrical signals can flow between connections and only user-selected
-        interfaces can rout data.</td></tr>
-<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#T.AUDIO_REVERSED">T.AUDIO_​REVERSED</a></td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
           outgoing audio signals are within the range of human hearing.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           output data transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="4"><a href="#T.DATA_LEAK">T.DATA_​LEAK</a>
+<tr class="major-row"><td rowspan="2"><a href="#T.DATA_LEAK">T.DATA_​LEAK</a>
 		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
-	</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          requiring restrictions on how data is routed between interfaces.</td></tr>
-<tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          requiring connections to be only from an authorized list of peripheral devices.</td></tr>
-<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+	</td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
           signals are filtered within the range of human hearing.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           output data transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="4"><a href="#T.MICROPHONE_USE">T.MICROPHONE_​USE</a></td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          preventing data and electrical signals from flowing between connections.</td></tr>
-<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+<tr class="major-row"><td rowspan="3"><a href="#T.MICROPHONE_USE">T.MICROPHONE_​USE</a></td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
           outgoing signals are filtered to within the range of human hearing.</td></tr>
 <tr><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>Mitigates this threat by only
           allowing authorized devices to connect upon power up and when a peripheral device is
@@ -1481,23 +1472,15 @@ provide all of its security functionality.
       </td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           output data transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="4"><a href="#T.SIGNAL_LEAK">T.SIGNAL_​LEAK</a>
+<tr class="major-row"><td rowspan="2"><a href="#T.SIGNAL_LEAK">T.SIGNAL_​LEAK</a>
 		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
-	</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          requiring restrictions on how signals are routed between interfaces.</td></tr>
-<tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-          requiring connections to be only from an authorized list of peripheral devices.</td></tr>
-<tr><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
+	</td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
           signals are filtered within the range of human hearing.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           signals transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="3"><a href="#T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_​DEVICES</a>
+<tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_​DEVICES</a>
 		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
-	</td><td><a href="#FDP_APC_EXT.1">FDP_APC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-                requiring restrictions on how signals are routed between interfaces.</td></tr>
-<tr><td><a href="#FDP_PDC_EXT.1">FDP_PDC_EXT.1</a> (Modified)</td><td>Mitigates this threat by
-                requiring connections to be only from an authorized list of peripheral devices.</td></tr>
-<tr><td><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></td><td>Mitigates this threat by not
+	</td><td><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></td><td>Mitigates this threat by not
                 allowing power to be connected to any unauthorized device.</td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-bpp-psd" class="indexable" data-level="2">6.1 
     Protection Profile for Peripheral Sharing Device</h2><h3 id="contoe-bpp-psd" class="indexable" data-level="3">6.1.1 
