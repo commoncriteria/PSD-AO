@@ -810,19 +810,13 @@ The following sections list Common Criteria and technology terms used in this do
           low‐gain microphone to eavesdrop on the surrounding audio or transfer data across an air‐gap
           through audio signaling.</span></dd><dt class="threat defined" id="T.DATA_LEAK">T.DATA_LEAK
 		(from PSD PP)
-	</dt><dd>
-						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
-					</dd><dt class="threat defined" id="T.MICROPHONE_USE">T.MICROPHONE_USE</dt><dd><span class="description">A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
+	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</span></dd><dt class="threat defined" id="T.MICROPHONE_USE">T.MICROPHONE_USE</dt><dd><span class="description">A malicious agent could use an unauthorized peripheral device such as a microphone, connected to
           the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio out peripheral device interface to eavesdrop or transfer data across an air‐gap through
           audio signaling.</span></dd><dt class="threat defined" id="T.SIGNAL_LEAK">T.SIGNAL_LEAK
 		(from PSD PP)
-	</dt><dd>
-						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
-					</dd><dt class="threat defined" id="T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_DEVICES
+	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</span></dd><dt class="threat defined" id="T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_DEVICES
 		(from PSD PP)
-	</dt><dd>
-						This threat from the above Base <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
-					</dd></dl>
+	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</span></dd></dl>
       
     
       <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
@@ -1143,8 +1137,14 @@ provide all of its security functionality.
         in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> as follows: <table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">3</span></span>: Consistency of Security Problem Definition (<abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.AUDIO_REVERSED">T.AUDIO_REVERSED</a></td><td>
         The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
+      </td></tr><tr><td><a href="#T.DATA_LEAK">T.DATA_LEAK</a></td><td>
+        This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists.
       </td></tr><tr><td><a href="#T.MICROPHONE_USE">T.MICROPHONE_USE</a></td><td>
         The <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not identify any threats specific to analog audio output peripheral devices. This threat is specific to analog audio output devices and therefore is an additional threat to this module supplementing those in <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
+      </td></tr><tr><td><a href="#T.SIGNAL_LEAK">T.SIGNAL_LEAK</a></td><td>
+        This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists.
+      </td></tr><tr><td><a href="#T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_DEVICES</a></td><td>
+        This threat is from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, thus no conflict exists.
       </td></tr><tr><td><a href="#A.NO_MICROPHONES">A.NO_MICROPHONES</a></td><td>
           The assumption is upheld by the objective since the users in the environment are trained
           not to connect a microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output interface.
