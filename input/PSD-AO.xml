@@ -357,7 +357,7 @@
                   not to transit the TOE if no signal greater than 45 dB of attenuation at the specific audio frequency is
                   received. <h:br/><h:br/>                 
                   <testlist>
-                    <test><h:br/><h:br/>
+                    <test id="Test_1-AO"><h:br/><h:br/>
                       <h:b>Analog Audio Output Data Routing Methods</h:b><h:br/><h:br/>
                       This test verifies the functionality of the TOE routing methods while powered on, powered off, and in
                       failure state.<h:br/><h:br/><h:ol>
@@ -389,7 +389,7 @@
                       This test verifies that no data or electrical signals flow between connected computers while the TOE is
                       powered on or off.<h:br/><h:br/>
                       <h:ol>
-                        <h:li>Continue with the setup from Test 1.</h:li>
+                        <h:li>Continue with the setup from <xref to="Test_1-AO"/>.</h:li>
                         <h:li>Connect a computer to the TOE analog audio output device interface. Run audio spectrum analyzer
                           software on all computers.</h:li>
                         <h:li>Perform steps 4‐13 for each TOE analog audio computer interface.</h:li>
