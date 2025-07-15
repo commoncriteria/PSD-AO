@@ -1448,21 +1448,16 @@ provide all of its security functionality.
               </div></div></div></div></div>        
             
     <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#T.AUDIO_REVERSED">T.AUDIO_​REVERSED</a></td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
-          outgoing audio signals are within the range of human hearing.</td></tr>
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">2</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="2"><a href="#T.AUDIO_REVERSED">T.AUDIO_​REVERSED</a></td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by audio signal attenuation that prevents inadvertent transmission of audio data.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
-          output data transit unidirectionally between interfaces.</td></tr>
+          the audio output jack cannot be used to transmit data into the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> or a connected computer as a microphone.</td></tr>
 <tr class="major-row"><td rowspan="2"><a href="#T.DATA_LEAK">T.DATA_​LEAK</a>
 		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
-	</td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
-          signals are filtered within the range of human hearing.</td></tr>
+	</td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by attenuating audio signals that could otherwise be data leakage.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           output data transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="3"><a href="#T.MICROPHONE_USE">T.MICROPHONE_​USE</a></td><td><a href="#FDP_AFL_EXT.1">FDP_AFL_EXT.1</a></td><td>Mitigates this threat by ensuring
-          outgoing signals are filtered to within the range of human hearing.</td></tr>
-<tr><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>Mitigates this threat by only
-          allowing authorized devices to connect upon power up and when a peripheral device is
-          connected.
+<tr class="major-row"><td rowspan="2"><a href="#T.MICROPHONE_USE">T.MICROPHONE_​USE</a></td><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>Mitigates this threat by only
+          supporting audio output devices.
       </td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           output data transit unidirectionally between interfaces.</td></tr>
@@ -1472,10 +1467,10 @@ provide all of its security functionality.
           signals are filtered within the range of human hearing.</td></tr>
 <tr><td><a href="#FDP_UDF_EXT.1/AO">FDP_UDF_EXT.1/AO</a></td><td>Mitigates this threat by ensuring
           signals transit unidirectionally between interfaces.</td></tr>
-<tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_​DEVICES</a>
+<tr class="major-row"><td rowspan="2"><a href="#T.UNAUTHORIZED_DEVICES">T.UNAUTHORIZED_​DEVICES</a>
 		(from <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>)
-	</td><td><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></td><td>Mitigates this threat by not
-                allowing power to be connected to any unauthorized device.</td></tr>
+	</td><td><a href="#FDP_PDC_EXT.2/AO">FDP_PDC_EXT.2/AO</a></td><td>Mitigates this threat by implementing audio functionality using an analog port so that digital audio devices or other unauthorzied devices are not accepted.</td></tr>
+<tr><td><a href="#FDP_PUD_EXT.1">FDP_PUD_EXT.1</a></td><td>Mitigates this threat by having the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>'s audio ports be unpowered so that devices that require a power source over this interface are not supported.</td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-bpp-psd" class="indexable" data-level="2">6.1 
     Protection Profile for Peripheral Sharing Device</h2><h3 id="contoe-bpp-psd" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type

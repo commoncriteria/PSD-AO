@@ -12,7 +12,9 @@ output/PSD-AO-release-linkable.html: UA
 output/PSD-AO-release-linkable.html: V5
 output/PSD-AO-release-linkable.html: codec
 output/PSD-AO-release-linkable.html: codecs
+output/PSD-AO-release-linkable.html: unauthorzied
 output/PSD-AO-release-linkable.html: unidirectionally
+output/PSD-AO-release-linkable.html: unpowered
 output/PSD-AO-release.html: 0V
 output/PSD-AO-release.html: 1Hz
 output/PSD-AO-release.html: 2mV
@@ -24,7 +26,9 @@ output/PSD-AO-release.html: V5
 output/PSD-AO-release.html: codec
 output/PSD-AO-release.html: codecs
 output/PSD-AO-release.html: information’
+output/PSD-AO-release.html: unauthorzied
 output/PSD-AO-release.html: unidirectionally
+output/PSD-AO-release.html: unpowered
 output/PSD-AO-sd.html: 0V
 output/PSD-AO-sd.html: 0v
 output/PSD-AO-sd.html: 1Hz
@@ -56,4 +60,6 @@ output/PSD-AO.html: V5
 output/PSD-AO.html: codec
 output/PSD-AO.html: codecs
 output/PSD-AO.html: information’
+output/PSD-AO.html: unauthorzied
 output/PSD-AO.html: unidirectionally
+output/PSD-AO.html: unpowered
