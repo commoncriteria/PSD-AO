@@ -182,6 +182,7 @@
             
       <threat name="T.DATA_LEAK">
         <from base="bpp-psd"/>
+        <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
         <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
           signals are filtered within the range of human hearing.</rationale>
         <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
@@ -204,6 +205,7 @@
 
       <threat name="T.SIGNAL_LEAK">
         <from base="bpp-psd"/>
+        <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
         <addressed-by>FDP_AFL_EXT.1</addressed-by><rationale>Mitigates this threat by ensuring
           signals are filtered within the range of human hearing.</rationale>
         <addressed-by>FDP_UDF_EXT.1/AO</addressed-by><rationale>Mitigates this threat by ensuring
@@ -211,7 +213,8 @@
       </threat>
             
             <threat name="T.UNAUTHORIZED_DEVICES">
-              <from base="bpp-psd"/>            
+              <from base="bpp-psd"/>     
+              <description>This threat from the PSD PP also applies to the functionality defined in this PP-Module.</description>
               <addressed-by>FDP_PUD_EXT.1</addressed-by><rationale>Mitigates this threat by not
                 allowing power to be connected to any unauthorized device.</rationale>
             </threat>
