@@ -139,6 +139,49 @@
       cases as defined by the PSD PP. The functionality defined by this PP‐Module is implementation-dependent
       (i.e., not tied to any specific use cases) and is related entirely to the specific security
       requirements related to security of the physical and logical interfaces for analog audio output devices.
+    </section>
+    <section title="Test Environment for Evaluation Activities">
+      In order to ensure that the TOE demonstrates the functionality required by the EAs, it is necessary for the
+      evaluator to ensure that they have appropriate equipment to conduct the required testing. In addition to
+      the equipment that is relevant for testing any PSD as defined in the PSD PP, the following additional
+      equipment should be used in testing:<h:ul>
+        <h:li><h:b>Amplified speakers</h:b> – The tests depend upon the use of high‐quality system 2.1 standard
+          and higher amplified speakers with a separate subwoofer.</h:li>
+        <h:li><h:b>Tone generator software application</h:b> – The tests require the use of a tone generator
+          software application that can generate sine wave audio at configurable pitch (in Hz) and volume
+          levels.</h:li>
+        <h:li><h:b>Computer microphone (analog)</h:b> – The tests require the use of an analog microphone to
+          be connected to the TOE to demonstrate that it will not transmit audio signals when this occurs.</h:li>
+        <h:li><h:b>3.5 mm stereo plug with open end wires or solderable tabs</h:b> – This plug is used by some of the tests
+          in this Supporting Document to enable audio signal injection or detection at the TOE analog audio
+          interfaces.</h:li>
+        <h:li><h:b>Digital voltmeter</h:b> – The tests require the use of a digital voltmeter to measure the DC
+          voltage over TOE peripheral interfaces to confirm that current is not supplied to a connected
+          microphone.</h:li>
+        <h:li><h:b>Audio signal generator</h:b> – The tests require the use of an audio signal generator that is
+          capable of generating a sine wave with positive/negative bias from DC up to 100 KHz to test that
+          the TOE does not experience audio signal leakage.</h:li>
+        <h:li><h:b>Audio spectrum analyzer software – The tests require the use of software with a Fast
+          Fourier Transform (FFT) capability that can display real‐time audio spectrum data, including
+          frequencies, attenuation dB, and voltage of audio signals, and is used to detect signal leakage
+          between interfaces. Note that any use of a computer with audio spectrum analyzer software may
+          be replaced by an audio spectrum analyzer or an Oscilloscope with FFT capability.</h:b></h:li>
+        <h:li><h:b>Oscilloscope</h:b> – The tests require the use of an oscilloscope to detect signal leakage
+          between peripheral interfaces. Any oscilloscope with an FFT capability and bandwidth of at least
+          1 MHz may be used. Note that any use of an oscilloscope may be replaced by a computer with
+          audio spectrum analyzer software or an audio spectrum analyzer.</h:li>
+        <h:li><h:b>Tone generator software</h:b> – The tests require the use of tone generator software to verify
+          how data is routed.</h:li>
+        <h:li><h:b>USB dummy load</h:b> – The tests require the use of a USB dummy load
+          to verify that electrical signals are not sent to non-selected computers.</h:li>
+      </h:ul>
+      This equipment is required in addition to that which is relevant for testing any PSD as defined in the PSD
+      PP. Additional equipment may apply if the TOE claims support for additional peripheral types as defined
+      by the other PP‐Modules that extend the PSD PP.<h:br/><h:br/>      
+      When conducting testing, the evaluator must ensure that all combinations of switch selections are tested.
+      For example, if testing a device with 2 audio output interfaces and eight computer interfaces, the
+      evaluator may use two connected computers, but must change the connected ports several times to
+      ensure that each of the possible permutations of switch positions is tested. Some equivalency arguments between ports are allowed.
     </section>    
   </sec:Introduction>
 
