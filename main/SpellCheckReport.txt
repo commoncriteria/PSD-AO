@@ -10,8 +10,6 @@ output/PSD-AO-release-linkable.html: PDIF
 output/PSD-AO-release-linkable.html: SPD
 output/PSD-AO-release-linkable.html: SWI
 output/PSD-AO-release-linkable.html: UA
-output/PSD-AO-release-linkable.html: V5
-output/PSD-AO-release-linkable.html: aonce
 output/PSD-AO-release-linkable.html: codec
 output/PSD-AO-release-linkable.html: codecs
 output/PSD-AO-release-linkable.html: solderable
@@ -27,8 +25,6 @@ output/PSD-AO-release.html: CEM
 output/PSD-AO-release.html: FFT
 output/PSD-AO-release.html: PDIF
 output/PSD-AO-release.html: SPD
-output/PSD-AO-release.html: V5
-output/PSD-AO-release.html: aonce
 output/PSD-AO-release.html: codec
 output/PSD-AO-release.html: codecs
 output/PSD-AO-release.html: information’
@@ -47,8 +43,6 @@ output/PSD-AO-sd.html: CEM
 output/PSD-AO-sd.html: SPD
 output/PSD-AO-sd.html: SWI
 output/PSD-AO-sd.html: UA
-output/PSD-AO-sd.html: V5
-output/PSD-AO-sd.html: aonce
 output/PSD-AO-sd.html: codec
 output/PSD-AO-sd.html: evaluator’s
 output/PSD-AO-sd.html: fail’
@@ -66,8 +60,6 @@ output/PSD-AO.html: PDIF
 output/PSD-AO.html: SPD
 output/PSD-AO.html: SWI
 output/PSD-AO.html: UA
-output/PSD-AO.html: V5
-output/PSD-AO.html: aonce
 output/PSD-AO.html: codec
 output/PSD-AO.html: codecs
 output/PSD-AO.html: information’
