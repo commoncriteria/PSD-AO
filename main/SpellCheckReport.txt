@@ -14,7 +14,6 @@ output/PSD-AO-release-linkable.html: codec
 output/PSD-AO-release-linkable.html: codecs
 output/PSD-AO-release-linkable.html: solderable
 output/PSD-AO-release-linkable.html: subwoofer
-output/PSD-AO-release-linkable.html: unauthorzied
 output/PSD-AO-release-linkable.html: unidirectionally
 output/PSD-AO-release-linkable.html: unpowered
 output/PSD-AO-release.html: 0V
@@ -30,7 +29,6 @@ output/PSD-AO-release.html: codecs
 output/PSD-AO-release.html: information’
 output/PSD-AO-release.html: solderable
 output/PSD-AO-release.html: subwoofer
-output/PSD-AO-release.html: unauthorzied
 output/PSD-AO-release.html: unidirectionally
 output/PSD-AO-release.html: unpowered
 output/PSD-AO-sd.html: 0V
@@ -65,6 +63,5 @@ output/PSD-AO.html: codecs
 output/PSD-AO.html: information’
 output/PSD-AO.html: solderable
 output/PSD-AO.html: subwoofer
-output/PSD-AO.html: unauthorzied
 output/PSD-AO.html: unidirectionally
 output/PSD-AO.html: unpowered
