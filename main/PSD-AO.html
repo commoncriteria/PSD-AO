@@ -720,7 +720,7 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><div id="Audio_codec">Audio codec</div></td><td>
         PC subsystem capable of encoding and decoding a digital data stream of audio.
       </td></tr>
-<tr><td><div id="Decibel_Volt">Decibel Volt (dBv)</div></td><td>
+<tr><td><div id="Decibel_Volt">Decibel Volt (dBV)</div></td><td>
         A measurement of voltage ratio to 1 volt.
       </td></tr>
 <tr><td><div id="Digital_Audio">Digital Audio</div></td><td>
@@ -957,7 +957,7 @@ provide all of its security functionality.
                 received. It is very unlikely that this element can be satisfied unless all unselected
                 computer interfaces are shorted to ground by the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr>.<br/><br/>
                 Note that the above port‐to‐port attenuation pass criterion is calculated based on
-                the following: 45 <abbr class="dyn-abbr"><a href="#abbr_dBv">dBv</a></abbr> = 177.82 signal to voltage ratio. When the signal inserted
+                the following: 45 <abbr class="dyn-abbr"><a href="#abbr_dBV">dBV</a></abbr> = 177.82 signal to voltage ratio. When the signal inserted
                 on one <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer interface audio input is 2.00 V peak‐to‐peak sine wave, the
                 maximum allowed output signal voltage measured at another <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer
                 interface is therefore 11.2mV (or well below noise level). Negative swing is
@@ -1003,6 +1003,7 @@ provide all of its security functionality.
                       guidance.</li>
                     <li>Play a different audio file on a number of computers for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer
                       analog audio interface.</li>
+                    <li>Connect each computer to a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> computer analog audio interface.</li>
                     <li>Turn on the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</li>
                   </ul>
                   Note that for a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that provides audio mixing functions the evaluator shall maximize the volume on a
@@ -1305,8 +1306,8 @@ provide all of its security functionality.
                     Filtration Specifications table.</li>
                   <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
                     the peak‐to‐peak voltage.</li>
-                  <li>Connect an oscilloscope to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and set it to measure
-                    the peak‐to‐peak voltage.<ul>
+                  <li>For each connected computer, perform Step 5 with the signal generator set to
+                    the following settings:<ul>
                       <li>Pure sine wave around the average voltage of half output (positive signal only), with the output
                         signal set to 2.00 V peak‐to‐peak, calibrating the signal with the oscilloscope as needed</li>
                       <li>Signal average to 0V (negative swing)</li>
@@ -1674,7 +1675,7 @@ provide all of its security functionality.
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
 <tr><td><span class="term" id="abbr_cPP" data-plural="cPPs"><abbr class="dyn-abbr"><a href="#abbr_cPP">cPP</a></abbr></span></td><td><span id="long_abbr_cPP">Collaborative Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_dB"><abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr></span></td><td><span id="long_abbr_dB">Decibel</span></td></tr>
-<tr><td><span class="term" id="abbr_dBv"><abbr class="dyn-abbr"><a href="#abbr_dBv">dBv</a></abbr></span></td><td><span id="long_abbr_dBv">Decibel Volt</span></td></tr>
+<tr><td><span class="term" id="abbr_dBV"><abbr class="dyn-abbr"><a href="#abbr_dBV">dBV</a></abbr></span></td><td><span id="long_abbr_dBV">Decibel Volt</span></td></tr>
 <tr><td><span class="term" id="abbr_EP"><abbr class="dyn-abbr"><a href="#abbr_EP">EP</a></abbr></span></td><td><span id="long_abbr_EP">Extended Package</span></td></tr>
 <tr><td><span class="term" id="abbr_FP"><abbr class="dyn-abbr"><a href="#abbr_FP">FP</a></abbr></span></td><td><span id="long_abbr_FP">Functional Package</span></td></tr>
 <tr><td><span class="term" id="abbr_KHz"><abbr class="dyn-abbr"><a href="#abbr_KHz">KHz</a></abbr></span></td><td><span id="long_abbr_KHz">Kilohertz</span></td></tr>

@@ -384,7 +384,7 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><div id="Audio_codec">Audio codec</div></td><td>
         PC subsystem capable of encoding and decoding a digital data stream of audio.
       </td></tr>
-<tr><td><div id="Decibel_Volt">Decibel Volt (dBv)</div></td><td>
+<tr><td><div id="Decibel_Volt">Decibel Volt (dBV)</div></td><td>
         A measurement of voltage ratio to 1 volt.
       </td></tr>
 <tr><td><div id="Digital_Audio">Digital Audio</div></td><td>
@@ -459,6 +459,7 @@ The following sections list Common Criteria and technology terms used in this do
                       guidance.</li>
                     <li>Play a different audio file on a number of computers for each TOE computer
                       analog audio interface.</li>
+                    <li>Connect each computer to a TOE computer analog audio interface.</li>
                     <li>Turn on the TOE.</li>
                   </ul>
                   Note that for a TOE that provides audio mixing functions the evaluator shall maximize the volume on a
@@ -659,8 +660,8 @@ The following sections list Common Criteria and technology terms used in this do
                     Filtration Specifications table.</li>
                   <li>Connect an oscilloscope to the TOE analog audio output peripheral interface and set it to measure
                     the peak‐to‐peak voltage.</li>
-                  <li>Connect an oscilloscope to the TOE analog audio output peripheral interface and set it to measure
-                    the peak‐to‐peak voltage.<ul>
+                  <li>For each connected computer, perform Step 5 with the signal generator set to
+                    the following settings:<ul>
                       <li>Pure sine wave around the average voltage of half output (positive signal only), with the output
                         signal set to 2.00 V peak‐to‐peak, calibrating the signal with the oscilloscope as needed</li>
                       <li>Signal average to 0V (negative swing)</li>
