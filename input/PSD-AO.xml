@@ -442,6 +442,7 @@
               <TSS>The evaluator shall check the TSS to verify that the TOE audio function implementation properly filters
                 the audio passing through the TOE.</TSS>
               <Guidance/>
+              <CustomEA name="Isolation"/>
               <Tests>
                 <testlist>
                   <test>
@@ -542,6 +543,7 @@
               <TSS/>
               <Guidance>The evaluator shall verify that the operational guidance describes devices authorized for use with the TOE
                 in accordance with the authorized peripheral device connections.</Guidance>
+              <CustomEA name="Isolation"/>
               <Tests>
                 The evaluator shall verify that the TOE ports do not reject authorized devices and devices with authorized
                 protocols as per the authorized peripheral device connections.
@@ -595,6 +597,7 @@
               </TSS>
               <Guidance>The evaluator shall verify that the guidance states that a microphone should never be connected to the
                 TOE’s analog audio output interface.</Guidance>
+              <CustomEA name="Isolation"/>
               <Tests>
                 <testlist>
                   <test>
@@ -670,6 +673,7 @@
                 input pure sine wave at the extended audio frequency range, including negative swing signal.
               <TSS/>
               <Guidance/>
+              <CustomEA name="Isolation"/>
               <Tests>
                 Note: Data is considered not to transit the TOE if no signal greater than 45 dB of attenuation at the specific
                 audio frequency is received.
