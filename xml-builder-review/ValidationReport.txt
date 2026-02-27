@@ -1,1 +1,1 @@
-/home/runner/work/PSD-AO/PSD-AO/input/PSD-AO.xml:320:27: error: element "base-sfr-spec" incomplete; missing required element "description"
+/home/runner/work/PSD-AO/PSD-AO/input/PSD-AO.xml:324:27: error: element "base-sfr-spec" incomplete; missing required element "description"
