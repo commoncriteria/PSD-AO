@@ -99,6 +99,10 @@
       USB audio devices (i.e., codecs) are not authorized for use with the TOE. USB audio codecs have
       configuration memory that may be exploited to enable unauthorized data flows.
     </section>
+    <sec:Use_Cases>No additional use cases are defined for this PP‐Module. The TOE is expected to embody one or more use
+      cases as defined by the PSD PP. The functionality defined by this PP‐Module is implementation-dependent
+      (i.e., not tied to any specific use cases) and is related entirely to the specific security
+      requirements related to security of the physical and logical interfaces for analog audio output devices.</sec:Use_Cases>
     <section title="Test Environment for Evaluation Activities">
       In order to ensure that the TOE demonstrates the functionality required by the EAs, it is necessary for the
       evaluator to ensure that they have appropriate equipment to conduct the required testing. In addition to
