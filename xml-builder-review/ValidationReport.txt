@@ -1,3 +1,0 @@
-/home/runner/work/PSD-AO/PSD-AO/input/PSD-AO.xml:320:45: error: element "f-element" not allowed here; expected element "description"
-/home/runner/work/PSD-AO/PSD-AO/input/PSD-AO.xml:328:45: error: element "f-element" not allowed here; expected element "description"
-/home/runner/work/PSD-AO/PSD-AO/input/PSD-AO.xml:492:27: error: element "base-sfr-spec" incomplete; missing required element "description"
