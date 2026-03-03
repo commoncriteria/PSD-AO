@@ -315,7 +315,7 @@
       <modified-sfrs>
         <section title="User Data Protection (FDP)" id="mod-fdp">
           <!-- FDP_APC_EXT.1 Active PSD Connections -->
-          <base-sfr-spec cc-id="fdp_apc_ext.1" id="fdp-apc-ext-1" title="Active PSD Connections">
+          <f-component cc-id="fdp_apc_ext.1" id="fdp-apc-ext-1" name="Active PSD Connections">
             <consistency-rationale/>
             <f-element id="fdp-apc-ext-1e1">
               <title>
@@ -489,7 +489,7 @@
                 </Tests>
               </aactivity>
             </f-element>
-          </base-sfr-spec>
+          </f-component>
         </section>
       </modified-sfrs>
       <!-- 5.1.2 Additional SFRs -->
