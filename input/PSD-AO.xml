@@ -16,6 +16,11 @@
       <date>2019-07-19</date>
       <subject>Initial draft</subject>
     </entry>
+    <entry>
+      <version>2.0</version>
+      <date>2025-07-11</date>
+      <subject>Updates for CC:2022</subject>
+    </entry>
   </RevisionHistory>
   <pp-preferences/>
   <sec:Introduction>
@@ -98,6 +103,11 @@
       <h:br/>
       USB audio devices (i.e., codecs) are not authorized for use with the TOE. USB audio codecs have
       configuration memory that may be exploited to enable unauthorized data flows.
+      <sec:TOE_Boundary>The TOE boundary is the same as for a Peripheral Sharing Device in general. Refer to the PSD PP for an
+        outline of the TOE boundary. Note that a TOE that claims conformance to this PP‐Module must specifically
+        include support for analog audio output peripherals. A TOE that claims conformance to this PP‐Module is
+        not prevented from claiming conformance to other PSD PP‐Modules. All relevant PP‐Modules must be
+        claimed by the TOE based on the specific types of peripheral device functionality provided.</sec:TOE_Boundary>
     </section>
     <section title="Test Environment for Evaluation Activities">
       In order to ensure that the TOE demonstrates the functionality required by the EAs, it is necessary for the
