@@ -30,8 +30,6 @@
       <date>2019-07-19</date>
       <subject>Initial draft</subject>
     </entry>
-  </RevisionHistory>
-  <RevisionHistory>
     <entry>
       <version>2.0</version>
       <date>2025-07-11</date>
@@ -129,7 +127,6 @@
       video is addressed in the PP‐Module for Video/Display Devices.<h:br/><h:br/>
       USB audio devices (i.e., codecs) are not authorized for use with the TOE. USB audio codecs have
       configuration memory that may be exploited to enable unauthorized data flows.
-    </section>      
       <section title="TOE Boundary" id="TOEboundary">
         The TOE boundary is the same as for a Peripheral Sharing Device in general. Refer to the PSD PP for an
         outline of the TOE boundary. Note that a TOE that claims conformance to this PP‐Module must specifically
@@ -137,6 +134,7 @@
         not prevented from claiming conformance to other PSD PP‐Modules. All relevant PP‐Modules must be
         claimed by the TOE based on the specific types of peripheral device functionality provided.
       </section>      
+    </section>      
     <section title="Use Cases" id="usecases">
       No additional use cases are defined for this PP‐Module. The TOE is expected to embody one or more use
       cases as defined by the PSD PP. The functionality defined by this PP‐Module is implementation-dependent
