@@ -1,2 +1,1 @@
-* Error: Detected multiple elements with an id of 'fdp'.
-* Error: Detected multiple elements with an id of 'fdp'.
+* Warning: This document still has at least one comment.
