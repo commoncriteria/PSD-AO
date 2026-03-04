@@ -500,6 +500,27 @@
               </aactivity>
             </f-element>
           </f-component>
+          <!-- FDP_PDC_EXT.1 Peripheral Device Connection -->
+          <f-component cc-id="fdp_pdc_ext.1" id="fdp-pdc-ext-1" name="Peripheral Device Connection">
+            <consistency-rationale/>
+            <f-element id="fdp-pdc-ext-1e1">
+              <title>There is no modification to this SFR in this PP‐Module. However, there are additions to the supported
+              peripheral device connections (see Appendix E) that are associated with this SFR and
+              additional evaluation activities.</title>
+              <aactivity>
+                <TSS/>
+                <Guidance/>
+                <CustomEA name="Isolation"/>
+                <Tests>
+                  <testlist>
+                    <test>The evaluator shall verify that the TOE ports properly reject unauthorized devices and devices with unauthorized protocols as per the unauthorized peripheral device connections. <h:br/>  <h:br/> For this test, verify device rejection through TOE user indication in accordance with the operational user guidance or an immediate cessation of traffic following device detection or enumeration, or incompatibility of the device interface with the peripheral interface. <h:br/>  <h:br/>  <h:ol><h:li>Ensure the TOE is powered off and audio analyzer software is running on the connected computer.</h:li> <h:li>Connect an analog microphone to the TOE analog audio output peripheral interface.</h:li> <h:li>Power on the TOE, speak loudly into the microphone from approximately one‐inch distance, and
+                        verify no audio is present in the audio analyzer software.</h:li> <h:li>Disconnect the microphone and reconnect it to the TOE peripheral interface.</h:li> <h:li>Speak loudly into the microphone from approximately one‐inch distance, and verify no audio is
+                        present in the audio analyzer software.</h:li></h:ol></test>
+                  </testlist>
+                </Tests>
+              </aactivity>
+            </f-element>
+          </f-component>
         </section>
       </modified-sfrs>
       <!-- 5.1.2 Additional SFRs -->
