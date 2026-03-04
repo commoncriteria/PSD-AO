@@ -533,6 +533,21 @@ The following sections list Common Criteria and technology terms used in this do
                               to 2.00 V peak‐to‐peak, calibrating the signal with the oscilloscope as needed</li> <li>Signal average to 0v (negative swing)</li></ul></li> <li>Perform steps 9‐11 for each of the designated frequencies.</li> <li>Use the signal generator to generate the signal.</li> <li>Disconnect the signal generator, wait two minutes, and replace it with an oscilloscope set to
                           measure the peak‐to‐peak voltage.</li> <li>Verify the signal on the oscilloscope is 11.2 mV or less at the generated frequency.</li></ol></li>
                   </ul></span>
+                </div></div></span></div><div class="comp" id="FDP-PDC-EXT-1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_PDC_EXT.1</div>
+                
+                
+                
+                
+              <div class="eacategory">TSS</div><div class="ea">
+			There are no additional TSS evaluation activities for this component.<br/></div><div class="eacategory">Guidance</div><div class="ea">
+			There are no additional Guidance evaluation activities for this component.<br/></div><div class="ea"><div class="eacategory">Isolation</div>
+			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
+                  <span class="testlist-"><ul>
+                    <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:1</a>:
+      The evaluator shall verify that the TOE ports properly reject unauthorized devices and devices with unauthorized protocols as per the unauthorized peripheral device connections. <br/>  <br/> For this test, verify device rejection through TOE user indication in accordance with the operational user guidance or an immediate cessation of traffic following device detection or enumeration, or incompatibility of the device interface with the peripheral interface. <br/>  <br/>  <ol><li>Ensure the TOE is powered off and audio analyzer software is running on the connected computer.</li> <li>Connect an analog microphone to the TOE analog audio output peripheral interface.</li> <li>Power on the TOE, speak loudly into the microphone from approximately one‐inch distance, and
+                        verify no audio is present in the audio analyzer software.</li> <li>Disconnect the microphone and reconnect it to the TOE peripheral interface.</li> <li>Speak loudly into the microphone from approximately one‐inch distance, and verify no audio is
+                        present in the audio analyzer software.</li></ol></li>
+                  </ul></span>
                 </div></div></span></div>
       <h2 class="indexable" data-level="1" id="man-sfrs">2.2 TOE SFR Evaluation Activities</h2><h2 class="indexable" data-level="2" id="fdp">2.2.1 User Data Protection (FDP)</h2><div class="comp" id="FDP-AFL-EXT-1"><h4>FDP_AFL_EXT.1 Audio Filtration</h4><span class="activity_pane_body"><div class="component-activity-header">FDP_AFL_EXT.1</div>
               
@@ -544,7 +559,7 @@ The following sections list Common Criteria and technology terms used in this do
 			There are no additional Guidance evaluation activities for this component.<br/></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_AFL_EXT.1:1</a>:
+                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FDP_AFL_EXT.1:1</a>:
       
                     <ol>
                       <li>Connect a computer to the TOE analog audio output peripheral interface and run audio analyzer
@@ -586,7 +601,7 @@ The following sections list Common Criteria and technology terms used in this do
                 Repeat this test for each of the following devices: analog headphone and analog
                 speakers.
                 <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FDP_PDC_EXT.2/AO:1</a>:
+                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FDP_PDC_EXT.2/AO:1</a>:
       
                     <ol>
                       <li>Ensure the TOE is powered off.</li>
@@ -618,7 +633,7 @@ The following sections list Common Criteria and technology terms used in this do
                 TOE’s analog audio output interface.</div></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
                 <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FDP_PUD_EXT.1:1</a>:
+                  <li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FDP_PUD_EXT.1:1</a>:
       
                     <ol>
                       <li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
@@ -656,7 +671,7 @@ The following sections list Common Criteria and technology terms used in this do
                 <br/>
                 The evaluator shall perform the following test.
                 <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FDP_UDF_EXT.1/AO:1</a>:
+                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FDP_UDF_EXT.1/AO:1</a>:
       
                     <ol>
                       <li>Connect a computer to the TOE analog audio output peripheral interface, run its tone generator
