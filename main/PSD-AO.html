@@ -865,24 +865,18 @@ The following sections list Common Criteria and technology terms used in this do
 	</dt><dd><span class="description">This threat from the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> also applies to the functionality defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.</span></dd></dl>
       
     
-      <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2>
-These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
+      <h2 class="indexable" data-level="2" id="Assumptions">3.2 Assumptions</h2><p>These assumptions are made on the Operational Environment (<abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>) in order to be able to ensure that the
 security functionality specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> can be provided by the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
 If the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is placed in an <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr> that does not meet these assumptions, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may no longer be able to
-provide all of its security functionality.
-      
+provide all of its security functionality.</p>
           This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module defines the following additional assumption beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_PSD">PSD</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>
     <dl><dt class="assumption defined" id="A.NO_MICROPHONES">A.NO_MICROPHONES</dt><dd><span class="description">
           Users are trained not to connect a microphone to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> audio output interface.          
         </span></dd></dl>
     
     
-    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>An organization deploying the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is
-      expected to satisfy the organizational security policy listed below in addition to all
-      organizational security policies defined by the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. </p>
+    <h2 class="indexable" data-level="2" id="Organizational_Security_Policies">3.3 Organizational Security Policies</h2><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines no Organizational Security Policies beyond those defined in the claimed <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>(s).</p>
       
-      This document does not define any additional OSPs.
-    
     
   <h1 class="indexable" data-level="1" id="Security_Objectives">4 Security Objectives</h1>
     <h2 class="indexable" data-level="2" id="Security_Objectives_for_the_Operational_Environment">4.1 Security Objectives for the Operational Environment</h2>
@@ -1011,8 +1005,7 @@ provide all of its security functionality.
                   Note: Electrical signals are considered not to flow between connected computers and data is considered
                   not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of attenuation at the specific audio frequency is
                   received. <br/><br/>                 
-                  <span class="testlist-"><ul>
-                    <li class="test-"><a id="Test_1-AO" class="defined" href="#Test_1-AO">Test FDP_APC_EXT.1:1</a>:
+                  <span class="testlist-"><br/><br/><br/><br/><br/><br/><ul><li class="test-"><a id="Test_1-AO" class="defined" href="#Test_1-AO">Test FDP_APC_EXT.1:1</a>:
       <br/><br/>
                       <b>Analog Audio Output Data Routing Methods</b><br/><br/>
                       This test verifies the functionality of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> routing methods while powered on, powered off, and in
@@ -1036,9 +1029,7 @@ provide all of its security functionality.
                           audio spectrum analyzer software on the computer connected to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output device
                           interface.</li>                        
                       </ol>                      
-                    </li><br/><br/>
-                    
-                    <li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>:
+                    </li><li class="test-"><a id="_t_2" class="defined" href="#_t_2">Test FDP_APC_EXT.1:2</a>:
       <br/><br/>
                       <b>Analog Audio Output Interface Isolation</b><br/><br/>
                       [Conditional: Perform this test if “switching through express user action” is selected in FDP_SWI_EXT.1.1
@@ -1083,8 +1074,7 @@ provide all of its security functionality.
                         <li>Power off the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and set the signal generator to generate the designated frequencies and verify
                           the signal on the oscilloscopes is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less.</li>
                         </ol>
-                    </li><br/><br/>
-                    <li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
+                    </li><li class="test-"><a id="_t_3" class="defined" href="#_t_3">Test FDP_APC_EXT.1:3</a>:
       <br/><br/>
                       <b>No Flow between Computers with Other Peripheral Device Types</b><br/><br/>
                       [Conditional: Perform this test only if a <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module aside from the Analog Audio Output <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module is part
@@ -1125,8 +1115,7 @@ provide all of its security functionality.
                         <li>[Conditional: If the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Module for User Authentication Devices is part of the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>‐Configuration
                           being claimed, then:] connect an authentication session to the first computer and verify that no sounds
                           appears on the audio analyzer software on the other connected computers.</li></ol>
-                    </li><br/><br/>
-                    <li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_APC_EXT.1:4</a>:
+                    </li><li class="test-"><a id="_t_4" class="defined" href="#_t_4">Test FDP_APC_EXT.1:4</a>:
       
                       This test verifies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not send data to different computers connected to the same interface
                       at different times. Repeat this test for each <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Analog Audio Output
@@ -1151,8 +1140,7 @@ provide all of its security functionality.
                           measure the peak‐to‐peak voltage.</li>
                         <li>Verify the signal on the oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less at the generated frequency.</li>                        
                       </ol>
-                    </li>
-                  </ul></span>
+                    </li></ul></span>
                 </div></div></div></div></div>
           
           <div class="comp" id="FDP_PDC_EXT.1"><h4>FDP_PDC_EXT.1 Peripheral Device Connection</h4>
@@ -1170,8 +1158,7 @@ provide all of its security functionality.
 			There are no additional <abbr class="dyn-abbr"><a href="#abbr_TSS">TSS</a></abbr> evaluation activities for this component.<br/></div><div class="eacategory">Guidance</div><div class="ea">
 			There are no additional Guidance evaluation activities for this component.<br/></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_5" class="defined" href="#_t_5">Test FDP_PDC_EXT.1:1</a>:
       
                     The evaluator shall verify that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> ports properly reject unauthorized devices and devices with
                     unauthorized protocols as per the unauthorized peripheral device connections.<br/><br/>
@@ -1187,8 +1174,7 @@ provide all of its security functionality.
                       <li>Speak loudly into the microphone from approximately one‐inch distance, and verify no audio is
                         present in the audio analyzer software.</li>
                     </ol>
-                  </li>                  
-                </ul></span>
+                  </li></ul></span>
               </div></div></div></div></div>         
         
       <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
@@ -1294,8 +1280,7 @@ provide all of its security functionality.
                 the audio passing through the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.</div></div><div class="eacategory">Guidance</div><div class="ea">
 			There are no additional Guidance evaluation activities for this component.<br/></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FDP_AFL_EXT.1:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_6" class="defined" href="#_t_6">Test FDP_AFL_EXT.1:1</a>:
       
                 <ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface and run audio analyzer
@@ -1316,8 +1301,7 @@ provide all of its security functionality.
                     verify the signal on the oscilloscope does not exceed the corresponding maximum voltage after
                     attenuation.</li>
                 </ol>
-                  </li>
-                </ul></span>
+                  </li></ul></span>
               </div></div></div></div></div>
         
         
@@ -1362,8 +1346,7 @@ provide all of its security functionality.
                 protocols as per the authorized peripheral device connections.<br/><br/>
                 Repeat this test for each of the following devices: analog headphone and analog
                 speakers.
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FDP_PDC_EXT.2/AO:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_7" class="defined" href="#_t_7">Test FDP_PDC_EXT.2/AO:1</a>:
       
                 <ol>
                   <li>Ensure the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is powered off.</li>
@@ -1377,8 +1360,7 @@ provide all of its security functionality.
                   <li>Play an audio file on the connected computer and verify the sound is heard through the authorized
                     device.</li>
                 </ol>
-                  </li>
-                </ul></span>
+                  </li></ul></span>
               </div></div></div></div></div>
         
         <div class="comp" id="FDP_PUD_EXT.1"><h4>FDP_PUD_EXT.1 Powering Unauthorized Devices</h4>
@@ -1407,8 +1389,7 @@ provide all of its security functionality.
                 <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>’s analog audio output interface.
               </div></div><div class="ea"><div class="eacategory">Isolation</div>
 			There are no Isolation evaluation activities for this component.<br/></div><div class="eacategory">Tests</div><div class="ea"><div class="ea">
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FDP_PUD_EXT.1:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_8" class="defined" href="#_t_8">Test FDP_PUD_EXT.1:1</a>:
       
                 <ol>
                   <li>Connect the amplified speakers directly to computer #1’s analog audio output interface (typically
@@ -1423,8 +1404,7 @@ provide all of its security functionality.
                   <li>Verify the voltage is 0.2 volts or less, ensuring there is no DC bias voltage supplied to the
                     microphone.</li>                                    
                 </ol>
-                  </li>
-                </ul></span>
+                  </li></ul></span>
               </div></div></div></div></div>
         
         
@@ -1468,8 +1448,7 @@ provide all of its security functionality.
                 Note: Data is considered not to transit the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> if no signal greater than 45 <abbr class="dyn-abbr"><a href="#abbr_dB">dB</a></abbr> of attenuation at the specific
                 audio frequency is received.<br/><br/>
                 The evaluator shall perform the following test.
-                <span class="testlist-"><ul>
-                  <li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FDP_UDF_EXT.1/AO:1</a>:
+                <span class="testlist-"><ul><li class="test-"><a id="_t_9" class="defined" href="#_t_9">Test FDP_UDF_EXT.1/AO:1</a>:
       
                 <ol>
                   <li>Connect a computer to the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> analog audio output peripheral interface, run its tone generator
@@ -1490,8 +1469,7 @@ provide all of its security functionality.
                   <li>Set the signal generator to generate the designated frequencies, and verify the signal on the
                     oscilloscope is 11.2 <abbr class="dyn-abbr"><a href="#abbr_mV">mV</a></abbr> or less.</li>
                 </ol> 
-                  </li>
-                </ul></span>
+                  </li></ul></span>
               </div></div></div></div></div>        
             
     <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
