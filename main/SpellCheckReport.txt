@@ -7,6 +7,7 @@ output/PSD-AO-release-linkable.html: 45dB
 output/PSD-AO-release-linkable.html: CEM
 output/PSD-AO-release-linkable.html: FFT
 output/PSD-AO-release-linkable.html: PDIF
+output/PSD-AO-release-linkable.html: PSDPP
 output/PSD-AO-release-linkable.html: SPD
 output/PSD-AO-release-linkable.html: SWI
 output/PSD-AO-release-linkable.html: UA
@@ -24,6 +25,7 @@ output/PSD-AO-release.html: 45dB
 output/PSD-AO-release.html: CEM
 output/PSD-AO-release.html: FFT
 output/PSD-AO-release.html: PDIF
+output/PSD-AO-release.html: PSDPP
 output/PSD-AO-release.html: SPD
 output/PSD-AO-release.html: V5
 output/PSD-AO-release.html: codec
@@ -58,6 +60,7 @@ output/PSD-AO.html: 45dB
 output/PSD-AO.html: CEM
 output/PSD-AO.html: FFT
 output/PSD-AO.html: PDIF
+output/PSD-AO.html: PSDPP
 output/PSD-AO.html: SPD
 output/PSD-AO.html: SWI
 output/PSD-AO.html: UA
